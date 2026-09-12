@@ -1,58 +1,70 @@
-# Andy Zhang
+# Andy Zhang (张千羽)
 
-AI 产品经理。关注一个具体问题：**AI 产品做出来了，怎么证明它到底好不好。**
+**AI Product Manager** — I build agent workflows, prompt-asset platforms, and the evaluation systems that keep them honest. Currently at NOVA, a short-drama production platform.
 
-大模型产品最难的不是让它跑起来，是回答"这版比上一版好在哪、好多少"。我做的两个项目都在这条线上——不是包个模型做应用，是给已有的 AI 产品建一套能复现、能反驳、能拿去开评审会的效果评估体系。
+Previously: AI product 0→1 at Baidu, user growth at Meituan (Saudi Arabia), and in-car assistant at Li Auto.
 
-### 🔗 先看 Demo：**[andyzhang666666.github.io](https://andyzhang666666.github.io)**
+**Start here → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — score a script yourself, then compare against the human labels and two judge versions. No code to read.
 
-不用翻代码。页面里两个项目都能直接上手：给一段短剧剧本自己打分，再翻开看人工标注和两版裁判各给了多少；或者读一段公告摘要，猜哪句是编的，再看裁判逐条断言的核对结果。所有数字都从下面两个仓库的 `results/` 里搬过来，没有一个是手填的。
+## What I work on
 
----
+- **Agent workflow design** — multi-stage task orchestration with human checkpoints at every stage
+- **Prompt asset governance** — turning ad-hoc prompts into versioned, staged-rollout assets with tracked outcomes
+- **Evaluation systems** — golden sets, LLM-as-judge, bad-case attribution, judge reliability testing
+- **Monetization & growth** — subscription mechanics, event-tracking attribution, A/B testing
 
-## 项目
+The through-line: **shipping an AI feature is the easy half. Proving this version is better than the last one is the hard half.** Every repo below is about that second half.
 
-### [filing-eval](https://github.com/AndyZhang666666/filing-eval) · 公告摘要的断言级事实核查
+## Projects
 
-给"AI 生成的公告摘要"做幻觉检测。把摘要拆成一条条断言，逐条回原文核对，输出**幻觉检出率 / 误报率 / 关键信息覆盖率**三个独立指标。
+| Project | What it is |
+|---|---|
+| [llm-output-eval](https://github.com/AndyZhang666666/llm-output-eval) | Eval harness for long-form generated text — 5 dimension scores with verbatim evidence, plus a report validating the judge itself |
+| [creative-eval](https://github.com/AndyZhang666666/creative-eval) | Scoring judge for short-drama scripts — 5 weighted dimensions, 93.1% agreement with human labels |
+| [filing-eval](https://github.com/AndyZhang666666/filing-eval) | Claim-level fact-checking for AI-generated filing summaries — 11/11 error detection, 0 false positives |
+| [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | Teardowns of Chinese AI products against a fixed 6-dimension framework |
+| note-intent-classifier | WIP — classifying note intent on Xiaohongshu to predict lead quality |
+| pricing-model-sim | WIP — subscription vs. one-time pricing revenue simulator |
 
-20 条金标集（4 干净 + 11 单点错误 + 5 边界），错误类型覆盖数量级偷换、单位偷换、方向倒置、主体倒置、口径偷换、实质性遗漏。另建 8 条"自己都要看两遍"的困难集。
+The last two have no link on purpose — no repo yet, and a dead link is worse than no link.
 
-| | 主集 | 困难集 |
-|---|---|---|
-| 错误检出 | **11/11** | **5/5**（另 1 条争议样本） |
-| 误报 | **0/4** | **0/2** |
-| 结论稳定性 | 同输入连跑 3 次，**0 次翻转** | |
-| 提示注入 | **5/5 守住**，0 次被劫持 | |
+## Background & Contact
 
-### [creative-eval](https://github.com/AndyZhang666666/creative-eval) · 短剧剧本初稿的 LLM 评分裁判
-
-5 个加权维度的 rubric 打分（钩子 / 节奏 / 人设一致性 / payoff / 台词），40 条金标集含 8 条刻意设计的边界样本。
-
-重点不在"能打分"，在**证明这个裁判可信**：与人工标注的 ±1 分一致率 **93.1%**，同输入连跑 3 次的加权标准差 **0.074**，长度偏差和维度顺序偏差各做了独立测试。
-
-第一版裁判系统性偏松——11 条给满分，比人工标注平均高 **+0.38**。只在 prompt 里加了一段打分基准，偏差降到 **+0.21**，满分从 11 条降到 6 条。这次迭代的前后数据都在仓库里。
-
----
-
-## 两个项目为什么都要做
-
-它们是**两种评估范式**的对照：
-
-- creative-eval 评的是**主观质量**——没有标准答案，只能靠 rubric 锚点 + 人工标注一致率来证明裁判没跑偏。
-- filing-eval 评的是**客观事实**——有唯一正确答案，可以直接算检出率和误报率，但要小心指标之间互相掩盖。
-
-同一套 LLM-as-judge 的手法，在两种问题上的度量方式完全不同。这个差别是我做完才真正想清楚的。
+- **NOVA** — AI Product Manager (agent workflows, prompt platform, overseas subscription)
+- **Baidu · Meituan · Li Auto** — AI product 0→1, user growth, in-car assistant
+- **UCL** — MSc Financial Engineering · **University of Bristol** — BEng Electrical & Electronic Engineering
+- Working languages: Chinese, English
+- [github.com/AndyZhang666666](https://github.com/AndyZhang666666) · [andyzhang666666.github.io](https://andyzhang666666.github.io)
 
 ---
 
-## 踩过的坑（都写进 README 了）
+## 中文
 
-- **三个指标 AND 成一个，等于自己骗自己。** 摘要把数字写错了，那条关键事实必然显示"未覆盖"——检出和覆盖在错误样本上互相打架，AND 起来永远不及格。拆开才看得清问题在哪。
-- **"检出率 100%"可能是分母算错了。** 干净样本被标签规则误算成错误样本，检出率虚高到 15/15。真实值是 11/11。
-- **一片绿色比报错更可怕。** 有 4 条测试样本写了期望值，却因为判定逻辑走的是标签而不是期望，**一项检查都没执行**，静默显示通过。加了空测试检测器才抓出来。
-- **裁判和我不一致时，先怀疑自己的标注。** 有一条我判裁判错了，复核后发现是我标得太严；另一条两种读法都站得住，标成争议样本从分母剔除——但不改标注去迁就裁判，那等于把测试集调成永远通过。
+AI 产品经理。做 Agent 工作流、Prompt 资产平台，以及让它们可控的效果评估体系。目前在 NOVA（短剧内容生产平台）。此前在百度做 AI 产品的 0→1，在美团做用户增长，在理想汽车做智能座舱。
 
----
+**我关注的问题是一个具体的问题：AI 产品做出来了，怎么证明它到底好不好。**
 
-🔗 [Demo 站](https://andyzhang666666.github.io) · 📮 [GitHub](https://github.com/AndyZhang666666)
+大模型产品最难的不是让它跑起来，是回答「这版比上一版好在哪、好多少」。评审会上的意见永远是「感觉不对」——没法量化，也没法比较。下面几个仓库都在这条线上：不是包个模型做应用，是给已有的 AI 产品建一套能复现、能反驳、能拿去开评审会的评估体系。
+
+### 项目
+
+**[llm-output-eval](https://github.com/AndyZhang666666/llm-output-eval)** — 长文本生成质量的评测工具。五个维度用 LLM-as-judge 打分并强制给出逐字证据句，附一份裁判自身的可靠性校验报告（连跑一致性、与人工标注的比对、位置偏差）。报告里如实写了找到的两个 bug：响应被 max_tokens 截断导致样本静默丢失，以及空值污染统计聚合。
+
+**[creative-eval](https://github.com/AndyZhang666666/creative-eval)** — 短剧剧本的评分裁判。与人工标注 ±1 分一致率 93.1%，同输入连跑 3 次加权标准差 0.074。第一版裁判系统性偏松（比人工高 +0.38），加打分基准后降到 +0.21，前后数据都在仓库里。
+
+**[filing-eval](https://github.com/AndyZhang666666/filing-eval)** — 公告摘要的断言级事实核查。把摘要拆成断言逐条回原文核对，错误检出 11/11、误报 0/4、提示注入 5/5 守住。
+
+**[ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns)** — 用固定六维框架拆解可灵、豆包、文库 AI。框架本身比结论更重要：能力边界在哪、答错时怎么办、效果怎么衡量、如果我是 PM 下一步做什么。
+
+### 两类评估的差别
+
+creative-eval 评**主观质量**——没有标准答案，只能靠 rubric 锚点加人工标注一致率证明裁判没跑偏。filing-eval 评**客观事实**——有唯一正确答案，可以直接算检出率和误报率，但要小心指标之间互相掩盖。同一套 LLM-as-judge 的手法，两种问题的度量方式完全不同。这个差别是我做完才真正想清楚的。
+
+### 踩过的坑
+
+- **三个指标 AND 成一个，等于自己骗自己。** 摘要把数字写错了，那条关键事实必然显示「未覆盖」——检出和覆盖在错误样本上互相打架，AND 起来永远不及格。
+- **「检出率 100%」可能是分母算错了。** 干净样本被标签规则误算成错误样本，检出率虚高到 15/15，真实值是 11/11。
+- **一片绿色比报错更可怕。** 4 条测试样本写了期望值却因判定逻辑走标签而一项都没执行，静默显示通过。加空测试检测器才抓出来。
+- **裁判和我不一致时，先怀疑自己的标注。** 但不改标注去迁就裁判——那等于把测试集调成永远通过。
+
+联系：[GitHub](https://github.com/AndyZhang666666) · [Demo 站](https://andyzhang666666.github.io)
