@@ -1,102 +1,77 @@
 # Andy Zhang (张千羽)
 
-**AI Product Manager** — I build agent workflows, prompt-asset platforms, and the evaluation systems that keep them honest. Currently at NOVA, a short-drama production platform.
+AI Product Manager at NOVA (short-drama production platform). Before that: AI product 0→1 at Baidu, user growth at Meituan (Saudi Arabia market), in-car assistant at Li Auto. UCL MSc Financial Engineering, Bristol BEng EEE.
 
-Previously: AI product 0→1 at Baidu, user growth at Meituan (Saudi Arabia), and in-car assistant at Li Auto.
+- **AI product design** — I take a business scenario all the way to shipped AI features: agent workflow design, reusable prompt-asset management, and evaluation systems that tell you whether a new version is actually better. Comfortable working alongside algorithm teams to take AI products from 0 to 1 and scale them.
+- **Data-driven, closed-loop** — SQL/Python for analysis and strategy validation; A/B testing, event-tracking attribution, and funnel decomposition to break down business problems and find growth paths that can be shipped and verified.
+- **Growth & monetization** — From user-scenario insight to paid-conversion path design: identifying high-value scenarios, designing differentiated experiences, and hands-on experience with subscription rollout and promotion optimization. Overseas market experience; English as a working language.
 
-**Start here → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — five interactive demos, no code to read. Score a script yourself, then see whether the judge agrees with the humans; watch what "peeking" at an A/B test does to your false-positive rate; find the price at which subscription beats pay-per-episode.
-
-## What I work on
-
-- **Agent workflow design** — multi-stage task orchestration with human checkpoints at every stage
-- **Prompt asset governance** — turning ad-hoc prompts into versioned, staged-rollout assets with tracked outcomes
-- **Evaluation systems** — golden sets, LLM-as-judge, bad-case attribution, judge reliability testing
-- **Growth & monetization** — A/B test design and stopping rules, pricing-mechanism simulation, bundle mining from order data
-
-The through-line: **shipping is the easy half. Proving this version is better than the last one — or that this change was worth making — is the hard half.** Evaluation is the main line; but growth and pricing decisions also have to be the kind that numbers can refute. Every repo below is about that second half, and every number in every README can be traced to a file in `results/` or `validation/`.
+**Try the demos → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — five interactive tools, nothing to install.
 
 ## Projects
 
-**Evaluation — is the AI output any good?**
+### AI evaluation
 
-| Project | One line | A number you can check |
-|---|---|---|
-| [creative-eval](https://github.com/AndyZhang666666/creative-eval) · [demo](https://andyzhang666666.github.io) | Scoring judge for short-drama scripts, 5-dimension rubric, plus the report on whether the judge itself is trustworthy | 93.1% within-±1 agreement with human labels (36 labeled items × 5 dimensions); v1 judge was +0.38 too lenient, v2 is +0.23 |
-| [llm-output-eval](https://github.com/AndyZhang666666/llm-output-eval) · [demo](https://andyzhang666666.github.io/llm-output-eval/) | Second version of the judge as a daily tool: two prompt versions run N times side by side, ≤2-score dimensions collected as bad cases, every score backed by a verbatim quote | Fixing a `max_tokens` truncation bug moved Spearman ρ from a polluted 0.79 to a real 0.93 |
-| [filing-eval](https://github.com/AndyZhang666666/filing-eval) | Claim-level fact-checking for AI-generated filing summaries | 11/11 planted errors caught, 0/4 false positives, 5/5 prompt injections held |
+| Project | Problem | What I built | Result |
+|---|---|---|---|
+| [creative-eval](https://github.com/AndyZhang666666/creative-eval) · [demo](https://andyzhang666666.github.io) | A content team gets 200 AI-generated script fragments a day; QA is still three people reading. No consistent way to say "v2 is better than v1". | An LLM judge that scores short-drama scripts on 5 fixed dimensions (hook, pacing, dialogue, persona, structure), each with written 1/3/5 anchors, and must quote evidence from the text. A 40-item golden set with human labels, and a validation suite: run-to-run stability, agreement with humans, length and order bias. | 93.1% within-±1 agreement with human raters. v1 judge was +0.38 too lenient; adding score anchors brought it to +0.23. |
+| [llm-output-eval](https://github.com/AndyZhang666666/llm-output-eval) · [demo](https://andyzhang666666.github.io/llm-output-eval/) | The judge above is a script, not a tool. PMs need to compare prompt versions and collect failure cases without touching code. | The same judge as a static web app. Paste text → per-dimension scores with verbatim evidence. Compare mode runs two versions N times each and shows mean ± range. Every ≤2 score is collected into an exportable bad-case list. Bring your own API key — calls go straight from your browser, no server. | Validation caught two bugs (truncation silently dropping samples; nulls counted as scores). Spearman ρ with humans 0.93 after the fix. |
+| [filing-eval](https://github.com/AndyZhang666666/filing-eval) | AI summaries of listed-company filings occasionally turn 120M into 1.2B or invent a sentence. Subjective scoring can't catch that. | Claim-level fact checking: split the summary into claims, match each back to the filing, label supported / contradicted / unsupported, then check key-fact coverage. Tested on 20 main samples plus 8 adversarial ones with planted errors and prompt injections. | 11/11 planted errors caught, 0/4 false positives, 5/5 injections held. |
 
-**Growth & monetization — was the change worth it?**
+### Growth & monetization
 
-| Project | One line | A number you can check |
-|---|---|---|
-| [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [demo](https://andyzhang666666.github.io/growth-experiment-lab/) | A/B test decision simulator: sample size, when to stop, whether the lift is worth shipping | Peeking daily and stopping at the first significant result pushes false positives from 4.95% to 22.45% (2,000 simulated 14-day tests, zero true effect) |
-| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [demo](https://andyzhang666666.github.io/pricing-model-sim/) | Pay-per-episode vs. subscription vs. hybrid: 12-month ARPU / LTV / payback from a retention curve | Subscription only beats hybrid once the monthly price passes ¥33–38; the better the retention, the lower the crossover |
+| Project | Problem | What I built | Result |
+|---|---|---|---|
+| [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [demo](https://andyzhang666666.github.io/growth-experiment-lab/) | Running A/B tests on coupon tiers at Meituan, the hard part wasn't the test — it was sizing it, resisting the urge to stop early, and turning "2 points of lift" into a ship/no-ship call. | A four-tab simulator: sample-size designer with an MDE curve; a peeking-penalty simulator that runs 2,000 zero-effect trials and shows what daily checking does to false positives; a result interpreter that turns the confidence interval into a conservative revenue estimate; and an experiment ledger where every decision is reproduced by the same rule the tool uses. | Peek daily and stop at first p<0.05 → false-positive rate goes from 4.95% to 22.45%. |
+| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [demo](https://andyzhang666666.github.io/pricing-model-sim/) | Working on overseas short-drama monetization: subscription markets had 3× the repeat-purchase rate of per-episode markets. Convincing the team meant showing the same cohort under different pricing mechanics. | Drag a retention curve, set episode price / monthly fee / CAC / platform cut, and compare pay-per-episode, subscription, and hybrid on 12-month ARPU, LTV, and payback. A sensitivity sweep finds where the best mechanic flips. | Subscription only beats hybrid above roughly ¥33–38/month, and the crossover is lower the better retention is. |
 
-**Commerce & teardowns — what does the data actually say?**
+### Commerce & product analysis
 
-| Project | One line | A number you can check |
-|---|---|---|
-| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [demo](https://andyzhang666666.github.io/bundle-lab/) | Mines order data for bundles worth making, and bounds what a discount can earn or lose | Recovers 5/5 planted bundles; usable from 2,000 orders, pure noise below 200 |
-| [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | Teardowns of Chinese AI products against a fixed 6-dimension framework | — (no numbers to verify; the framework is the deliverable) |
+| Project | Problem | What I built | Result |
+|---|---|---|---|
+| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [demo](https://andyzhang666666.github.io/bundle-lab/) | In Meituan's Saudi market, low basket size came from a structural mismatch: many group orders, a menu built for singles. Bundle decisions were made by hand from SQL pulls. | Upload order lines → see the group-vs-single mismatch → mine co-purchase pairs with association rules (lift / support / confidence) → set discount and adoption rate to see margin impact → export a one-page "who to target, what to bundle, when not to" recommendation. Validation planted 5 known bundles in synthetic data. | Recovered 5/5 planted bundles; usable from about 2,000 orders, noise below 200. |
+| [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | Most AI product reviews are feature lists. | Three teardowns (Kling, Doubao, Wenku AI) against one fixed 6-dimension framework: capability boundary, failure handling, how effect is measured, agentic potential, cost and latency, and what I'd do next as PM. | The framework is the reusable part. |
 
-Not on the list on purpose: a Xiaohongshu note-intent classifier that is still an idea, not a repo. A dead link is worse than no link.
+## Contact
 
-## Background & Contact
-
-- **NOVA** — AI Product Manager (agent workflows, prompt platform, overseas subscription)
-- **Baidu · Meituan · Li Auto** — AI product 0→1, user growth, in-car assistant
-- **UCL** — MSc Financial Engineering · **University of Bristol** — BEng Electrical & Electronic Engineering
-- Working languages: Chinese, English
-- [github.com/AndyZhang666666](https://github.com/AndyZhang666666) · [andyzhang666666.github.io](https://andyzhang666666.github.io)
+[github.com/AndyZhang666666](https://github.com/AndyZhang666666) · [andyzhang666666.github.io](https://andyzhang666666.github.io)
 
 ---
 
 ## 中文
 
-AI 产品经理。做 Agent 工作流、Prompt 资产平台，以及让它们可控的效果评估体系。目前在 NOVA（短剧内容生产平台）。此前在百度做 AI 产品的 0→1，在美团做用户增长，在理想汽车做智能座舱。
+AI 产品经理，目前在 NOVA（短剧内容生产平台）。此前在百度做 AI 产品 0→1，在美团做用户增长（沙特市场），在理想汽车做智能座舱。UCL 金融工程硕士，布里斯托大学电气电子工程学士。
 
-**我关注的问题是一个具体的问题：东西做出来了，怎么证明它到底好不好。**
+- **AI 应用产品设计能力**：关注大模型与 AI 行业趋势，具备从业务场景需求到 Agent 工作流设计、可复用 Prompt 资产管理与效果评估体系搭建的完整方法论；能与算法团队高效协同，推动 AI 产品从 0 到 1 并规模化复制。
+- **数据驱动与业务闭环**：具备产品的逻辑框架，能独立利用 SQL/Python 进行数据分析与策略验证，熟练运用 A/B Test、埋点归因与转化漏斗模型拆解业务问题，在不同业务场景找到可落地的增长路径并推动验证，形成业务直觉与闭环思维。
+- **用户增长与商业化产品经验**：具备从用户场景洞察到付费转化路径设计的完整能力，能识别高价值场景并设计差异化产品体验，在订阅制推广与促销策略优化方向形成实战经验；拥有海外市场产品经历，英语可作为工作语言。
 
-大模型产品最难的不是让它跑起来，是回答「这版比上一版好在哪、好多少」。评审会上的意见永远是「感觉不对」——没法量化，也没法比较。评估是主线；但增长和商业化的判断——样本量够不够、该不该提前停、买断还是订阅、这个套餐打几折——同样得是能被数字反驳的东西，不然也是「感觉」。下面的仓库都在这条线上，每一个 README 里的每个数字都能在 `results/` 或 `validation/` 里找到出处。
+**在线 Demo → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — 五个可交互工具，不用装任何东西。
 
-### 项目
+## 项目
 
-**评估：AI 做出来的东西好不好**
+### AI 效果评估
 
-**[creative-eval](https://github.com/AndyZhang666666/creative-eval)** · [Demo](https://andyzhang666666.github.io) — 短剧剧本的评分裁判，第一版。5 维 rubric、40 条金标集，重点是回答「裁判自己可信吗」：与人工标注 ±1 分一致率 93.1%，同输入连跑 3 次加权标准差 0.074。第一版裁判系统性偏松（比人工高 +0.38），加打分基准后降到 +0.23，前后数据都在仓库里。
+| 项目 | 解决什么问题 | 做了什么 | 结果 |
+|---|---|---|---|
+| [creative-eval](https://github.com/AndyZhang666666/creative-eval) · [Demo](https://andyzhang666666.github.io) | 内容团队用 AI 一天能出 200 条剧本片段，但判断质量的还是那几个人。新版 prompt 好不好，只能靠「感觉顺一点」。 | 一个短剧剧本的 LLM 评分裁判：5 个固定维度（开场钩子、节奏、对白、人设、结构），每档写死 1/3/5 分锚点，每个分数必须引用原文证据。配一套 40 条人工标注的金标集，和一套校验脚本：同一条连跑 3 次稳不稳、和人工标注一不一样、会不会看长度和顺序给分。 | 与人工标注 ±1 分一致率 93.1%。第一版裁判偏松 +0.38，加打分基准后降到 +0.23。 |
+| [llm-output-eval](https://github.com/AndyZhang666666/llm-output-eval) · [Demo](https://andyzhang666666.github.io/llm-output-eval/) | 上面那个裁判是一堆脚本，不是工具。PM 要对比 prompt 版本、收集失败样本，不该碰代码。 | 把同一个裁判做成网页工具：粘一段文本 → 逐维分数和逐字证据句。对比模式两版各连跑 N 次，给均值 ± 极差。所有 ≤2 分的维度自动收进 Bad Case 列表，可导出 CSV。自带 API key，请求从浏览器直接发给服务商，没有服务端。 | 校验时抓出两个 bug（截断导致样本静默丢失、null 被当成有效分），修完后与人工的 Spearman ρ 为 0.93。 |
+| [filing-eval](https://github.com/AndyZhang666666/filing-eval) | AI 把上市公司公告压成摘要，会把 1.2 亿写成 12 亿、会凭空多一句。主观打分抓不住这类错。 | 断言级事实核查：把摘要拆成一条条断言，逐条回原文比对，标「支持 / 矛盾 / 无依据」，再查关键事实覆盖率。20 条主集 + 8 条对抗样本（故意植入错误和提示注入）。 | 植入错误检出 11/11、干净样本误报 0/4、提示注入 5/5 守住。 |
 
-**[llm-output-eval](https://github.com/AndyZhang666666/llm-output-eval)** · [Demo](https://andyzhang666666.github.io/llm-output-eval/) — 同一个裁判的第二版，做成能日常用的工具：两版 prompt 各连跑 N 次做对比、≤2 分的维度自动收进 Bad Case 导出、每个分数附从原文逐字抽出的证据句。校验报告里如实写了找到的两个 bug：`max_tokens` 截断导致样本静默丢失，以及空值污染统计聚合——修完后 ρ 从被污染的 0.79 回到真实的 0.93。纯静态站，自带 key 即可跑，key 只在你的浏览器里。
+### 增长与商业化
 
-**[filing-eval](https://github.com/AndyZhang666666/filing-eval)** — 公告摘要的断言级事实核查。把摘要拆成断言逐条回原文核对，错误检出 11/11、误报 0/4、提示注入 5/5 守住。
+| 项目 | 解决什么问题 | 做了什么 | 结果 |
+|---|---|---|---|
+| [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [Demo](https://andyzhang666666.github.io/growth-experiment-lab/) | 在美团做优惠券梯度的 A/B 验证时，难的不是跑实验，是算不清要多少样本、忍不住提前停、以及把「提升 2 个点」变成推不推的决定。 | 四个页签：实验设计器（含 MDE 曲线）；偷看惩罚模拟器，跑 2000 次零效应试验，看每天偷看对假阳性率的影响；结果解读器，用置信区间下界算最保守能拿多少收入；实验台账，每条决策都用工具里同一条规则复现。 | 每天偷看、一显著就停，假阳性率从 4.95% 涨到 22.45%。 |
+| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [Demo](https://andyzhang666666.github.io/pricing-model-sim/) | 做海外短剧付费时，订阅制市场的复购率是单集解锁市场的三倍多。说服团队要让所有人看见同一批用户在不同付费机制下差多少。 | 拖一条留存曲线，设单集价 / 月费 / CAC / 平台抽成，比较「单次解锁 / 包月订阅 / 混合」12 个月的 ARPU、LTV、回本周期。敏感性扫描找出最优机制在哪个参数上换手。 | 月费大约在 ¥33–38 以上订阅才反超混合；留存越好，换手点越低。 |
 
-**增长与商业化：这个改动值不值**
+### 电商与产品分析
 
-**[growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab)** · [Demo](https://andyzhang666666.github.io/growth-experiment-lab/) — A/B 实验的决策模拟器：样本量够不够、什么时候能停、提升值不值得全量。最有用的一个数：两组真实转化率完全一样时，每天偷看一显著就停，假阳性率从 4.95% 飙到 **22.45%**（2000 次 14 天零效应模拟，449 次提前停止全是假阳性）。台账里 10 条实验的决策全部能被同一个 `interpret()` 函数独立复现。
+| 项目 | 解决什么问题 | 做了什么 | 结果 |
+|---|---|---|---|
+| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [Demo](https://andyzhang666666.github.io/bundle-lab/) | 在美团沙特市场，客单价低的原因是结构错位：很多多人点单，菜单却以单人餐为主。套餐组合靠人拉 SQL 拍脑袋定。 | 传订单明细 → 看多人单与单人单的错位 → 用关联规则（lift / support / confidence）挖「经常一起买」的组合 → 调折扣和采纳率看客单、毛利怎么变 → 导出一页「推给谁、推什么、什么情况别推」。校验用合成数据预埋 5 个已知组合。 | 召回 5/5；2000 单起可用，200 单以下是噪声。 |
+| [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | 多数 AI 产品评测是功能清单。 | 用同一套六维框架拆解可灵、豆包、文库 AI：能力边界、答错时怎么办、效果怎么衡量、智能体潜力、成本时延、如果我是 PM 下一步做什么。 | 框架是可复用的部分。 |
 
-**[pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim)** · [Demo](https://andyzhang666666.github.io/pricing-model-sim/) — 给一条留存曲线，算「单次解锁 / 包月订阅 / 混合」12 个月的 ARPU、LTV、回本周期。最有说服力的一个结果：月费在 **¥33–38** 以上订阅才反超混合，而且留存越好换手点越低（社交类 ¥33.25，短剧类 ¥37.75）。
+## 联系
 
-**电商与拆解：数据到底说了什么**
-
-**[bundle-lab](https://github.com/AndyZhang666666/bundle-lab)** · [Demo](https://andyzhang666666.github.io/bundle-lab/) — 从订单里找值得做成套餐的组合，并把折扣的收益边界算清楚。合成数据预埋 5 个组合，**召回 5/5**；**2000 单起可用，200 单以下是噪声排序**。
-
-**[ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns)** — 用固定六维框架拆解可灵、豆包、文库 AI。框架本身比结论更重要：能力边界在哪、答错时怎么办、效果怎么衡量、如果我是 PM 下一步做什么。
-
-### 两类评估的差别
-
-creative-eval 评**主观质量**——没有标准答案，只能靠 rubric 锚点加人工标注一致率证明裁判没跑偏。filing-eval 评**客观事实**——有唯一正确答案，可以直接算检出率和误报率，但要小心指标之间互相掩盖。同一套 LLM-as-judge 的手法，两种问题的度量方式完全不同。这个差别是我做完才真正想清楚的。
-
-增长和商业化那三个仓库又是第三种：没有「裁判」，只有模型。校验的办法是**预埋答案**——合成数据里故意放进已知的组合、已知的效应量、手算的 LTV，看工具能不能把它们原样挖出来。挖不出来就是模型错了，不是数据错了。
-
-### 踩过的坑
-
-- **三个指标 AND 成一个，等于自己骗自己。** 摘要把数字写错了，那条关键事实必然显示「未覆盖」——检出和覆盖在错误样本上互相打架，AND 起来永远不及格。（filing-eval）
-- **「检出率 100%」可能是分母算错了。** 干净样本被标签规则误算成错误样本，检出率虚高到 15/15，真实值是 11/11。（filing-eval）
-- **一片绿色比报错更可怕。** 4 条测试样本写了期望值却因判定逻辑走标签而一项都没执行，静默显示通过。加空测试检测器才抓出来。（filing-eval）
-- **裁判和我不一致时，先怀疑自己的标注。** 但不改标注去迁就裁判——那等于把测试集调成永远通过。（creative-eval）
-- **先修量具，再拿它评判改动。** `max_tokens` 截断把一条样本三次全打成 null，下游又把 null 当有效分聚合，MAE 被拉高、报告看起来仍然合理。ρ 从 0.79 回到 0.93 靠的不是改 prompt，是修 bug。（llm-output-eval）
-- **别在已有校验实现的代码库里第二次手写近似公式。** Bonferroni 边界我用了个近似式，还随手标注「和精确值差 0.01%」——实际高估 22%，假阳性率被压到荒谬的 0.40%。改成从已校验的 `stats.js` 导入后是 2.30%。（growth-experiment-lab）
-- **文案和数字打架，和伪造数据是同一件事。** 合成台账的复盘是手写的，写着「显著 p=0.02」，数据抽样出来 p=0.15。修法不是改文案凑数，是让数字生成文案，再加断言：决策必须能被同一个函数复现。（growth-experiment-lab）
-- **不报错的错最贵。** 混合机制的门槛判断把「人数 × 集数」拿去和「人均集数」比，四个数量级的量纲错——没有异常、没有 NaN，只是混合和纯解锁的 LTV 小数点后十位都一样。校验只查「是不是正数」就全漏。（pricing-model-sim）
-- **跑出「全都不行」，先怀疑口径，不要先怀疑参数。** 收益估算 50 个组合 49 个亏，原因是拿整单毛利减套餐毛利——等于要求套餐一个人扛起整单利润。基线改成「这几件的原花费」后只剩 1 个不可行，而且那个结论运营能直接用。（bundle-lab）
-
-联系：[GitHub](https://github.com/AndyZhang666666) · [Demo 站](https://andyzhang666666.github.io)
+[GitHub](https://github.com/AndyZhang666666) · [Demo 站](https://andyzhang666666.github.io)
