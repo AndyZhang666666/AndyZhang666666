@@ -1,12 +1,12 @@
 # Andy Zhang (张千羽)
 
-AI Product Manager at NOVA (short-drama production platform). Before that: AI product 0→1 at Baidu, user growth at Meituan (Saudi Arabia market), in-car assistant at Li Auto. UCL MSc Financial Engineering, Bristol BEng EEE.
+AI Product Manager. I work on agent workflows, prompt-asset platforms and evaluation systems, and on user growth and monetization.
 
-- **AI product design** — I take a business scenario all the way to shipped AI features: agent workflow design, reusable prompt-asset management, and evaluation systems that tell you whether a new version is actually better. Comfortable working alongside algorithm teams to take AI products from 0 to 1 and scale them.
-- **Data-driven, closed-loop** — SQL/Python for analysis and strategy validation; A/B testing, event-tracking attribution, and funnel decomposition to break down business problems and find growth paths that can be shipped and verified.
-- **Growth & monetization** — From user-scenario insight to paid-conversion path design: identifying high-value scenarios, designing differentiated experiences, and hands-on experience with subscription rollout and promotion optimization. Overseas market experience; English as a working language.
+- **AI product design** — From a business scenario to a shipped AI feature: agent workflow design, reusable prompt-asset management, and evaluation systems that tell you whether the new version is actually better. Work closely with algorithm teams to take AI products from 0 to 1 and scale them.
+- **Data-driven, closed-loop** — SQL/Python for analysis and strategy validation; A/B testing, event-tracking attribution and funnel decomposition to break down business problems, find growth paths that can be shipped, and verify them.
+- **Growth & monetization** — From user-scenario insight to paid-conversion path design: spotting high-value scenarios, designing differentiated experiences, hands-on with subscription rollout and promotion optimization. Overseas market experience; English as a working language.
 
-**Try the demos → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — five interactive tools, nothing to install.
+The projects below are what these three look like in practice. **Try the demos → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — five interactive tools, nothing to install.
 
 ## Projects
 
@@ -40,13 +40,13 @@ AI Product Manager at NOVA (short-drama production platform). Before that: AI pr
 
 ## 中文
 
-AI 产品经理，目前在 NOVA（短剧内容生产平台）。此前在百度做 AI 产品 0→1，在美团做用户增长（沙特市场），在理想汽车做智能座舱。UCL 金融工程硕士，布里斯托大学电气电子工程学士。
+AI 产品经理。做 Agent 工作流、Prompt 资产平台和效果评估体系，也做用户增长与商业化。
 
 - **AI 应用产品设计能力**：关注大模型与 AI 行业趋势，具备从业务场景需求到 Agent 工作流设计、可复用 Prompt 资产管理与效果评估体系搭建的完整方法论；能与算法团队高效协同，推动 AI 产品从 0 到 1 并规模化复制。
 - **数据驱动与业务闭环**：具备产品的逻辑框架，能独立利用 SQL/Python 进行数据分析与策略验证，熟练运用 A/B Test、埋点归因与转化漏斗模型拆解业务问题，在不同业务场景找到可落地的增长路径并推动验证，形成业务直觉与闭环思维。
 - **用户增长与商业化产品经验**：具备从用户场景洞察到付费转化路径设计的完整能力，能识别高价值场景并设计差异化产品体验，在订阅制推广与促销策略优化方向形成实战经验；拥有海外市场产品经历，英语可作为工作语言。
 
-**在线 Demo → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — 五个可交互工具，不用装任何东西。
+下面的项目是这三条能力的具体样子。**在线 Demo → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — 五个可交互工具，不用装任何东西。
 
 ## 项目
 
