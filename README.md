@@ -31,6 +31,13 @@ The projects below are what these three look like in practice. **Try the demos �
 | [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [demo](https://andyzhang666666.github.io/bundle-lab/) | Turn co-purchase observations into testable bundle hypotheses without claiming causality. | Explore synthetic order profiles, discover combinations, compare adoption and discount scenarios, and export a bounded recommendation. Shared portions and party-size definitions remain alternative explanations. | Historical synthetic validation recovered 5/5 planted bundles. Current release fixes deployment links and missing group-share statistics; it does not prove sales uplift. |
 | [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | Most AI product reviews are feature lists. | Three teardowns (Kling, Doubao, Wenku AI) against one fixed 6-dimension framework: capability boundary, failure handling, how effect is measured, agentic potential, cost and latency, and what I'd do next as PM. | The framework is the reusable part. |
 
+### Everyday AI experiments
+
+| Project | Problem | What I built | Result |
+|---|---|---|---|
+| [Suibianju · 随便局](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [demo](https://andyzhang666666.github.io/suibianju/) | “Anything is fine” hides constraints; a majority vote should not override someone's hard limit. | Opt-in budget proposals, side-effect-free draft previews, 3–5 simulated roles, unanimous versioned agreement and a public decision receipt. | A working, no-key single-person simulation. People and restaurants are fictional; no live rooms, booking, model calls or user-impact claims. |
+| [TasteRoom · 偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [demo](https://andyzhang666666.github.io/tasteroom/) | Liking a whole poster does not identify which parameter or context a preference belongs to. | Single-variable comparisons, neither-choice, explicit scope consent, contextual memory, reversible edits and style-brief / SVG export. | A working local-rule demo. Clues stay distinct from explicit rules; no live model, image generation, calibrated preference accuracy or adoption claims. |
+
 ### Poker & Everyday Decisions
 
 | Project | Problem | What I built | Result |
@@ -78,6 +85,13 @@ AI 产品经理。做 Agent 工作流、Prompt 资产平台和效果评估体系
 |---|---|---|---|
 | [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [Demo](https://andyzhang666666.github.io/bundle-lab/) | 从共购观察提出套餐假设，不把相关性直接当作原因。 | 用合成订单看画像、挖组合、比较采纳率与折扣下的收益边界，再导出建议。共享份量和人数口径仍需核查。 | 原有合成校验召回 5/5 预埋组合；本轮修复部署链接与统计缺失，不宣称已验证销售增长。 |
 | [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | 多数 AI 产品评测是功能清单。 | 用同一套六维框架拆解可灵、豆包、文库 AI：能力边界、答错时怎么办、效果怎么衡量、智能体潜力、成本时延、如果我是 PM 下一步做什么。 | 框架是可复用的部分。 |
+
+### 生活 AI 实验
+
+| 项目 | 解决什么问题 | 做了什么 | 结果 |
+|---|---|---|---|
+| [随便局](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [Demo](https://andyzhang666666.github.io/suibianju/) | “随便”掩盖底线，多数票不应该替少数人决定。 | 自愿预算建议、无副作用草稿预演、3–5 位模拟角色、同版全员接受、公共决定单复制与下载。 | 可直接操作的免 Key 单人模拟；人物和餐厅虚构，没有真实房间、订位、模型调用或用户效果宣称。 |
+| [TasteRoom · 偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [Demo](https://andyzhang666666.github.io/tasteroom/) | 喜欢整张海报，不能直接判断喜欢哪个参数、适用于哪个场景。 | 单变量对照、都不选、范围授权、场景记忆、记忆操作撤回，以及偏好说明书与 SVG 导出。 | 可操作的本地规则 Demo，线索和明确规则分开；没有真实模型、生图、偏好准确率或采用率宣称。 |
 
 ### 德州扑克与日常决策
 
