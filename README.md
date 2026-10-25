@@ -14,8 +14,8 @@ The projects below are what these three look like in practice. **Try the demos �
 
 | Project | Problem | What I built | Result |
 |---|---|---|---|
-| [文本评测工作台 / Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [demo](https://andyzhang666666.github.io/llm-output-eval/) · [iterations](https://andyzhang666666.github.io/llm-output-eval/iteration/) | Compare generated text with inspectable evidence and check the judge itself. | One project, two iterations: V1 creative-eval established scoring anchors; V2 adds no-key replay, repeated comparisons, bad-case export and judge validation. Both source repositories remain available. | V1: 40 constructed cases, 32 author-labeled. V2: a separate 30 author-labeled cases; replay shows 18 recorded runs for 6 examples. Different datasets are not pooled or claimed as proof of improvement. |
-| [filing-eval](https://github.com/AndyZhang666666/filing-eval) · [demo](https://andyzhang666666.github.io/demos/filing-eval/) | Trace each summary claim to source evidence, including missing facts and disputed scope. | A no-key evidence desk for 28 synthetic historical cases: quote location, separate omissions/disputes, local review notes and JSON export. | Historical main set: 11/11 errors detected, 0/4 false positives; labels lack independent human review. Six new holdout candidates are unrun, not added to scores. |
+| [文本评测工作台 / Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [demo](https://andyzhang666666.github.io/llm-output-eval/) · [iterations](https://andyzhang666666.github.io/llm-output-eval/iteration/) | Review the evidence behind a judge’s score. | Locate quotes in source text, isolate human notes by run and export original scores with review decisions. No-key replay; optional API requests are cancellable and keys are not persisted. | V1: 40 constructed cases, 32 author-labeled. V2: separate 30 author-labeled cases; replay has 18 stored runs for 6 examples. Current workflow verified locally and live with mocked API responses; historical model metrics were not rerun. |
+| [filing-eval](https://github.com/AndyZhang666666/filing-eval) · [demo](https://andyzhang666666.github.io/demos/filing-eval/) | Check wrong claims and important omissions separately. | Review 28 synthetic historical cases without default agreement, continue pending claims or coverage checks, and export source, summary, original judgments and human reasoning. | 102 historical claims are inspectable. Historical main set: 11/11 errors detected, 0/4 false positives; labels lack independent human review. Six holdout candidates remain unrun; no new model-effect claim. |
 
 ### Growth & monetization
 
@@ -69,8 +69,8 @@ AI 产品经理。做 Agent 工作流、Prompt 资产平台和效果评估体系
 
 | 项目 | 解决什么问题 | 做了什么 | 结果 |
 |---|---|---|---|
-| [文本评测工作台 / Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [Demo](https://andyzhang666666.github.io/llm-output-eval/) · [迭代记录](https://andyzhang666666.github.io/llm-output-eval/iteration/) | 用原文证据比较内容质量，也检查裁判自己的偏差与波动。 | 一个项目、两轮迭代：V1 creative-eval 建立评分锚点，V2 补齐免 Key 回放、重复对照、低分导出和裁判校验。两个源码仓库均保留。 | V1 为 40 条构造样本、32 条作者标注；V2 是另一套 30 条作者标注，回放其中 6 条的 18 次历史输出。不混算，不宣称已证明新版质量提升。 |
-| [filing-eval](https://github.com/AndyZhang666666/filing-eval) · [Demo](https://andyzhang666666.github.io/demos/filing-eval/) | 从摘要断言回到原文，分清写错、无据、遗漏和主体争议。 | 28 条模拟公告历史回放，支持引文定位、本地复核与 JSON 导出，无需 Key。 | 历史主集检出 11/11、误报 0/4；标签尚未完成独立人工复核。新增 6 条候选留出样本未调用模型，不计入成绩。 |
+| [文本评测工作台 / Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [Demo](https://andyzhang666666.github.io/llm-output-eval/) · [迭代记录](https://andyzhang666666.github.io/llm-output-eval/iteration/) | 核对分数背后的证据，而不只看总分。 | 点击引用定位原文，按运行隔离人工复核，导出保留原始分数。免 Key 回放；可选接口可取消、Key 不持久保存。 | V1 为40条构造样本、32条作者标注；V2 为另一套30条作者标注，回放6条的18次历史输出。本地/线上流程与模拟接口通过；历史模型指标未重跑。 |
+| [filing-eval](https://github.com/AndyZhang666666/filing-eval) · [Demo](https://andyzhang666666.github.io/demos/filing-eval/) | 把错句与关键遗漏分开核验。 | 28条模拟公告回放，不默认同意历史裁判；继续未复核断言或覆盖项，导出原文、摘要、原始判断和人工依据。 | 102条历史断言可核对。历史主集检出11/11、误报0/4；标签未独立人工复核。6条候选留出未运行，不宣称新增模型效果。 |
 
 ### 增长与商业化
 
