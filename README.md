@@ -28,7 +28,7 @@ The projects below are what these three look like in practice. **Try the demos �
 
 | Project | Problem | What I built | Result |
 |---|---|---|---|
-| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [demo](https://andyzhang666666.github.io/bundle-lab/) | Turn co-purchase observations into testable bundle hypotheses without claiming causality. | Explore synthetic order profiles, discover combinations, compare adoption and discount scenarios, and export a bounded recommendation. Shared portions and party-size definitions remain alternative explanations. | Historical synthetic validation recovered 5/5 planted bundles. Current release fixes deployment links and missing group-share statistics; it does not prove sales uplift. |
+| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [demo](https://andyzhang666666.github.io/bundle-lab/) | Separate new-purchase margin from discounts to existing full-basket customers. | All-candidate discovery, a reconciled two-population ledger and break-even model, local scenario recovery, linked recommendations and evidence exports with a validation plan. Model polish remains an unverified draft. | Hand checks, economic boundaries and six-route live workflows verified. Synthetic orders and uncalibrated adoption assumptions do not prove causal sales uplift or net profit. |
 | [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | Most AI product reviews are feature lists. | Three teardowns (Kling, Doubao, Wenku AI) against one fixed 6-dimension framework: capability boundary, failure handling, how effect is measured, agentic potential, cost and latency, and what I'd do next as PM. | The framework is the reusable part. |
 
 ### Everyday AI experiments
@@ -83,7 +83,7 @@ AI 产品经理。做 Agent 工作流、Prompt 资产平台和效果评估体系
 
 | 项目 | 解决什么问题 | 做了什么 | 结果 |
 |---|---|---|---|
-| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [Demo](https://andyzhang666666.github.io/bundle-lab/) | 从共购观察提出套餐假设，不把相关性直接当作原因。 | 用合成订单看画像、挖组合、比较采纳率与折扣下的收益边界，再导出建议。共享份量和人数口径仍需核查。 | 原有合成校验召回 5/5 预埋组合；本轮修复部署链接与统计缺失，不宣称已验证销售增长。 |
+| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [Demo](https://andyzhang666666.github.io/bundle-lab/) | 分开核算新增购买毛利与既有整套顾客领取折扣的损失。 | 全候选发现、两类人群账本、同源平衡点、本机假设恢复、建议与依据导出及后续验证计划；模型润色独立标记未核对。 | 手算、收益边界与线上六页流程已验收；合成数据与未校准采纳率不证明因果增长或净利润。 |
 | [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | 多数 AI 产品评测是功能清单。 | 用同一套六维框架拆解可灵、豆包、文库 AI：能力边界、答错时怎么办、效果怎么衡量、智能体潜力、成本时延、如果我是 PM 下一步做什么。 | 框架是可复用的部分。 |
 
 ### 生活 AI 实验
