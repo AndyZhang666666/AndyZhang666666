@@ -22,7 +22,7 @@ The projects below are what these three look like in practice. **Try the demos �
 | Project | Problem | What I built | Result |
 |---|---|---|---|
 | [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [demo](https://andyzhang666666.github.io/growth-experiment-lab/) | Separate experiment evidence from rollout permission. | Export design plans and readouts; run cancellable Worker simulations; require manual validity, guardrail and business-threshold checks. Input changes invalidate confirmations. | Synthetic cases use one draw each, not outcome-based resampling. Non-significance is not no effect; revenue scenarios are not guaranteed profit. |
-| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [demo](https://andyzhang666666.github.io/pricing-model-sim/) | Compare pricing mechanisms under explicit assumptions rather than comparing revenue totals alone. | Retention, price and conversion scenarios across unlock, subscription and hybrid models. Conclusions and tables share per-new-user metrics; sensitivity sweeps expose ranking changes. | Four synthetic cases; findings are conditional on uncalibrated retention and conversion assumptions, not an optimal real-world price. |
+| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [demo](https://andyzhang666666.github.io/pricing-model-sim/) | Compare mechanisms with conserved user pools and explicit assumptions. | Monthly unlock/subscription/exit traces; one-field sweeps preserve other inputs; discounted payback, ties, zero prices, local drafts and reproducible export. | Four synthetic cases; hand checks, invariants and live browser flows verified. Retention and conversion remain uncalibrated; no optimal-price or business-return claim. |
 
 ### Commerce & product analysis
 
@@ -77,7 +77,7 @@ AI 产品经理。做 Agent 工作流、Prompt 资产平台和效果评估体系
 | 项目 | 解决什么问题 | 做了什么 | 结果 |
 |---|---|---|---|
 | [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [Demo](https://andyzhang666666.github.io/growth-experiment-lab/) | 将实验设计、统计证据与上线许可分开。 | 设计计划和决策记录可导出；偷看模拟可取消；人工核对有效性、护栏与预设业务门槛，修改输入使确认失效。 | 合成台账每例只抽一次，不为结论挑数据。不显著不等于无效，收入情景不是保底利润。 |
-| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [Demo](https://andyzhang666666.github.io/pricing-model-sim/) | 在明确假设下比较付费机制，而不是只比收入总额。 | 调整留存、价格和转化，比较解锁、订阅与混合机制；结论和表格统一每名新增用户口径，敏感性分析寻找排序变化条件。 | 4 个合成案例；结论受未校准留存与转化假设限制，不作为真实最优定价建议。 |
+| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [Demo](https://andyzhang666666.github.io/pricing-model-sim/) | 在人群守恒、假设明确的基础上比较三种付费机制。 | 逐月解锁/订阅/流失轨迹；保留其他输入的单字段扫描；折现回本、并列、零价格、本机草稿与可复现导出。 | 4 个合成案例，手算、守恒与线上流程已验收；留存转化未经校准，不声称真实最优价格或业务收益。 |
 
 ### 电商与产品分析
 
