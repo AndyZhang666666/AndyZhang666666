@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 244" role="img" aria-labelledby="title desc">
+<title id="title">Andy Zhang · AI Product Manager</title><desc id="desc">Agent workflows, evaluation and growth. An original typographic identity with a decision trace.</desc>
+<rect width="1080" height="244" fill="#F5F2EA"/>
+<path d="M44 29H1036M44 215H1036M673 48V196" stroke="#D7D8CF"/>
+<rect x="44" y="50" width="10" height="10" fill="#C44830"/>
+<text x="67" y="60" fill="#606965" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2.1">AI PRODUCT MANAGER</text>
+<text x="40" y="147" fill="#1C2529" font-family="Arial,Helvetica,sans-serif" font-size="78" font-weight="700" letter-spacing="-5">Andy Zhang.</text>
+<text x="44" y="186" fill="#606965" font-family="Arial,Helvetica,sans-serif" font-size="17">Agent workflows / Evaluation / Growth</text>
+<text x="710" y="61" fill="#606965" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="1.8">FROM A QUESTION TO A WORKING PRODUCT</text>
+<path d="M732 111H994M846 111V164H994" fill="none" stroke="#D7D8CF" stroke-width="2"/>
+<circle cx="732" cy="111" r="7" fill="#1C2529"/><circle cx="846" cy="111" r="7" fill="#1C2529"/><circle cx="994" cy="111" r="10" fill="#C44830"/><circle cx="994" cy="164" r="7" fill="#F5F2EA" stroke="#1C2529" stroke-width="2"/>
+<g fill="#1C2529" font-family="Arial,Helvetica,sans-serif" font-size="14"><text x="710" y="92">Define</text><text x="829" y="92">Build</text><text x="972" y="92">Check</text><text x="941" y="193">Review &amp; iterate</text></g>
+</svg>

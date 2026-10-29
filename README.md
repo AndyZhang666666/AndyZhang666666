@@ -1,107 +1,72 @@
-# Andy Zhang (张千羽)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
+  <img src="assets/profile-light.svg" alt="Andy Zhang · AI Product Manager · Agent, Evaluation, Growth" width="100%">
+</picture>
 
-AI Product Manager. I work on agent workflows, prompt-asset platforms and evaluation systems, and on user growth and monetization.
+# 张千羽 · Andy Zhang
 
-- **AI product design** — From a business scenario to a shipped AI feature: agent workflow design, reusable prompt-asset management, and evaluation systems that tell you whether the new version is actually better. Work closely with algorithm teams to take AI products from 0 to 1 and scale them.
-- **Data-driven, closed-loop** — SQL/Python for analysis and strategy validation; A/B testing, event-tracking attribution and funnel decomposition to break down business problems, find growth paths that can be shipped, and verify them.
-- **Growth & monetization** — From user-scenario insight to paid-conversion path design: spotting high-value scenarios, designing differentiated experiences, hands-on with subscription rollout and promotion optimization. Overseas market experience; English as a working language.
+**AI 产品经理，做 Agent、效果评测和商业增长。**
 
-The projects below are what these three look like in practice. **Try the demos → [andyzhang666666.github.io](https://andyzhang666666.github.io)** — interactive projects, nothing to install.
+我关心 AI 怎样进入真实的工作流程：用户在哪一步需要帮助，工具可以做到哪里，怎样判断这次改动值得留下。做过创作 Agent、可复用 Skill、消费端 AI 产品和海外订阅实验；也把自己的产品判断做成能直接操作的工具。
 
-## Projects
+[作品与在线体验](https://andyzhang666666.github.io/) · [产品简历](https://andyzhang666666.github.io/assets/resume.pdf) · [English](README.en.md) · [完整项目索引](PROJECTS.md)
 
-### AI evaluation
+## 从这里开始
 
-| Project | Problem | What I built | Result |
-|---|---|---|---|
-| [文本评测工作台 / Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [demo](https://andyzhang666666.github.io/llm-output-eval/) · [iterations](https://andyzhang666666.github.io/llm-output-eval/iteration/) | Review the evidence behind a judge’s score. | Locate quotes in source text, isolate human notes by run and export original scores with review decisions. No-key replay; optional API requests are cancellable and keys are not persisted. | V1: 40 constructed cases, 32 author-labeled. V2: separate 30 author-labeled cases; replay has 18 stored runs for 6 examples. Current workflow verified locally and live with mocked API responses; historical model metrics were not rerun. |
-| [filing-eval](https://github.com/AndyZhang666666/filing-eval) · [demo](https://andyzhang666666.github.io/demos/filing-eval/) | Check wrong claims and important omissions separately. | Review 28 synthetic historical cases without default agreement, continue pending claims or coverage checks, and export source, summary, original judgments and human reasoning. | 102 historical claims are inspectable. Historical main set: 11/11 errors detected, 0/4 false positives; labels lack independent human review. Six holdout candidates remain unrun; no new model-effect claim. |
+| 想了解什么 | 建议先看 | 可以亲手检查的设计 |
+| --- | --- | --- |
+| Agent 能不能可靠完成任务 | [Agent 执行评测台](https://andyzhang666666.github.io/agent-bench/) · [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench) | 写入后超时，核对原操作与最终工单，再判断是否完成。 |
+| 模型的分数值不值得相信 | [Eval Lab](https://andyzhang666666.github.io/llm-output-eval/) · [源码](https://github.com/AndyZhang666666/llm-output-eval) | 从低分定位引句，回到原文，单独记录人工复核意见。 |
+| AI 如何理解个人偏好 | [偏爱实验室](https://andyzhang666666.github.io/tasteroom/) · [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) | 同内容只改变一个设计变量，选择后再确认记忆范围，允许撤回。 |
+| 一个商业想法是否值得验证 | [Bundle Lab](https://andyzhang666666.github.io/bundle-lab/) · [源码](https://github.com/AndyZhang666666/bundle-lab) | 找到共购候选，拆开新增贡献与既有顾客让利，检查平衡条件。 |
 
-### Growth & monetization
+### Agent 与评测：把完成条件做进产品
 
-| Project | Problem | What I built | Result |
-|---|---|---|---|
-| [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [demo](https://andyzhang666666.github.io/growth-experiment-lab/) | Separate experiment evidence from rollout permission. | Export design plans and readouts; run cancellable Worker simulations; require manual validity, guardrail and business-threshold checks. Input changes invalidate confirmations. | Synthetic cases use one draw each, not outcome-based resampling. Non-significance is not no effect; revenue scenarios are not guaranteed profit. |
-| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [demo](https://andyzhang666666.github.io/pricing-model-sim/) | Compare mechanisms with conserved user pools and explicit assumptions. | Monthly unlock/subscription/exit traces; one-field sweeps preserve other inputs; discounted payback, ties, zero prices, local drafts and reproducible export. | Four synthetic cases; hand checks, invariants and live browser flows verified. Retention and conversion remain uncalibrated; no optimal-price or business-return claim. |
+[Agent 执行评测台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench)、[可信 RAG 实验台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab)和 [Eval Lab](https://github.com/AndyZhang666666/llm-output-eval)分别检查执行、依据和输出质量。
 
-### Commerce & product analysis
+Agent 台用十个虚构工单案例检查权限、失败恢复和重复写入。RAG 台让同一问题随日期、资料版本和可访问范围改变，答案与来源一起复核。Eval 保留裁判原分，让人的不同判断也能留下来。
 
-| Project | Problem | What I built | Result |
-|---|---|---|---|
-| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [demo](https://andyzhang666666.github.io/bundle-lab/) | Separate new-purchase margin from discounts to existing full-basket customers. | All-candidate discovery, a reconciled two-population ledger and break-even model, local scenario recovery, linked recommendations and evidence exports with a validation plan. Model polish remains an unverified draft. | Hand checks, economic boundaries and six-route live workflows verified. Synthetic orders and uncalibrated adoption assumptions do not prove causal sales uplift or net profit. |
-| [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | Most AI product reviews are feature lists. | Three teardowns (Kling, Doubao, Wenku AI) against one fixed 6-dimension framework: capability boundary, failure handling, how effect is measured, agentic potential, cost and latency, and what I'd do next as PM. | The framework is the reusable part. |
+[体验 RAG](https://andyzhang666666.github.io/rag-lab/) · [查看 RAG 的检索与版本机制](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/engine.mjs) · [公告事实与遗漏复核](https://github.com/AndyZhang666666/filing-eval)
 
-### Everyday AI experiments
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://andyzhang666666.github.io/llm-output-eval/"><img src="https://andyzhang666666.github.io/assets/work/showcase/eval-crop.jpg" alt="Eval Lab 实际界面：原始评分、引用与人工复核" width="100%"></a>
+<p><strong>Eval Lab</strong><br>引用找得到，还要判断它能否支持评语。</p>
+</td>
+<td width="50%" valign="top">
+<a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://andyzhang666666.github.io/rag-lab/evidence/answer-preview.png" alt="可信 RAG 实验台实际界面：回答与适用的原文规则" width="100%"></a>
+<p><strong>可信 RAG 实验台</strong><br>先核对适用条件，再检查答案与来源。</p>
+</td>
+</tr>
+</table>
 
-| Project | Problem | What I built | Result |
-|---|---|---|---|
-| [Suibianju · 随便局](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [demo](https://andyzhang666666.github.io/suibianju/) | “Anything is fine” hides constraints; a majority vote should not override someone's hard limit. | Opt-in budget proposals, side-effect-free draft previews, 3–5 simulated roles, unanimous versioned agreement and a public decision receipt. | A working, no-key single-person simulation. People and restaurants are fictional; no live rooms, booking, model calls or user-impact claims. |
-| [TasteRoom · 偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [demo](https://andyzhang666666.github.io/tasteroom/) | Liking a whole poster does not identify which parameter or context a preference belongs to. | Single-variable comparisons, neither-choice, explicit scope consent, contextual memory, reversible edits and style-brief / SVG export. | A working local-rule demo. Clues stay distinct from explicit rules; no live model, image generation, calibrated preference accuracy or adoption claims. |
+### 生活产品：保留人的决定权
 
-### Poker & Everyday Decisions
+**[偏爱实验室 · TasteRoom](https://andyzhang666666.github.io/tasteroom/)** 把审美探索做成比较、归因和授权。瑞士现代主义与解构主义是可操作的设计方向；喜欢一张海报，不会被直接记成所有场景下的偏好。
 
-| Project | Problem | What I built | Result |
-|---|---|---|---|
-| [Grounded Choice](https://github.com/AndyZhang666666/grounded-choice) · [demo](https://andyzhang666666.github.io/grounded-choice/) | Saved travel tips and product reviews pile up, but conflicting opinions and personal constraints still make the final choice hard. | A two-scenario decision workflow for a western Sichuan trip and a robot vacuum: traceable simulated sources, consensus and disagreement, hard-constraint flags, trade-off comparison, user-controlled selection and an exportable decision card. | A working portfolio demo. All source material and comments are simulated; it does not perform live search or price comparison. |
-| [poker-bankroll-sim](https://github.com/AndyZhang666666/poker-bankroll-sim) · [demo](https://andyzhang666666.github.io/poker-bankroll-sim/) | Reaching a target once is not the same as finishing above it. | A seeded synthetic sandbox separating insufficient-stake stopping, zero balance, ever reaching a goal and terminal success; retain residual balances, scan one variable at a time and export provenance. | Reproducible model scenarios, not player outcomes or financial predictions. Sampling intervals do not include model uncertainty. |
-| [poker-ev-calculator](https://github.com/AndyZhang666666/poker-ev-calculator) · [demo](https://andyzhang666666.github.io/poker-ev-calculator/) | Does the preferred action change if a strength assumption is wrong? | Use effective stakes consistently for pot odds and EV; compare actions across a discrete strength range; restore local drafts and export a versioned decision record with assumptions. | Eight preset regression cases plus boundary and browser checks. A single-street learning model, not calibrated equity, GTO or betting advice. |
-| [commute-compare](https://github.com/AndyZhang666666/commute-compare) · [demo](https://andyzhang666666.github.io/commute-compare/) | Make commute trade-offs without confusing estimates and observations. | Confirm editable inputs, resample personal duration records, preview/commit departure thresholds and export evidence. Removing a route leaves others unchanged; invalid saved drafts are preserved. | Four synthetic city presets, regression checks and live browser flows verified. No map/model API or future punctuality guarantee; sparse records and return-trip assumptions remain visible. |
+**[随便局](https://andyzhang666666.github.io/suibianju/)** 处理朋友聚餐里的“随便”。没有共同选项时，先预演自愿调整，再由成员确认条件和同一版方案。**[有据 · Grounded Choice](https://andyzhang666666.github.io/grounded-choice/)** 则保留经验的共识、分歧和适用条件，让用户自己比较与选择。
 
-## Contact
+### 增长与商业化：让账本回答问题
 
-[github.com/AndyZhang666666](https://github.com/AndyZhang666666) · [andyzhang666666.github.io](https://andyzhang666666.github.io)
+| 工具 | 我想回答的问题 | 实现 |
+| --- | --- | --- |
+| [Bundle Lab](https://github.com/AndyZhang666666/bundle-lab) · [体验](https://andyzhang666666.github.io/bundle-lab/) | 经常一起买，是否就值得打折？ | 共购发现、两类人群账本、平衡点与验证计划。 |
+| [Growth Experiment Lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [体验](https://andyzhang666666.github.io/growth-experiment-lab/) | 显著之后，是否值得全量？ | 实验设计、反复查看风险、护栏与人工发布判断。 |
+| [Pricing Model Sim](https://github.com/AndyZhang666666/pricing-model-sim) · [体验](https://andyzhang666666.github.io/pricing-model-sim/) | 同一批用户，哪种付费机制更合适？ | 人群守恒、逐月收入、假设扫描与折现回本。 |
 
----
+## 工作中的产品实践
 
-## 中文
+在山海星辰负责创作 Agent 与 Skill 资产：上线 38 个 Skill，工具月均调用约 6,000 次，单剧创作耗时缩短约 30%。在百度实习时参与 AI 功能从 0 到 1，上线两周日活破万；在美团 Keeta 的增长实习中，分层补贴实验使新客获客成本降低 27%，新客月留存提升 8%。也有理想汽车智能座舱和 Revolut 订阅产品的实习经历。
 
-AI 产品经理。做 Agent 工作流、Prompt 资产平台和效果评估体系，也做用户增长与商业化。
+[具体职责与结果口径](https://andyzhang666666.github.io/#work) · [产品简历](https://andyzhang666666.github.io/assets/resume.pdf)
 
-- **AI 应用产品设计能力**：关注大模型与 AI 行业趋势，具备从业务场景需求到 Agent 工作流设计、可复用 Prompt 资产管理与效果评估体系搭建的完整方法论；能与算法团队高效协同，推动 AI 产品从 0 到 1 并规模化复制。
-- **数据驱动与业务闭环**：具备产品的逻辑框架，能独立利用 SQL/Python 进行数据分析与策略验证，熟练运用 A/B Test、埋点归因与转化漏斗模型拆解业务问题，在不同业务场景找到可落地的增长路径并推动验证，形成业务直觉与闭环思维。
-- **用户增长与商业化产品经验**：具备从用户场景洞察到付费转化路径设计的完整能力，能识别高价值场景并设计差异化产品体验，在订阅制推广与促销策略优化方向形成实战经验；拥有海外市场产品经历，英语可作为工作语言。
+上面是工作经历中的业务结果；这里的公开代码是独立作品。演示资料、历史模型输出和条件模拟在项目中分别标明，不包含公司内部代码或业务数据。Agent / RAG 的公开站点分别为程序记录回放和浏览器检索，真实模型接入需自行配置。
 
-下面的项目是这三条能力的具体样子。**在线 Demo → [andyzhang666666.github.io](https://andyzhang666666.github.io)**，打开即可体验。
+## 还在做什么
 
-## 项目
+[AI 产品拆解](https://github.com/AndyZhang666666/ai-product-teardowns)用同一套问题比较产品的能力边界、失败处理与付费点；[通勤比较器](https://github.com/AndyZhang666666/commute-compare)和[扑克决策工具](PROJECTS.md#日常决策与建模)用来练习风险、假设和不确定性的表达。[Creative Eval](https://github.com/AndyZhang666666/creative-eval)保留了 Eval 第一版的校准过程与历史结果。
 
-### AI 效果评估
+UCL 硕士 · Bristol 电子电气工程本科。研究过订单流日内量化模型，也做过面向运动场景的可穿戴姿态监测与手机交互。
 
-| 项目 | 解决什么问题 | 做了什么 | 结果 |
-|---|---|---|---|
-| [文本评测工作台 / Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [Demo](https://andyzhang666666.github.io/llm-output-eval/) · [迭代记录](https://andyzhang666666.github.io/llm-output-eval/iteration/) | 核对分数背后的证据，而不只看总分。 | 点击引用定位原文，按运行隔离人工复核，导出保留原始分数。免 Key 回放；可选接口可取消、Key 不持久保存。 | V1 为40条构造样本、32条作者标注；V2 为另一套30条作者标注，回放6条的18次历史输出。本地/线上流程与模拟接口通过；历史模型指标未重跑。 |
-| [filing-eval](https://github.com/AndyZhang666666/filing-eval) · [Demo](https://andyzhang666666.github.io/demos/filing-eval/) | 把错句与关键遗漏分开核验。 | 28条模拟公告回放，不默认同意历史裁判；继续未复核断言或覆盖项，导出原文、摘要、原始判断和人工依据。 | 102条历史断言可核对。历史主集检出11/11、误报0/4；标签未独立人工复核。6条候选留出未运行，不宣称新增模型效果。 |
-
-### 增长与商业化
-
-| 项目 | 解决什么问题 | 做了什么 | 结果 |
-|---|---|---|---|
-| [growth-experiment-lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [Demo](https://andyzhang666666.github.io/growth-experiment-lab/) | 将实验设计、统计证据与上线许可分开。 | 设计计划和决策记录可导出；偷看模拟可取消；人工核对有效性、护栏与预设业务门槛，修改输入使确认失效。 | 合成台账每例只抽一次，不为结论挑数据。不显著不等于无效，收入情景不是保底利润。 |
-| [pricing-model-sim](https://github.com/AndyZhang666666/pricing-model-sim) · [Demo](https://andyzhang666666.github.io/pricing-model-sim/) | 在人群守恒、假设明确的基础上比较三种付费机制。 | 逐月解锁/订阅/流失轨迹；保留其他输入的单字段扫描；折现回本、并列、零价格、本机草稿与可复现导出。 | 4 个合成案例，手算、守恒与线上流程已验收；留存转化未经校准，不声称真实最优价格或业务收益。 |
-
-### 电商与产品分析
-
-| 项目 | 解决什么问题 | 做了什么 | 结果 |
-|---|---|---|---|
-| [bundle-lab](https://github.com/AndyZhang666666/bundle-lab) · [Demo](https://andyzhang666666.github.io/bundle-lab/) | 分开核算新增购买毛利与既有整套顾客领取折扣的损失。 | 全候选发现、两类人群账本、同源平衡点、本机假设恢复、建议与依据导出及后续验证计划；模型润色独立标记未核对。 | 手算、收益边界与线上六页流程已验收；合成数据与未校准采纳率不证明因果增长或净利润。 |
-| [ai-product-teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) | 多数 AI 产品评测是功能清单。 | 用同一套六维框架拆解可灵、豆包、文库 AI：能力边界、答错时怎么办、效果怎么衡量、智能体潜力、成本时延、如果我是 PM 下一步做什么。 | 框架是可复用的部分。 |
-
-### 生活 AI 实验
-
-| 项目 | 解决什么问题 | 做了什么 | 结果 |
-|---|---|---|---|
-| [随便局](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [Demo](https://andyzhang666666.github.io/suibianju/) | “随便”掩盖底线，多数票不应该替少数人决定。 | 自愿预算建议、无副作用草稿预演、3–5 位模拟角色、同版全员接受、公共决定单复制与下载。 | 可直接操作的免 Key 单人模拟；人物和餐厅虚构，没有真实房间、订位、模型调用或用户效果宣称。 |
-| [TasteRoom · 偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [Demo](https://andyzhang666666.github.io/tasteroom/) | 喜欢整张海报，不能直接判断喜欢哪个参数、适用于哪个场景。 | 单变量对照、都不选、范围授权、场景记忆、记忆操作撤回，以及偏好说明书与 SVG 导出。 | 可操作的本地规则 Demo，线索和明确规则分开；没有真实模型、生图、偏好准确率或采用率宣称。 |
-
-### 德州扑克与日常决策
-
-| 项目 | 解决什么问题 | 做了什么 | 结果 |
-|---|---|---|---|
-| [有据 Grounded Choice](https://github.com/AndyZhang666666/grounded-choice) · [Demo](https://andyzhang666666.github.io/grounded-choice/) | 收藏的攻略和测评越多，观点越容易冲突；还得自己判断哪些经验适用、哪些方案违反硬约束。 | 用川西旅行和扫地机器人两个场景演示一条决策流程：模拟材料可追溯、共识和分歧不抹平、约束冲突明示、方案代价并排比较，最终由用户选并导出决策卡。 | 可交互的作品演示；资料与评论均为模拟内容，不接入实时搜索或电商比价。 |
-| [poker-bankroll-sim](https://github.com/AndyZhang666666/poker-bankroll-sim) · [Demo](https://andyzhang666666.github.io/poker-bankroll-sim/) | 曾经达到目标，不等于最终守住目标。 | 固定种子的合成沙盘，区分额度不足停止、余额归零、曾经达标与最终达标；保留剩余余额，单变量扫描，并导出带出处的比较记录。 | 可复现的模型情景，不是真实玩家结果或资金预测。抽样区间不覆盖模型假设误差。 |
-| [poker-ev-calculator](https://github.com/AndyZhang666666/poker-ev-calculator) · [Demo](https://andyzhang666666.github.io/poker-ev-calculator/) | 强度假设估错一点，较优行动会不会改变？ | 用有效筹码统一赔率与 EV；逐点检查强度区间的行动切换；本机草稿恢复，导出带假设与模型版本的决策记录。 | 保留 8 个预设回归案例，新增边界和浏览器验证。单轮学习模型，不是已校准胜率、GTO 或下注建议。 |
-| [commute-compare](https://github.com/AndyZhang666666/commute-compare) · [Demo](https://andyzhang666666.github.io/commute-compare/) | 比较通勤取舍，同时分清估算与观测。 | 确认数字输入，以实际记录校准，预览/提交出门阈值并导出依据。删除路线不让其他结果漂移；损坏草稿不会自动覆盖。 | 四城模拟预设、原有回归及线上浏览器流程通过；不接地图或模型，不保证未来准点，样本不足与往返假设明确保留。 |
-
-## 联系
-
-[GitHub](https://github.com/AndyZhang666666) · [Demo 站](https://andyzhang666666.github.io)
+[联系我](https://andyzhang666666.github.io/#contact) · [English](README.en.md) · [按方向浏览全部项目](PROJECTS.md)
