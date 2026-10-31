@@ -1,24 +1,46 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
-  <img src="assets/profile-light.svg" alt="Andy Zhang · AI Product Manager · Agent, Evaluation, Growth" width="100%">
+  <img src="assets/profile-light.svg" alt="Agent / Evaluation / Growth · a compact decision trace" width="100%">
 </picture>
 
 # 张千羽 · Andy Zhang
 
 **AI 产品经理，做 Agent、效果评测和商业增长。**
 
-我关心 AI 怎样进入真实的工作流程：用户在哪一步需要帮助，工具可以做到哪里，怎样判断这次改动值得留下。做过创作 Agent、可复用 Skill、消费端 AI 产品和海外订阅实验；也把自己的产品判断做成能直接操作的工具。
+我把业务问题做成可操作的产品，再核对它是否解决了问题。下面四个作品，可以直接体验我的设计取舍。
 
-[作品与在线体验](https://andyzhang666666.github.io/) · [产品简历](https://andyzhang666666.github.io/assets/resume.pdf) · [English](README.en.md) · [完整项目索引](PROJECTS.md)
+[官网与完整体验](https://andyzhang666666.github.io/) · [产品简历](https://andyzhang666666.github.io/assets/resume.pdf) · [English](README.en.md) · [全部项目](PROJECTS.md)
 
 ## 从这里开始
 
-| 想了解什么 | 建议先看 | 可以亲手检查的设计 |
-| --- | --- | --- |
-| Agent 能不能可靠完成任务 | [Agent 执行评测台](https://andyzhang666666.github.io/agent-bench/) · [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench) | 写入后超时，核对原操作与最终工单，再判断是否完成。 |
-| 模型的分数值不值得相信 | [Eval Lab](https://andyzhang666666.github.io/llm-output-eval/) · [源码](https://github.com/AndyZhang666666/llm-output-eval) | 从低分定位引句，回到原文，单独记录人工复核意见。 |
-| AI 如何理解个人偏好 | [偏爱实验室](https://andyzhang666666.github.io/tasteroom/) · [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) | 同内容只改变一个设计变量，选择后再确认记忆范围，允许撤回。 |
-| 一个商业想法是否值得验证 | [Bundle Lab](https://andyzhang666666.github.io/bundle-lab/) · [源码](https://github.com/AndyZhang666666/bundle-lab) | 找到共购候选，拆开新增贡献与既有顾客让利，检查平衡条件。 |
+<table>
+<tr>
+<td width="50%" valign="top">
+<p><strong>Agent 执行评测台</strong><br>响应丢失后，先核对原操作。</p>
+<a href="https://andyzhang666666.github.io/agent-bench/"><picture><source media="(prefers-reduced-motion: reduce)" srcset="docs/assets/agent-preview.jpg"><img src="docs/assets/agent-replay.gif" alt="Agent 执行评测台：响应丢失后，先核对原操作。" width="100%"></picture></a>
+<p>程序示例 · 不调用 AI<br><a href="https://andyzhang666666.github.io/agent-bench/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench">源码与设计</a></p>
+</td>
+<td width="50%" valign="top">
+<p><strong>Eval Lab</strong><br>分数之后，回到原文与人工复核。</p>
+<a href="https://andyzhang666666.github.io/llm-output-eval/"><img src="docs/assets/eval-preview.jpg" alt="Eval Lab：分数之后，回到原文与人工复核。" width="100%"></a>
+<p>历史输出 · 原分保留<br><a href="https://andyzhang666666.github.io/llm-output-eval/">体验</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval">源码与设计</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p><strong>偏爱实验室</strong><br>比较设计，再决定偏爱记在哪里。</p>
+<a href="https://andyzhang666666.github.io/tasteroom/"><img src="docs/assets/taste-preview.jpg" alt="偏爱实验室：比较设计，再决定偏爱记在哪里。" width="100%"></a>
+<p>本地规则 · 明确授权范围<br><a href="https://andyzhang666666.github.io/tasteroom/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">源码与设计</a></p>
+</td>
+<td width="50%" valign="top">
+<p><strong>Bundle Lab</strong><br>新增贡献和既有顾客让利分开算。</p>
+<a href="https://andyzhang666666.github.io/bundle-lab/"><img src="docs/assets/bundle-preview.jpg" alt="Bundle Lab：新增贡献和既有顾客让利分开算。" width="100%"></a>
+<p>合成订单 · 条件推演<br><a href="https://andyzhang666666.github.io/bundle-lab/">体验</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">源码与设计</a></p>
+</td>
+</tr>
+</table>
+
+[Agent 静态图](docs/assets/agent-preview.jpg)。动图是程序记录的逐步回放，停留时长用于演示，不表示执行耗时。
 
 ### Agent 与评测：把完成条件做进产品
 
@@ -27,19 +49,6 @@
 Agent 台用十个虚构工单案例检查权限、失败恢复和重复写入。RAG 台让同一问题随日期、资料版本和可访问范围改变，答案与来源一起复核。Eval 保留裁判原分，让人的不同判断也能留下来。
 
 [体验 RAG](https://andyzhang666666.github.io/rag-lab/) · [查看 RAG 的检索与版本机制](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/engine.mjs) · [公告事实与遗漏复核](https://github.com/AndyZhang666666/filing-eval)
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://andyzhang666666.github.io/llm-output-eval/"><img src="https://andyzhang666666.github.io/assets/work/showcase/eval-crop.jpg" alt="Eval Lab 实际界面：原始评分、引用与人工复核" width="100%"></a>
-<p><strong>Eval Lab</strong><br>引用找得到，还要判断它能否支持评语。</p>
-</td>
-<td width="50%" valign="top">
-<a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://andyzhang666666.github.io/rag-lab/evidence/answer-preview.png" alt="可信 RAG 实验台实际界面：回答与适用的原文规则" width="100%"></a>
-<p><strong>可信 RAG 实验台</strong><br>先核对适用条件，再检查答案与来源。</p>
-</td>
-</tr>
-</table>
 
 ### 生活产品：保留人的决定权
 

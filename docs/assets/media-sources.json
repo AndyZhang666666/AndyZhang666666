@@ -1,0 +1,66 @@
+[
+  {
+    "file": "agent-preview.jpg",
+    "source": "https://andyzhang666666.github.io/agent-bench/",
+    "captured": "2026-10-31",
+    "viewport": [
+      1280,
+      720
+    ],
+    "mode": "Read-only replay of an original deterministic program record; no model call or new ticket write. Response lost, query original operation, inspect final state.",
+    "sha256": "8953b3976b0b02cd6a4ee6949dd95756b88f9682af7c8fbbd151b2fab33f819d"
+  },
+  {
+    "file": "eval-preview.jpg",
+    "source": "https://andyzhang666666.github.io/llm-output-eval/",
+    "captured": "2026-10-31",
+    "viewport": [
+      1280,
+      720
+    ],
+    "mode": "Historical g07 evaluation output. Source citation selected; human review remains pending and the original score is unchanged.",
+    "sha256": "2bf235680f3b3922abd769f265505039cfa0c5d7709c6e4dbb30b8b5d515e2a7"
+  },
+  {
+    "file": "taste-preview.jpg",
+    "source": "https://andyzhang666666.github.io/tasteroom/?direction=swiss",
+    "captured": "2026-10-31",
+    "viewport": [
+      1280,
+      720
+    ],
+    "mode": "Original synthetic poster comparison. Swiss option selected; stopped before choosing memory scope. No preference rule saved.",
+    "sha256": "9ada17f8cb0d3c6833e4d3aa458c7b852dac9e1acfb213cf01449b1c8c1060af"
+  },
+  {
+    "file": "bundle-preview.jpg",
+    "source": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+    "captured": "2026-10-31",
+    "viewport": [
+      1280,
+      720
+    ],
+    "mode": "Synthetic orders and conditional margin calculation. Incremental contribution and discounts for existing complete-basket buyers are separate; not a forecast.",
+    "sha256": "291d0138ed11121130f09c24e9ac8cc8e8820286a6c2471c559cd985875582b8"
+  },
+  {
+    "file": "agent-replay.gif",
+    "source_frames": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source": "https://andyzhang666666.github.io/agent-bench/#checkpoint",
+    "captured": "2026-10-31",
+    "size": [
+      960,
+      540
+    ],
+    "mode": "Actual screenshots of the read-only program replay, resized and encoded as GIF. Pauses are presentation timing, not execution latency.",
+    "sha256": "7735675fc2e728690f70b92d43d939519179c4c9d16414d84ea818e09c96a1bb"
+  }
+]

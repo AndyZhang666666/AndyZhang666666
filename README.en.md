@@ -1,24 +1,46 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
-  <img src="assets/profile-light.svg" alt="Andy Zhang · AI Product Manager · Agent, Evaluation, Growth" width="100%">
+  <img src="assets/profile-light.svg" alt="Agent / Evaluation / Growth · a compact decision trace" width="100%">
 </picture>
 
 # Andy Zhang · 张千羽
 
 **AI Product Manager working on Agents, evaluation and growth.**
 
-I turn business needs into working AI products, then define how to tell whether they help. My work spans creative Agents, reusable Skills, consumer AI features and overseas subscription experiments. I also build independent tools to test my product decisions in an interface people can use.
+I turn business questions into usable products, then check whether they solve the problem. These four projects make the decisions inspectable.
 
-[Portfolio & demos](https://andyzhang666666.github.io/) · [Product CV, Chinese](https://andyzhang666666.github.io/assets/resume.pdf) · [中文](README.md) · [Project index](PROJECTS.en.md)
+[Portfolio & full demos](https://andyzhang666666.github.io/) · [Product CV, Chinese](https://andyzhang666666.github.io/assets/resume.pdf) · [中文](README.md) · [All projects](PROJECTS.en.md)
 
 ## Start here
 
-| What you want to examine | Project | A decision you can inspect |
-| --- | --- | --- |
-| Reliable Agent execution | [Agent Execution Bench](https://andyzhang666666.github.io/agent-bench/) · [Source](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench) | After a write times out, check the original operation and final ticket before reporting completion. |
-| Trust in a model's score | [Eval Lab](https://andyzhang666666.github.io/llm-output-eval/) · [Source](https://github.com/AndyZhang666666/llm-output-eval) | Locate a quoted passage and record a human review without overwriting the judge's score. |
-| Learning personal preferences | [TasteRoom](https://andyzhang666666.github.io/tasteroom/) · [Source](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) | Compare one design variable, confirm where a preference applies, and revoke it later. |
-| Testing a commercial idea | [Bundle Lab](https://andyzhang666666.github.io/bundle-lab/) · [Source](https://github.com/AndyZhang666666/bundle-lab) | Discover a basket association, separate incremental contribution from discount leakage, and inspect break-even conditions. |
+<table>
+<tr>
+<td width="50%" valign="top">
+<p><strong>Agent Execution Bench</strong><br>After a lost response, check the original operation.</p>
+<a href="https://andyzhang666666.github.io/agent-bench/"><picture><source media="(prefers-reduced-motion: reduce)" srcset="docs/assets/agent-preview.jpg"><img src="docs/assets/agent-replay.gif" alt="Agent Execution Bench: After a lost response, check the original operation." width="100%"></picture></a>
+<p>Recorded program example · no model call<br><a href="https://andyzhang666666.github.io/agent-bench/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench">Source & decisions</a></p>
+</td>
+<td width="50%" valign="top">
+<p><strong>Eval Lab</strong><br>Follow the score back to the source and human review.</p>
+<a href="https://andyzhang666666.github.io/llm-output-eval/"><img src="docs/assets/eval-preview.jpg" alt="Eval Lab: Follow the score back to the source and human review." width="100%"></a>
+<p>Historical output · original score retained<br><a href="https://andyzhang666666.github.io/llm-output-eval/">Try it</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval">Source & decisions</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p><strong>TasteRoom</strong><br>Compare designs, then choose where a preference applies.</p>
+<a href="https://andyzhang666666.github.io/tasteroom/"><img src="docs/assets/taste-preview.jpg" alt="TasteRoom: Compare designs, then choose where a preference applies." width="100%"></a>
+<p>Local rules · explicit scope consent<br><a href="https://andyzhang666666.github.io/tasteroom/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">Source & decisions</a></p>
+</td>
+<td width="50%" valign="top">
+<p><strong>Bundle Lab</strong><br>Separate new contribution from discount leakage.</p>
+<a href="https://andyzhang666666.github.io/bundle-lab/"><img src="docs/assets/bundle-preview.jpg" alt="Bundle Lab: Separate new contribution from discount leakage." width="100%"></a>
+<p>Synthetic orders · conditional model<br><a href="https://andyzhang666666.github.io/bundle-lab/">Try it</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">Source & decisions</a></p>
+</td>
+</tr>
+</table>
+
+[Static Agent image](docs/assets/agent-preview.jpg). The animation steps through program records; its pauses are presentation timing, not execution latency.
 
 ### Agents and evaluation
 
@@ -27,19 +49,6 @@ I turn business needs into working AI products, then define how to tell whether 
 Agent Bench uses ten fictional ticket cases to inspect permissions, recovery and duplicate writes. RAG Lab changes the date, source snapshot and accessible scope for the same question, then shows the applicable answer and passage. Eval keeps the original judge output and leaves room for disagreement.
 
 [Try RAG Lab](https://andyzhang666666.github.io/rag-lab/) · [Retrieval and version-selection code](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/engine.mjs) · [Filing facts and omissions](https://github.com/AndyZhang666666/filing-eval)
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://andyzhang666666.github.io/llm-output-eval/"><img src="https://andyzhang666666.github.io/assets/work/showcase/eval-crop.jpg" alt="Actual Eval Lab interface showing a score, citation and human review" width="100%"></a>
-<p><strong>Eval Lab</strong><br>A located quote still needs to support the judgement.</p>
-</td>
-<td width="50%" valign="top">
-<a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://andyzhang666666.github.io/rag-lab/evidence/answer-preview.png" alt="Actual RAG Lab interface showing the answer and applicable source rule" width="100%"></a>
-<p><strong>Trustworthy RAG Lab</strong><br>Check applicability before judging the answer and citation.</p>
-</td>
-</tr>
-</table>
 
 ### Everyday products
 
