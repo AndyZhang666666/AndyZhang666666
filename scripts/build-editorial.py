@@ -76,23 +76,23 @@ for theme in PALETTES:
     ], 'Manual notes stay separate from model scores.')
     plate('eval', theme, 1090, 'Read. Question. Revise.', [
         ('eval-diff.jpg',(208,205,495,280),(24,90,552,312)),
-        ('eval-review.jpg',(725,90,493,555),(24,420,552,621)),
+        ('eval-review.jpg',(725,90,493,565),(24,420,552,632)),
     ], 'Constructed text / Manual review / No model call', narrow=True)
     plate('taste', theme, 620, 'Same content. Different context.', [
-        ('taste-scene.jpg',(96,187,1045,430),(40,110,1120,461)),
+        ('taste-scene.jpg',(96,182,1045,435),(40,110,1120,466)),
     ], 'Personal / Work — viewing a comparison saves no preference.')
     plate('bundle', theme, 700, 'Growth has a cost.', [
         ('bundle-ledger.jpg',(392,270,825,395),(40,110,1120,536)),
     ], 'Synthetic orders / Conditional gross margin / Not business results')
     plate('rag', theme, 920, 'A number needs a source.', [
-        ('rag-numeric.jpg',(311,117,570,450),(40,110,700,553)),
+        ('rag-numeric.jpg',(311,108,570,459),(40,110,700,564)),
         ('rag-numeric.jpg',(920,22,300,235),(780,110,380,298)),
         ('rag-condition.jpg',(311,140,565,100),(40,680,1120,198)),
     ], 'Rule checks flag a review need; they do not verify meaning.')
-    plate('rag', theme, 1110, 'A number needs a source.', [
-        ('rag-numeric.jpg',(920,22,300,235),(24,85,552,280)),
-        ('rag-numeric.jpg',(311,117,570,450),(24,385,552,436)),
-        ('rag-condition.jpg',(311,140,565,100),(24,850,552,185)),
+    plate('rag', theme, 940, 'A number needs a source.', [
+        ('rag-numeric.jpg',(920,84,300,112),(24,85,552,206)),
+        ('rag-numeric.jpg',(311,108,570,459),(24,320,552,445)),
+        ('rag-condition.jpg',(311,140,565,100),(24,800,552,98)),
     ], 'A changed date makes the old citation stale.', narrow=True)
 
 print(json.dumps({p.name:p.stat().st_size for p in OUT.glob('*.svg')}, indent=2))

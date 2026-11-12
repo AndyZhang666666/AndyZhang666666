@@ -184,52 +184,242 @@
   ],
   "presentation_regions": [
     {
-      "source": "raw/eval-review.jpg",
-      "x": 208,
-      "y": 80,
-      "width": 1015,
-      "height": 623,
-      "method": "nested SVG viewBox framing; original JPEG unchanged"
+      "product": "eval",
+      "source": "eval-review.jpg",
+      "viewbox": [
+        208,
+        250,
+        495,
+        100
+      ],
+      "box": [
+        40,
+        155,
+        520,
+        105
+      ],
+      "narrow": false
     },
     {
-      "source": "raw/eval-diff.jpg",
-      "x": 208,
-      "y": 90,
-      "width": 495,
-      "height": 405,
-      "method": "nested SVG viewBox framing; original JPEG unchanged"
+      "product": "eval",
+      "source": "eval-diff.jpg",
+      "viewbox": [
+        208,
+        245,
+        495,
+        245
+      ],
+      "box": [
+        40,
+        370,
+        520,
+        257
+      ],
+      "narrow": false
     },
     {
-      "source": "raw/taste-scene.jpg",
-      "x": 96,
-      "y": 187,
-      "width": 1045,
-      "height": 430,
-      "method": "nested SVG viewBox framing; original JPEG unchanged"
+      "product": "eval",
+      "source": "eval-review.jpg",
+      "viewbox": [
+        725,
+        90,
+        493,
+        100
+      ],
+      "box": [
+        640,
+        155,
+        520,
+        105
+      ],
+      "narrow": false
     },
     {
-      "source": "raw/bundle-ledger.jpg",
-      "x": 392,
-      "y": 270,
-      "width": 825,
-      "height": 395,
-      "method": "nested SVG viewBox framing; original JPEG unchanged"
+      "product": "eval",
+      "source": "eval-review.jpg",
+      "viewbox": [
+        725,
+        338,
+        493,
+        319
+      ],
+      "box": [
+        640,
+        290,
+        520,
+        337
+      ],
+      "narrow": false
     },
     {
-      "source": "raw/rag-numeric.jpg",
-      "x": 307,
-      "y": 22,
-      "width": 916,
-      "height": 550,
-      "method": "nested SVG viewBox framing; original JPEG unchanged"
+      "product": "eval",
+      "source": "eval-diff.jpg",
+      "viewbox": [
+        208,
+        205,
+        495,
+        280
+      ],
+      "box": [
+        24,
+        90,
+        552,
+        312
+      ],
+      "narrow": true
     },
     {
-      "source": "raw/rag-condition.jpg",
-      "x": 311,
-      "y": 140,
-      "width": 565,
-      "height": 100,
-      "method": "nested SVG viewBox framing; original JPEG unchanged"
+      "product": "eval",
+      "source": "eval-review.jpg",
+      "viewbox": [
+        725,
+        90,
+        493,
+        565
+      ],
+      "box": [
+        24,
+        420,
+        552,
+        632
+      ],
+      "narrow": true
+    },
+    {
+      "product": "taste",
+      "source": "taste-scene.jpg",
+      "viewbox": [
+        96,
+        182,
+        1045,
+        435
+      ],
+      "box": [
+        40,
+        110,
+        1120,
+        466
+      ],
+      "narrow": false
+    },
+    {
+      "product": "bundle",
+      "source": "bundle-ledger.jpg",
+      "viewbox": [
+        392,
+        270,
+        825,
+        395
+      ],
+      "box": [
+        40,
+        110,
+        1120,
+        536
+      ],
+      "narrow": false
+    },
+    {
+      "product": "rag",
+      "source": "rag-numeric.jpg",
+      "viewbox": [
+        311,
+        108,
+        570,
+        459
+      ],
+      "box": [
+        40,
+        110,
+        700,
+        564
+      ],
+      "narrow": false
+    },
+    {
+      "product": "rag",
+      "source": "rag-numeric.jpg",
+      "viewbox": [
+        920,
+        22,
+        300,
+        235
+      ],
+      "box": [
+        780,
+        110,
+        380,
+        298
+      ],
+      "narrow": false
+    },
+    {
+      "product": "rag",
+      "source": "rag-condition.jpg",
+      "viewbox": [
+        311,
+        140,
+        565,
+        100
+      ],
+      "box": [
+        40,
+        680,
+        1120,
+        198
+      ],
+      "narrow": false
+    },
+    {
+      "product": "rag",
+      "source": "rag-numeric.jpg",
+      "viewbox": [
+        920,
+        84,
+        300,
+        112
+      ],
+      "box": [
+        24,
+        85,
+        552,
+        206
+      ],
+      "narrow": true
+    },
+    {
+      "product": "rag",
+      "source": "rag-numeric.jpg",
+      "viewbox": [
+        311,
+        108,
+        570,
+        459
+      ],
+      "box": [
+        24,
+        320,
+        552,
+        445
+      ],
+      "narrow": true
+    },
+    {
+      "product": "rag",
+      "source": "rag-condition.jpg",
+      "viewbox": [
+        311,
+        140,
+        565,
+        100
+      ],
+      "box": [
+        24,
+        800,
+        552,
+        98
+      ],
+      "narrow": true
     }
   ],
   "presentation_constraints": [
@@ -312,46 +502,47 @@
     {
       "path": "assets/editorial/eval-narrow-dark.svg",
       "bytes": 166235,
-      "sha256": "1c4c9deccc71f261ac6ea95b50f8374ea421f89b57f1423fcb3ab580e92c782e"
+      "sha256": "54cf76cb12a262d5eb28e8df0cfdc7188c6887beb8618ec93083533a2213e38b"
     },
     {
       "path": "assets/editorial/eval-narrow-light.svg",
       "bytes": 166235,
-      "sha256": "e40726630ebbcb4cc606527d38096693361c3c82bd24730594afd0cd5611abe9"
+      "sha256": "32ebb8c6ddfc21e8d626fd39bfa69195c9c781ac72c302493e1bd492d7899795"
     },
     {
       "path": "assets/editorial/rag-dark.svg",
       "bytes": 225833,
-      "sha256": "f9ff849075f388373eaa145140ffc0ef5d012528db93b6e65d3d5a30c3efde60"
+      "sha256": "be982d0ba1ee218613cc7ecb885fd1f06c3345fbcfa9c45b3f82540e07fb326a"
     },
     {
       "path": "assets/editorial/rag-light.svg",
       "bytes": 225833,
-      "sha256": "05560c6e14ed84321e482cb0715627528695243ad65c71b99ae17608c5096fa9"
+      "sha256": "7cbf271503b119b526273de89afce56292e84398e60ae8b9587a08d0c7ca8b3f"
     },
     {
       "path": "assets/editorial/rag-narrow-dark.svg",
-      "bytes": 225816,
-      "sha256": "bf242d9ef879e38447d5d1f0b1c98acb3fa6bf4251c48bf75efe211886776620"
+      "bytes": 225811,
+      "sha256": "0512e5c3aab2a6c980085bfe2f4b04d1d32cb91a4fcef2c25f3dc0dc55394a03"
     },
     {
       "path": "assets/editorial/rag-narrow-light.svg",
-      "bytes": 225816,
-      "sha256": "cb904fde17b9a3664fcf72d9ce102505033da441105e5bd358c26d1440820a70"
+      "bytes": 225811,
+      "sha256": "75e31d950dc45371175d46d4787ec9be63aad928daa02a33b4e68bdb3a4af6dd"
     },
     {
       "path": "assets/editorial/taste-dark.svg",
       "bytes": 69273,
-      "sha256": "1e59ae8ab302f83a913f2be8236bf8e984f85a3d2782ef28974aac4a539de903"
+      "sha256": "0ffb604c67708d9db8cd506eb4d57da8f6320ff11444a45fdd386037bbfa382f"
     },
     {
       "path": "assets/editorial/taste-light.svg",
       "bytes": 69273,
-      "sha256": "5dd41ab89e539d0f924bae8222aea58278e3757e1c9873585714f6126b913f62"
+      "sha256": "d04d2a8beb1fd3bbe96ae9f2f53ec2a0e7b00d152883934bac889172d7eb405a"
     }
   ],
   "default_static_bytes_per_theme": {
     "light": 545573,
     "dark": 545573
-  }
+  },
+  "presentation_regions_note": "Exact final regions are generated from the checked-in build-editorial.py; old conceptual region list is superseded."
 }

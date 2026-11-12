@@ -89,6 +89,8 @@ Local browser retrieval, rule-based checks and human-edited drafts. No model cal
 
 ## Experience and other work
 
+At work, I build creative Agent workflows and manage Skill assets. I have also worked on AI launches, user growth and subscription conversion.
+
 <details>
 <summary>Work experience, business outcomes and research</summary>
 
