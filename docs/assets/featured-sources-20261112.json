@@ -1,0 +1,70 @@
+[
+  {
+    "source": "https://andyzhang666666.github.io/llm-output-eval/workspace/",
+    "captured": "2026-11-11",
+    "provenance_checked": "2026-11-12",
+    "source_repository": "AndyZhang666666/llm-output-eval",
+    "source_commit": "af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40",
+    "source_path": "docs/assets/task-loops-20261111/static/workspace-diff-1280.png",
+    "source_blob_sha": "63494994a819c499b9a827b9e1cd27bded8a3f90",
+    "image_url": "https://raw.githubusercontent.com/AndyZhang666666/llm-output-eval/af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40/docs/assets/task-loops-20261111/static/workspace-diff-1280.png",
+    "sha256": "303c554aaea8dfc52258cfb2f2eb38964a89c80b968e7b08d07ca53f69165abf",
+    "size": [
+      1280,
+      960
+    ],
+    "mode": "Constructed acceptance manuscript; saved V1/V2 diff and manual review, not a model-quality experiment.",
+    "treatment": "Reused unchanged from the published source repository; no cropping or retouching."
+  },
+  {
+    "source": "https://andyzhang666666.github.io/tasteroom/",
+    "captured": "2026-11-11",
+    "provenance_checked": "2026-11-12",
+    "source_repository": "AndyZhang666666/AndyZhang666666.github.io",
+    "source_commit": "174399eef34fcdaae22926585dcf9066d1a283bb",
+    "source_path": "tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png",
+    "source_blob_sha": "c5b913266b6206b04bbffee3b7d3c9d33f69ae01",
+    "image_url": "https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png",
+    "sha256": "f442b8dae85c39a53010da04017e03d083cae2786b89255d067136a572d2aa17",
+    "size": [
+      1280,
+      900
+    ],
+    "mode": "Original synthetic poster and explicitly scoped design rules; read-only personal/work comparison.",
+    "treatment": "Reused unchanged from the published source repository; no cropping or retouching."
+  },
+  {
+    "source": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+    "captured": "2026-11-11",
+    "provenance_checked": "2026-11-12",
+    "source_repository": "AndyZhang666666/bundle-lab",
+    "source_commit": "062b6563a9e587c27040f6fc596184f58d0407b3",
+    "source_path": "docs/assets/task-loop-20261111/workspace-1280.png",
+    "source_blob_sha": "079a15453067ed865e6028423d191cc2ff838457",
+    "image_url": "https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png",
+    "sha256": "f008be79f4abf9253f2552fd7e598c8321493356961499052ae00e77821c85a4",
+    "size": [
+      1280,
+      960
+    ],
+    "mode": "Synthetic basket and conditional contribution model, not audited orders or realised returns.",
+    "treatment": "Reused unchanged from the published source repository; no cropping or retouching."
+  },
+  {
+    "source": "https://andyzhang666666.github.io/rag-lab/",
+    "captured": "2026-11-11",
+    "provenance_checked": "2026-11-12",
+    "source_repository": "AndyZhang666666/AndyZhang666666.github.io",
+    "source_commit": "174399eef34fcdaae22926585dcf9066d1a283bb",
+    "source_path": "rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png",
+    "source_blob_sha": "e14c072d28ee5ef0a053732870daa7a45c1de0e5",
+    "image_url": "https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png",
+    "sha256": "aeed39268cb31cc6b353509fbb1a5199cb83ebb2a9c627209c956689a484b6ae",
+    "size": [
+      1280,
+      1000
+    ],
+    "mode": "Constructed acceptance documents and user-authored draft; local retrieval and numeric hints, no model call.",
+    "treatment": "Reused unchanged from the published source repository; no cropping or retouching."
+  }
+]

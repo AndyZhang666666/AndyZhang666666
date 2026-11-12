@@ -9,15 +9,15 @@
 | 项目 | 问题与机制 | 运行方式 |
 | --- | --- | --- |
 | [Agent 执行评测台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench) · [体验](https://andyzhang666666.github.io/agent-bench/) | 响应超时后，查原操作与最终工单；审批、权限与幂等共同约束执行。 | 程序执行记录回放；Python / SQLite 后端可本地运行。 |
-| [可信 RAG 实验台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab) · [体验](https://andyzhang666666.github.io/rag-lab/) | 先限定适用资料，再检查检索、引用、冲突和资料不足。 | 公开资料的 BM25 检索与规则摘录；本地 API 另有范围检查。 |
-| [Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [体验](https://andyzhang666666.github.io/llm-output-eval/) | 逐维评分、引用定位与独立人工复核。 | 6 条样本的 18 次历史输出；可选配置模型接口。 |
+| [可信 RAG 实验台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab) · [体验](https://andyzhang666666.github.io/rag-lab/) | 导入个人资料，检索并选择引用、编辑答复；核对数字与日期、身份变化后的依据范围。 | TXT/Markdown/文字 PDF 本机解析与检索；草稿由用户确认，规则提示不等于语义认证；可选后端另行配置。 |
+| [Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [体验](https://andyzhang666666.github.io/llm-output-eval/workspace/) | 人工审阅、处理项与改稿对照；本版送评任务包和量表校准备忘。 | 自有文稿在本机审阅；6 个样本的 18 次历史输出另行回放；可选模型接口，原分保留。 |
 | [Filing Eval](https://github.com/AndyZhang666666/filing-eval) · [体验](https://andyzhang666666.github.io/demos/filing-eval/) | 断言错误与重要遗漏分别回到原文核验。 | 28 条构造公告回放；人工记录独立保存。 |
 
 ## 生活与创新
 
 | 项目 | 问题与机制 | 运行方式 |
 | --- | --- | --- |
-| [偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [体验](https://andyzhang666666.github.io/tasteroom/) | 单变量审美对照、范围授权、可撤回的偏好记忆。 | 原创海报与本地规则；不调用模型或生图服务。 |
+| [偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [体验](https://andyzhang666666.github.io/tasteroom/) | 编辑原创海报，对照同文同图的场景授权，明确确认可撤回的偏好记忆。 | 本机设计规则与导出；场景对照不写记忆，不调用模型或生图服务。 |
 | [随便局](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [体验](https://andyzhang666666.github.io/suibianju/) | 先确认底线，预演自愿调整，同版全员接受后形成决定。 | 3–5 位虚构角色的单人协商模拟。 |
 | [有据 · Grounded Choice](https://github.com/AndyZhang666666/grounded-choice) · [体验](https://andyzhang666666.github.io/grounded-choice/) | 保留经验分歧与适用条件，比较方案并导出决定。 | 原创模拟资料；不做实时搜索或自动电商比价。 |
 
@@ -25,7 +25,7 @@
 
 | 项目 | 问题与机制 | 运行方式 |
 | --- | --- | --- |
-| [Bundle Lab](https://github.com/AndyZhang666666/bundle-lab) · [体验](https://andyzhang666666.github.io/bundle-lab/) | 从共购候选进入两类人群账本，再提出验证计划。 | 合成订单和未校准的行为假设。 |
+| [Bundle Lab](https://github.com/AndyZhang666666/bundle-lab) · [体验](https://andyzhang666666.github.io/bundle-lab/simulate/) | 自有商品/CSV 基线、两类人群账本、矩阵方案与冻结验证计划，后续观察核对原保本门槛。 | 内置合成订单或自有输入；未校准的条件毛利推演，不认证数据或因果收益。 |
 | [Growth Experiment Lab](https://github.com/AndyZhang666666/growth-experiment-lab) · [体验](https://andyzhang666666.github.io/growth-experiment-lab/) | 实验设计、反复查看风险、统计证据与发布判断。 | 固定种子模拟与合成台账；不自动批准上线。 |
 | [Pricing Model Sim](https://github.com/AndyZhang666666/pricing-model-sim) · [体验](https://andyzhang666666.github.io/pricing-model-sim/) | 在同一批用户上比较付费机制、现金流和回本。 | 条件收入模型，价格与转化假设尚未校准。 |
 
@@ -36,6 +36,7 @@
 | [通勤方案比较器](https://github.com/AndyZhang666666/commute-compare) · [体验](https://andyzhang666666.github.io/commute-compare/) | 一起比较成本、时间分布与迟到风险，用个人记录校准。 | 浏览器计算；无实时地图或路况接口。 |
 | [扑克波动实验室](https://github.com/AndyZhang666666/poker-bankroll-sim) · [体验](https://andyzhang666666.github.io/poker-bankroll-sim/) | 分开表示额度不足停止、曾经达标与最终达标。 | 固定种子模型练习，保留残余余额。 |
 | [扑克 EV 决策沙盘](https://github.com/AndyZhang666666/poker-ev-calculator) · [体验](https://andyzhang666666.github.io/poker-ev-calculator/) | 统一有效筹码口径，检查假设误差会不会改变选择。 | 单轮学习模型，不是 GTO 求解或真实胜率模型。 |
+| [鱿鱼博弈实验室](https://github.com/AndyZhang666666/poker-squid-lab) · [体验](https://andyzhang666666.github.io/poker-squid-lab/) | 同一手牌对照三种规则，逐手回放结算，用挑战题核对判断。 | 本机规则沙盘与假设模拟，不是完整 GTO 或实际支付。 |
 
 ## 产品分析与历史版本
 
