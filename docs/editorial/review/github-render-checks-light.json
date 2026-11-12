@@ -1,0 +1,278 @@
+[
+  {
+    "language": "zh",
+    "device": "desktop",
+    "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+    "height": 900,
+    "images": [
+      {
+        "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+        "asset": "cover-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 320,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Eval Lab：原文依据、人工判断与修改对照",
+        "asset": "eval-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 720,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+        "asset": "taste-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 620,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+        "asset": "bundle-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 700,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+        "asset": "rag-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 920,
+        "naturalWidth": 1200
+      }
+    ],
+    "scheme": "light",
+    "scrollWidth": 1265,
+    "width": 1280
+  },
+  {
+    "language": "zh",
+    "device": "tablet",
+    "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+    "height": 1024,
+    "images": [
+      {
+        "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+        "asset": "cover-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 320,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Eval Lab：原文依据、人工判断与修改对照",
+        "asset": "eval-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 720,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+        "asset": "taste-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 620,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+        "asset": "bundle-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 700,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+        "asset": "rag-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 920,
+        "naturalWidth": 1200
+      }
+    ],
+    "scheme": "light",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "language": "zh",
+    "device": "mobile",
+    "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+    "height": 844,
+    "images": [
+      {
+        "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+        "asset": "cover-narrow-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 260,
+        "naturalWidth": 600
+      },
+      {
+        "alt": "Eval Lab：原文依据、人工判断与修改对照",
+        "asset": "eval-narrow-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 1090,
+        "naturalWidth": 600
+      },
+      {
+        "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+        "asset": "taste-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 620,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+        "asset": "bundle-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 700,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+        "asset": "rag-narrow-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 940,
+        "naturalWidth": 600
+      }
+    ],
+    "scheme": "light",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "language": "en",
+    "device": "desktop",
+    "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+    "height": 900,
+    "images": [
+      {
+        "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+        "asset": "cover-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 320,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+        "asset": "eval-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 720,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "TasteRoom: the same copy and image under personal and work consent",
+        "asset": "taste-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 620,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+        "asset": "bundle-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 700,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+        "asset": "rag-light.svg",
+        "displayWidth": 1012,
+        "naturalHeight": 920,
+        "naturalWidth": 1200
+      }
+    ],
+    "scheme": "light",
+    "scrollWidth": 1265,
+    "width": 1280
+  },
+  {
+    "language": "en",
+    "device": "tablet",
+    "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+    "height": 1024,
+    "images": [
+      {
+        "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+        "asset": "cover-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 320,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+        "asset": "eval-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 720,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "TasteRoom: the same copy and image under personal and work consent",
+        "asset": "taste-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 620,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+        "asset": "bundle-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 700,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+        "asset": "rag-light.svg",
+        "displayWidth": 655,
+        "naturalHeight": 920,
+        "naturalWidth": 1200
+      }
+    ],
+    "scheme": "light",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "language": "en",
+    "device": "mobile",
+    "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+    "height": 844,
+    "images": [
+      {
+        "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+        "asset": "cover-narrow-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 260,
+        "naturalWidth": 600
+      },
+      {
+        "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+        "asset": "eval-narrow-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 1090,
+        "naturalWidth": 600
+      },
+      {
+        "alt": "TasteRoom: the same copy and image under personal and work consent",
+        "asset": "taste-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 620,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+        "asset": "bundle-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 700,
+        "naturalWidth": 1200
+      },
+      {
+        "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+        "asset": "rag-narrow-light.svg",
+        "displayWidth": 309,
+        "naturalHeight": 940,
+        "naturalWidth": 600
+      }
+    ],
+    "scheme": "light",
+    "scrollWidth": 375,
+    "width": 390
+  }
+]

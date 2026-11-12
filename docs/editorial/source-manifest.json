@@ -55,7 +55,7 @@
       "human_feedback": "Quote and human dialogue observation saved separately from model scores. No model score is shown in these captures."
     },
     "taste": {
-      "material": "same default copy and main image in both scenes",
+      "material": "same default copy; no main image uploaded; both scenes use the same empty main-image input",
       "personal_scene": {
         "authorised_rules": 1,
         "rule": "font",

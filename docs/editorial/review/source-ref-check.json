@@ -1,0 +1,250 @@
+{
+  "checked_at_utc": "2026-11-12T13:59:59.415284+00:00",
+  "scope": "Read-only remote refs, release PR status and HTTP document checks. No product functionality or model execution was tested or changed.",
+  "published_profile_baseline_sha": "ae171a4355b9c21f463f15df9d793c9c4b937d64",
+  "products": [
+    {
+      "id": "eval",
+      "repository": "AndyZhang666666/llm-output-eval",
+      "published_source_sha": "af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40",
+      "current_main_sha": "af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40",
+      "source_unchanged": true,
+      "image_source_path": "docs/assets/task-loops-20261111/static/workspace-diff-1280.png"
+    },
+    {
+      "id": "taste",
+      "repository": "AndyZhang666666/AndyZhang666666.github.io",
+      "published_source_sha": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "current_main_sha": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "source_unchanged": true,
+      "image_source_path": "tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png"
+    },
+    {
+      "id": "bundle",
+      "repository": "AndyZhang666666/bundle-lab",
+      "published_source_sha": "062b6563a9e587c27040f6fc596184f58d0407b3",
+      "current_main_sha": "062b6563a9e587c27040f6fc596184f58d0407b3",
+      "source_unchanged": true,
+      "image_source_path": "docs/assets/task-loop-20261111/workspace-1280.png"
+    },
+    {
+      "id": "rag",
+      "repository": "AndyZhang666666/AndyZhang666666.github.io",
+      "published_source_sha": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "current_main_sha": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "source_unchanged": true,
+      "image_source_path": "rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png"
+    }
+  ],
+  "release_pull_requests": [
+    {
+      "repository": "AndyZhang666666/llm-output-eval",
+      "number": 5,
+      "state": "closed",
+      "merged": true,
+      "merged_at": "2026-11-11T08:08:15Z",
+      "merge_commit_sha": "af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40",
+      "title": "Complete review → revise → calibrate task loops",
+      "url": "https://github.com/AndyZhang666666/llm-output-eval/pull/5"
+    },
+    {
+      "repository": "AndyZhang666666/bundle-lab",
+      "number": 4,
+      "state": "closed",
+      "merged": true,
+      "merged_at": "2026-11-11T08:09:02Z",
+      "merge_commit_sha": "062b6563a9e587c27040f6fc596184f58d0407b3",
+      "title": "Connect targeting assumptions, preview snapshots and frozen validation checks",
+      "url": "https://github.com/AndyZhang666666/bundle-lab/pull/4"
+    },
+    {
+      "repository": "AndyZhang666666/AndyZhang666666.github.io",
+      "number": 8,
+      "state": "closed",
+      "merged": true,
+      "merged_at": "2026-11-11T08:09:43Z",
+      "merge_commit_sha": "8c980ec2d8a662638d2e15b3fc0c84a32e3f94c4",
+      "title": "Integrate RAG and TasteRoom task loops for four-tool local review",
+      "url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8"
+    },
+    {
+      "repository": "AndyZhang666666/AndyZhang666666.github.io",
+      "number": 9,
+      "state": "closed",
+      "merged": true,
+      "merged_at": "2026-11-11T08:20:44Z",
+      "merge_commit_sha": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "title": "Avoid mixed cached RAG modules after the approved task-loop release",
+      "url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9"
+    }
+  ],
+  "pins": {
+    "baseline_order": [
+      "llm-output-eval",
+      "AndyZhang666666.github.io",
+      "bundle-lab",
+      "growth-experiment-lab",
+      "filing-eval",
+      "pricing-model-sim"
+    ],
+    "current_public_order": [
+      "llm-output-eval",
+      "AndyZhang666666.github.io",
+      "bundle-lab",
+      "growth-experiment-lab",
+      "filing-eval",
+      "pricing-model-sim"
+    ],
+    "matches_baseline": true,
+    "source": "https://github.com/AndyZhang666666",
+    "http_status": 200
+  },
+  "links": [
+    {
+      "product": "eval",
+      "kind": "experience",
+      "url": "https://andyzhang666666.github.io/llm-output-eval/workspace/",
+      "status": 200,
+      "resolved_url": "https://andyzhang666666.github.io/llm-output-eval/workspace/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 12683,
+      "title": "文本评测台 · llm-output-eval"
+    },
+    {
+      "product": "eval",
+      "kind": "candidate_design",
+      "url": "https://github.com/AndyZhang666666/llm-output-eval#readme",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/llm-output-eval#readme",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 361000,
+      "title": "GitHub - AndyZhang666666/llm-output-eval: Eval Lab: evidence-linked LLM output review, prompt comparison and human assessment. No-key historical replay; optional model endpoint. · GitHub"
+    },
+    {
+      "product": "eval",
+      "kind": "published_design",
+      "url": "https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 217085,
+      "title": "llm-output-eval/docs/TASK-LOOPS-20261111.md at main · AndyZhang666666/llm-output-eval · GitHub"
+    },
+    {
+      "product": "taste",
+      "kind": "experience",
+      "url": "https://andyzhang666666.github.io/tasteroom/",
+      "status": 200,
+      "resolved_url": "https://andyzhang666666.github.io/tasteroom/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 20009,
+      "title": "TasteRoom · 偏爱实验室"
+    },
+    {
+      "product": "taste",
+      "kind": "candidate_design",
+      "url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom#readme",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom#readme",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 307195,
+      "title": "AndyZhang666666.github.io/tasteroom at main · AndyZhang666666/AndyZhang666666.github.io · GitHub"
+    },
+    {
+      "product": "taste",
+      "kind": "published_design",
+      "url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 192782,
+      "title": "AndyZhang666666.github.io/tasteroom/docs/TASK-LOOP-20261111.md at main · AndyZhang666666/AndyZhang666666.github.io · GitHub"
+    },
+    {
+      "product": "bundle",
+      "kind": "experience",
+      "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+      "status": 200,
+      "resolved_url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 81953,
+      "title": "套餐实验室 · Bundle Lab"
+    },
+    {
+      "product": "bundle",
+      "kind": "candidate_design",
+      "url": "https://github.com/AndyZhang666666/bundle-lab#readme",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/bundle-lab#readme",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 316792,
+      "title": "GitHub - AndyZhang666666/bundle-lab: Bundle Lab: discover basket associations, separate incremental contribution from discount leakage, and turn assumptions into a test plan. · GitHub"
+    },
+    {
+      "product": "bundle",
+      "kind": "published_design",
+      "url": "https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 208565,
+      "title": "bundle-lab/docs/TASK-LOOP-20261111.md at main · AndyZhang666666/bundle-lab · GitHub"
+    },
+    {
+      "product": "rag",
+      "kind": "experience",
+      "url": "https://andyzhang666666.github.io/rag-lab/",
+      "status": 200,
+      "resolved_url": "https://andyzhang666666.github.io/rag-lab/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 14351,
+      "title": "可信 RAG 实验台 · Andy Zhang"
+    },
+    {
+      "product": "rag",
+      "kind": "candidate_design",
+      "url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab#readme",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab#readme",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 274378,
+      "title": "AndyZhang666666.github.io/rag-lab at main · AndyZhang666666/AndyZhang666666.github.io · GitHub"
+    },
+    {
+      "product": "rag",
+      "kind": "published_design",
+      "url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 188761,
+      "title": "AndyZhang666666.github.io/rag-lab/docs/TASK-LOOP-20261111.md at main · AndyZhang666666/AndyZhang666666.github.io · GitHub"
+    },
+    {
+      "product": "profile",
+      "kind": "pins",
+      "url": "https://github.com/AndyZhang666666",
+      "status": 200,
+      "resolved_url": "https://github.com/AndyZhang666666",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 179861,
+      "title": "AndyZhang666666 (Andy Zhang) · GitHub",
+      "public_pinned_order": [
+        "llm-output-eval",
+        "AndyZhang666666.github.io",
+        "bundle-lab",
+        "growth-experiment-lab",
+        "filing-eval",
+        "pricing-model-sim"
+      ],
+      "document_sha256": "2c0411560a4f4114cf8618f52f83dd1f012caf3e7d2727d54b008b649bead5ac"
+    }
+  ],
+  "summary": {
+    "all_product_source_shas_unchanged": true,
+    "all_release_prs_merged": true,
+    "all_http_links_ok": true,
+    "products_modified": false,
+    "pins_match_baseline": true
+  }
+}

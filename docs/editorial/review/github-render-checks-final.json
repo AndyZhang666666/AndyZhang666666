@@ -1,0 +1,1360 @@
+{
+  "checked_at_utc": "2026-11-12T14:40:38.365461+00:00",
+  "sources": [
+    {
+      "path": "github-render-checks-light.json",
+      "sha256": "4c71a32e97a2f80848496feb7174f08c14b4547e9c4ce245c1deafd8d0d21c36"
+    },
+    {
+      "path": "github-render-checks-dark.json",
+      "sha256": "ca052aeb3d00ae4570fdb2a7f3f386836bd2df33e340efc01bf8728cca62d7b2"
+    }
+  ],
+  "scope": "Merge only github-render-checks-light.json and github-render-checks-dark.json from actual native GitHub renders. No old browser-checks or first-round final files used.",
+  "commit_refs": [
+    "d531789aac082f007ca5fcfe0ec2c218779a9c2a"
+  ],
+  "case_count": 12,
+  "actual_image_instances": 60,
+  "narrow_source_selections": 12,
+  "unique_narrow_sources": [
+    "cover-narrow-dark.svg",
+    "cover-narrow-light.svg",
+    "eval-narrow-dark.svg",
+    "eval-narrow-light.svg",
+    "rag-narrow-dark.svg",
+    "rag-narrow-light.svg"
+  ],
+  "cases": [
+    {
+      "language": "zh",
+      "device": "desktop",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 900,
+      "images": [
+        {
+          "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+          "asset": "cover-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab：原文依据、人工判断与修改对照",
+          "asset": "eval-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+          "asset": "taste-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+          "asset": "bundle-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+          "asset": "rag-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "light",
+      "scrollWidth": 1265,
+      "width": 1280,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-light.svg",
+            "observed_asset": "cover-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-light.svg",
+            "observed_asset": "eval-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-light.svg",
+            "observed_asset": "taste-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-light.svg",
+            "observed_asset": "bundle-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-light.svg",
+            "observed_asset": "rag-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-zh-desktop-light.jpg",
+        "exists": true,
+        "dimensions": [
+          1265,
+          7014
+        ],
+        "bytes": 496508,
+        "sha256": "287ad714a57286b28ae5bf795c805a25478d3a66a63eb826bcaec05365f0d34c"
+      }
+    },
+    {
+      "language": "zh",
+      "device": "tablet",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 1024,
+      "images": [
+        {
+          "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+          "asset": "cover-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab：原文依据、人工判断与修改对照",
+          "asset": "eval-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+          "asset": "taste-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+          "asset": "bundle-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+          "asset": "rag-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "light",
+      "scrollWidth": 753,
+      "width": 768,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-light.svg",
+            "observed_asset": "cover-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-light.svg",
+            "observed_asset": "eval-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-light.svg",
+            "observed_asset": "taste-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-light.svg",
+            "observed_asset": "bundle-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-light.svg",
+            "observed_asset": "rag-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-zh-tablet-light.jpg",
+        "exists": true,
+        "dimensions": [
+          753,
+          4077
+        ],
+        "bytes": 353271,
+        "sha256": "65525a477b955af67ffccf5d213934d65c2354934f314f078656ce7cf8506173"
+      }
+    },
+    {
+      "language": "zh",
+      "device": "mobile",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 844,
+      "images": [
+        {
+          "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+          "asset": "cover-narrow-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 260,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "Eval Lab：原文依据、人工判断与修改对照",
+          "asset": "eval-narrow-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 1090,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+          "asset": "taste-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+          "asset": "bundle-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+          "asset": "rag-narrow-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 940,
+          "naturalWidth": 600
+        }
+      ],
+      "scheme": "light",
+      "scrollWidth": 375,
+      "width": 390,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-narrow-light.svg",
+            "observed_asset": "cover-narrow-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-narrow-light.svg",
+            "observed_asset": "eval-narrow-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-light.svg",
+            "observed_asset": "taste-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-light.svg",
+            "observed_asset": "bundle-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-narrow-light.svg",
+            "observed_asset": "rag-narrow-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-zh-mobile-light.jpg",
+        "exists": true,
+        "dimensions": [
+          375,
+          3783
+        ],
+        "bytes": 217716,
+        "sha256": "215ef19dbebf0f59f98bc9422b27c80df5c3761ffc8ab2c3117cc1a9604f7dc2"
+      }
+    },
+    {
+      "language": "en",
+      "device": "desktop",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 900,
+      "images": [
+        {
+          "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+          "asset": "cover-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+          "asset": "eval-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom: the same copy and image under personal and work consent",
+          "asset": "taste-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+          "asset": "bundle-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+          "asset": "rag-light.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "light",
+      "scrollWidth": 1265,
+      "width": 1280,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-light.svg",
+            "observed_asset": "cover-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-light.svg",
+            "observed_asset": "eval-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-light.svg",
+            "observed_asset": "taste-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-light.svg",
+            "observed_asset": "bundle-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-light.svg",
+            "observed_asset": "rag-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-en-desktop-light.jpg",
+        "exists": true,
+        "dimensions": [
+          1265,
+          5093
+        ],
+        "bytes": 545664,
+        "sha256": "55892c3c4fc863afb0c74f71f38ae29f7995fbacb83a1ad161e7e16f35e2aee8"
+      }
+    },
+    {
+      "language": "en",
+      "device": "tablet",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+          "asset": "cover-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+          "asset": "eval-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom: the same copy and image under personal and work consent",
+          "asset": "taste-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+          "asset": "bundle-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+          "asset": "rag-light.svg",
+          "displayWidth": 655,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "light",
+      "scrollWidth": 753,
+      "width": 768,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-light.svg",
+            "observed_asset": "cover-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-light.svg",
+            "observed_asset": "eval-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-light.svg",
+            "observed_asset": "taste-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-light.svg",
+            "observed_asset": "bundle-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-light.svg",
+            "observed_asset": "rag-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-en-tablet-light.jpg",
+        "exists": true,
+        "dimensions": [
+          753,
+          4389
+        ],
+        "bytes": 419264,
+        "sha256": "21de12eaab658301ea818b66418e5e5bc3b59484000b3a6c8a43aa71ba0ade79"
+      }
+    },
+    {
+      "language": "en",
+      "device": "mobile",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 844,
+      "images": [
+        {
+          "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+          "asset": "cover-narrow-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 260,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+          "asset": "eval-narrow-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 1090,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "TasteRoom: the same copy and image under personal and work consent",
+          "asset": "taste-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+          "asset": "bundle-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+          "asset": "rag-narrow-light.svg",
+          "displayWidth": 309,
+          "naturalHeight": 940,
+          "naturalWidth": 600
+        }
+      ],
+      "scheme": "light",
+      "scrollWidth": 375,
+      "width": 390,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-narrow-light.svg",
+            "observed_asset": "cover-narrow-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-narrow-light.svg",
+            "observed_asset": "eval-narrow-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-light.svg",
+            "observed_asset": "taste-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-light.svg",
+            "observed_asset": "bundle-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-narrow-light.svg",
+            "observed_asset": "rag-narrow-light.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-en-mobile-light.jpg",
+        "exists": true,
+        "dimensions": [
+          375,
+          5346
+        ],
+        "bytes": 346593,
+        "sha256": "f332626224d21ae3557deae7be4a14c42d931836c77ad38d246a93ed4ac11721"
+      }
+    },
+    {
+      "language": "zh",
+      "device": "desktop",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 900,
+      "images": [
+        {
+          "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+          "asset": "cover-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab：原文依据、人工判断与修改对照",
+          "asset": "eval-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+          "asset": "taste-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+          "asset": "bundle-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+          "asset": "rag-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "dark",
+      "scrollWidth": 1265,
+      "width": 1280,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-dark.svg",
+            "observed_asset": "cover-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-dark.svg",
+            "observed_asset": "eval-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-dark.svg",
+            "observed_asset": "taste-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-dark.svg",
+            "observed_asset": "bundle-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-dark.svg",
+            "observed_asset": "rag-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-zh-desktop-dark.jpg",
+        "exists": true,
+        "dimensions": [
+          1265,
+          4805
+        ],
+        "bytes": 479337,
+        "sha256": "bcec97c743e71cdce8d53044f941260ee6bab9d96598d11142576cbaacf622d5"
+      }
+    },
+    {
+      "language": "zh",
+      "device": "tablet",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 1024,
+      "images": [
+        {
+          "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+          "asset": "cover-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab：原文依据、人工判断与修改对照",
+          "asset": "eval-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+          "asset": "taste-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+          "asset": "bundle-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+          "asset": "rag-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "dark",
+      "scrollWidth": 753,
+      "width": 768,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-dark.svg",
+            "observed_asset": "cover-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-dark.svg",
+            "observed_asset": "eval-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-dark.svg",
+            "observed_asset": "taste-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-dark.svg",
+            "observed_asset": "bundle-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-dark.svg",
+            "observed_asset": "rag-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-zh-tablet-dark.jpg",
+        "exists": true,
+        "dimensions": [
+          753,
+          4077
+        ],
+        "bytes": 359871,
+        "sha256": "01bc28067e745aeb11709e27f4284b95bd3e158720b5fea1912a5eecd194a32d"
+      }
+    },
+    {
+      "language": "zh",
+      "device": "mobile",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 844,
+      "images": [
+        {
+          "alt": "张千羽 · Andy Zhang — Agent / Evaluation / Growth",
+          "asset": "cover-narrow-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 260,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "Eval Lab：原文依据、人工判断与修改对照",
+          "asset": "eval-narrow-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 1090,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "TasteRoom：相同文案与主图在个人和工作授权下的构图对照",
+          "asset": "taste-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab：新增贡献、既有让利与毛利变化",
+          "asset": "bundle-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "可信 RAG：草稿数字、引用依据与适用范围提示",
+          "asset": "rag-narrow-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 940,
+          "naturalWidth": 600
+        }
+      ],
+      "scheme": "dark",
+      "scrollWidth": 375,
+      "width": 390,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-narrow-dark.svg",
+            "observed_asset": "cover-narrow-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-narrow-dark.svg",
+            "observed_asset": "eval-narrow-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-dark.svg",
+            "observed_asset": "taste-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-dark.svg",
+            "observed_asset": "bundle-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-narrow-dark.svg",
+            "observed_asset": "rag-narrow-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-zh-mobile-dark.jpg",
+        "exists": true,
+        "dimensions": [
+          375,
+          4458
+        ],
+        "bytes": 278533,
+        "sha256": "34b038b35b7d7c030f1e15d1a741e769a682ea0ccd39992b9bccc6b5473085cd"
+      }
+    },
+    {
+      "language": "en",
+      "device": "desktop",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 900,
+      "images": [
+        {
+          "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+          "asset": "cover-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+          "asset": "eval-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom: the same copy and image under personal and work consent",
+          "asset": "taste-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+          "asset": "bundle-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+          "asset": "rag-dark.svg",
+          "displayWidth": 1012,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "dark",
+      "scrollWidth": 1265,
+      "width": 1280,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-dark.svg",
+            "observed_asset": "cover-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-dark.svg",
+            "observed_asset": "eval-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-dark.svg",
+            "observed_asset": "taste-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-dark.svg",
+            "observed_asset": "bundle-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-dark.svg",
+            "observed_asset": "rag-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-en-desktop-dark.jpg",
+        "exists": true,
+        "dimensions": [
+          1265,
+          7302
+        ],
+        "bytes": 574947,
+        "sha256": "e49ba52e4ea5508bb56542149e93e6aaa19ff48e7faec49505a2b66e7d044623"
+      }
+    },
+    {
+      "language": "en",
+      "device": "tablet",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 1024,
+      "images": [
+        {
+          "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+          "asset": "cover-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 320,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+          "asset": "eval-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 720,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "TasteRoom: the same copy and image under personal and work consent",
+          "asset": "taste-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+          "asset": "bundle-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+          "asset": "rag-dark.svg",
+          "displayWidth": 655,
+          "naturalHeight": 920,
+          "naturalWidth": 1200
+        }
+      ],
+      "scheme": "dark",
+      "scrollWidth": 753,
+      "width": 768,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-dark.svg",
+            "observed_asset": "cover-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-dark.svg",
+            "observed_asset": "eval-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-dark.svg",
+            "observed_asset": "taste-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-dark.svg",
+            "observed_asset": "bundle-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-dark.svg",
+            "observed_asset": "rag-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-en-tablet-dark.jpg",
+        "exists": true,
+        "dimensions": [
+          753,
+          4389
+        ],
+        "bytes": 424514,
+        "sha256": "3cdcebb9fe75002f917bd3e5f8522fefdc70227b066997fa36738b72df9048a4"
+      }
+    },
+    {
+      "language": "en",
+      "device": "mobile",
+      "commit": "d531789aac082f007ca5fcfe0ec2c218779a9c2a",
+      "height": 844,
+      "images": [
+        {
+          "alt": "Andy Zhang · 张千羽 — Agent / Evaluation / Growth",
+          "asset": "cover-narrow-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 260,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "Eval Lab: source evidence, human judgement and revision comparison",
+          "asset": "eval-narrow-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 1090,
+          "naturalWidth": 600
+        },
+        {
+          "alt": "TasteRoom: the same copy and image under personal and work consent",
+          "asset": "taste-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 620,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Bundle Lab: new contribution, existing-customer discounts and margin change",
+          "asset": "bundle-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 700,
+          "naturalWidth": 1200
+        },
+        {
+          "alt": "Trustworthy RAG: draft numbers, source evidence and scope warnings",
+          "asset": "rag-narrow-dark.svg",
+          "displayWidth": 309,
+          "naturalHeight": 940,
+          "naturalWidth": 600
+        }
+      ],
+      "scheme": "dark",
+      "scrollWidth": 375,
+      "width": 390,
+      "checks": {
+        "viewport_matches": true,
+        "no_horizontal_overflow": true,
+        "five_images": true,
+        "theme_matches": true,
+        "asset_checks": [
+          {
+            "expected_asset": "cover-narrow-dark.svg",
+            "observed_asset": "cover-narrow-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "eval-narrow-dark.svg",
+            "observed_asset": "eval-narrow-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "taste-dark.svg",
+            "observed_asset": "taste-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "bundle-dark.svg",
+            "observed_asset": "bundle-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          },
+          {
+            "expected_asset": "rag-narrow-dark.svg",
+            "observed_asset": "rag-narrow-dark.svg",
+            "source_matches": true,
+            "intrinsic_dimensions_match": true,
+            "within_document_width": true,
+            "alt_present": true
+          }
+        ]
+      },
+      "screenshot": {
+        "path": "verified-en-mobile-dark-complete.jpg",
+        "exists": true,
+        "dimensions": [
+          375,
+          5346
+        ],
+        "bytes": 348656,
+        "sha256": "2bc7181be32dcd35f1381cf260b99acb569ee81f4488fbcecf1dbae4d8301061",
+        "manually_viewed_with_view_image": true
+      },
+      "initial_incomplete_screenshot": {
+        "path": "verified-en-mobile-dark.jpg",
+        "exists": true,
+        "dimensions": [
+          375,
+          4671
+        ],
+        "bytes": 308276,
+        "sha256": "b2bfa0dc7687b0ee8b8cba679ee123904d8c50fd3a84290e862fbc084d97542c"
+      },
+      "supplemental_screenshots": [
+        {
+          "path": "verified-en-mobile-dark-bottom.jpg",
+          "exists": true,
+          "dimensions": [
+            375,
+            812
+          ],
+          "bytes": 55710,
+          "sha256": "9390bd20f747671531a019a0458982d3dfe8afed8e54a23de7f7418fd19be77a",
+          "manually_viewed_with_view_image": true
+        }
+      ],
+      "visual_bottom_complete": true
+    }
+  ],
+  "data_failures": [],
+  "visual_evidence_notes": [
+    "English six screenshots inspected separately in visual-review-en.md.",
+    "DOM viewport height is not a full-page screenshot height; these values are not compared as if equivalent."
+  ],
+  "limitations": [
+    "Checks validate recorded currentSrc asset names, viewport/scroll width, intrinsic asset sizes and source ordering, not product functions or model quality."
+  ],
+  "visual_evidence_findings": [
+    {
+      "kind": "incomplete_capture",
+      "screenshot": "verified-en-mobile-dark.jpg",
+      "scope": "Evidence completeness, not a demonstrated page defect",
+      "observation": "Current image ends near Experience and other work; bottom index/contact is not visible.",
+      "status": "resolved_by_supplemental_and_complete_capture",
+      "resolution": "Both new images viewed with view_image. Full Experience summary, collapsed career/research, all five index categories, contact, language and image-source links are visible; no bottom clipping.",
+      "resolution_evidence": [
+        "verified-en-mobile-dark-bottom.jpg",
+        "verified-en-mobile-dark-complete.jpg"
+      ],
+      "original_incomplete_capture_preserved": true
+    },
+    {
+      "kind": "extra_capture_blank",
+      "screenshot": "verified-en-desktop-dark.jpg",
+      "scope": "Screenshot contains all content",
+      "observation": "Large same-colour blank area follows the end of the README.",
+      "status": "non_blocking"
+    }
+  ],
+  "supplemental_visual_review_at_utc": "2026-11-12T14:49:48.022982+00:00",
+  "supplemental_english_screenshots": [
+    {
+      "path": "verified-en-mobile-dark-bottom.jpg",
+      "exists": true,
+      "dimensions": [
+        375,
+        812
+      ],
+      "bytes": 55710,
+      "sha256": "9390bd20f747671531a019a0458982d3dfe8afed8e54a23de7f7418fd19be77a",
+      "manually_viewed_with_view_image": true
+    },
+    {
+      "path": "verified-en-mobile-dark-complete.jpg",
+      "exists": true,
+      "dimensions": [
+        375,
+        5346
+      ],
+      "bytes": 348656,
+      "sha256": "2bc7181be32dcd35f1381cf260b99acb569ee81f4488fbcecf1dbae4d8301061",
+      "manually_viewed_with_view_image": true
+    }
+  ],
+  "english_visual_review_open_blockers": [],
+  "screenshot_storage_note": "Selected review screenshots are published in this folder. Full viewport/panorama captures and supplemental originals are retained in the local candidate review bundle. Initial incomplete captures are retained as such, with supplemental bottom captures closing the evidence gaps."
+}
