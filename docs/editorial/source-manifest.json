@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-12T14:04:17.262865+00:00",
+  "capture_date": "2026-11-12",
+  "source_refs_checked_at_utc": "2026-11-12T13:59:59.415284+00:00",
+  "scope": "Fresh CUA screenshots of live public products using explicitly constructed materials. No product code was changed.",
+  "source_ref_scope": "Remote main refs checked alongside capture; source commit references are not a server-side deployment attestation.",
+  "products": [
+    {
+      "id": "eval",
+      "repository": "AndyZhang666666/llm-output-eval",
+      "source_commit": "af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40",
+      "source_url": "https://github.com/AndyZhang666666/llm-output-eval/tree/af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40",
+      "experience_url": "https://andyzhang666666.github.io/llm-output-eval/workspace/",
+      "design_url": "https://github.com/AndyZhang666666/llm-output-eval#readme",
+      "task_loop_url": "https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md"
+    },
+    {
+      "id": "taste",
+      "repository": "AndyZhang666666/AndyZhang666666.github.io",
+      "source_commit": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "source_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/174399eef34fcdaae22926585dcf9066d1a283bb",
+      "experience_url": "https://andyzhang666666.github.io/tasteroom/",
+      "design_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom#readme",
+      "task_loop_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md"
+    },
+    {
+      "id": "bundle",
+      "repository": "AndyZhang666666/bundle-lab",
+      "source_commit": "062b6563a9e587c27040f6fc596184f58d0407b3",
+      "source_url": "https://github.com/AndyZhang666666/bundle-lab/tree/062b6563a9e587c27040f6fc596184f58d0407b3",
+      "experience_url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+      "design_url": "https://github.com/AndyZhang666666/bundle-lab#readme",
+      "task_loop_url": "https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md"
+    },
+    {
+      "id": "rag",
+      "repository": "AndyZhang666666/AndyZhang666666.github.io",
+      "source_commit": "174399eef34fcdaae22926585dcf9066d1a283bb",
+      "source_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/174399eef34fcdaae22926585dcf9066d1a283bb",
+      "experience_url": "https://andyzhang666666.github.io/rag-lab/",
+      "design_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab#readme",
+      "task_loop_url": "https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md"
+    }
+  ],
+  "scenarios": {
+    "eval": {
+      "material": "constructed 50-character short Chinese fiction draft",
+      "versions": [
+        "V1: original with human dialogue-naturalness observations",
+        "V2: revised draft with literal additions and deletions"
+      ],
+      "model_calls": false,
+      "model_scores_present": false,
+      "human_feedback": "Quote and human dialogue observation saved separately from model scores. No model score is shown in these captures."
+    },
+    "taste": {
+      "material": "same default copy and main image in both scenes",
+      "personal_scene": {
+        "authorised_rules": 1,
+        "rule": "font",
+        "layout": "default Swiss"
+      },
+      "work_scene": {
+        "authorised_rules": 1,
+        "rule": "explicit deconstruction layout"
+      },
+      "comparison": "read-only; no preference memory write from opening comparison"
+    },
+    "bundle": {
+      "material": "built-in synthetic orders; cola and chicken-leg rice",
+      "discount_rate": 0.12,
+      "new_adoption_rate_mid_case": 0.12,
+      "existing_customer_discount_take_up": 1,
+      "normalisation": "per 100 covered orders; not observed order count",
+      "displayed_incremental_margin": -49.51,
+      "displayed_new_margin_contribution": 46.11,
+      "displayed_existing_customer_discount_loss": 95.61,
+      "currency": "CNY",
+      "rounding": "Each UI value is rounded independently from its underlying calculation. Do not recompute or alter the displayed total using rounded displayed components.",
+      "excluded_costs": [
+        "fulfilment",
+        "inventory",
+        "operations"
+      ],
+      "interpretation": "conditional calculation, not realised revenue or net profit"
+    },
+    "rag": {
+      "material": "constructed monitor-loan policy pasted by operator; states a maximum of 14 days",
+      "human_draft": "maximum of 12 days",
+      "business_date_before": "2026-10-28",
+      "business_date_after": "2026-11-12",
+      "selected_evidence_after_change": "previous evidence requires review",
+      "export_after_change": "disabled until applicability is reconfirmed",
+      "model_calls": false,
+      "interpretation": "local retrieval and rule checks; a number match does not establish semantic correctness"
+    }
+  },
+  "raw_screenshots": [
+    {
+      "path": "raw/bundle-ledger.jpg",
+      "product": "bundle",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 61296,
+      "sha256": "59f0ae1b5951fbd75c8a57a2889b888047d3c6aaedc9a74e17b7cf82c8995bd2",
+      "modified_after_capture": false
+    },
+    {
+      "path": "raw/eval-diff.jpg",
+      "product": "eval",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 62313,
+      "sha256": "91ef2c089f8e246b9a6598f91529874e119e94819146f21e74396eca3722daaa",
+      "modified_after_capture": false
+    },
+    {
+      "path": "raw/eval-review.jpg",
+      "product": "eval",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 61521,
+      "sha256": "642316167a3def94662fc605c35ca3ab59533f1a24d98d142f87f09533ebc6fc",
+      "modified_after_capture": false
+    },
+    {
+      "path": "raw/eval-revision.jpg",
+      "product": "eval",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 56172,
+      "sha256": "c47685b6d656846c8f43cfb28133198e568f73fd3415e46cd45b0c8b151ecc72",
+      "modified_after_capture": false
+    },
+    {
+      "path": "raw/rag-condition.jpg",
+      "product": "rag",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 73757,
+      "sha256": "9255610252c7447f1833232d2103f2f3484c0d793ef1e51a5433b367b303d6e2",
+      "modified_after_capture": false
+    },
+    {
+      "path": "raw/rag-numeric.jpg",
+      "product": "rag",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 94677,
+      "sha256": "962aa14621e2f78c4b344335b297c92bb1c173dc80174d73ee940d8a26f6bd68",
+      "modified_after_capture": false
+    },
+    {
+      "path": "raw/taste-scene.jpg",
+      "product": "taste",
+      "format": "image/jpeg",
+      "capture_date": "2026-11-12",
+      "capture_method": "fresh CUA browser viewport screenshot",
+      "width": 1265,
+      "height": 712,
+      "bytes": 51230,
+      "sha256": "31f1d1f6a7d420d92c216bc7ffc2bf987a44151cde3c081ec36d06b8b291ce64",
+      "modified_after_capture": false
+    }
+  ],
+  "presentation_regions": [
+    {
+      "source": "raw/eval-review.jpg",
+      "x": 208,
+      "y": 80,
+      "width": 1015,
+      "height": 623,
+      "method": "nested SVG viewBox framing; original JPEG unchanged"
+    },
+    {
+      "source": "raw/eval-diff.jpg",
+      "x": 208,
+      "y": 90,
+      "width": 495,
+      "height": 405,
+      "method": "nested SVG viewBox framing; original JPEG unchanged"
+    },
+    {
+      "source": "raw/taste-scene.jpg",
+      "x": 96,
+      "y": 187,
+      "width": 1045,
+      "height": 430,
+      "method": "nested SVG viewBox framing; original JPEG unchanged"
+    },
+    {
+      "source": "raw/bundle-ledger.jpg",
+      "x": 392,
+      "y": 270,
+      "width": 825,
+      "height": 395,
+      "method": "nested SVG viewBox framing; original JPEG unchanged"
+    },
+    {
+      "source": "raw/rag-numeric.jpg",
+      "x": 307,
+      "y": 22,
+      "width": 916,
+      "height": 550,
+      "method": "nested SVG viewBox framing; original JPEG unchanged"
+    },
+    {
+      "source": "raw/rag-condition.jpg",
+      "x": 311,
+      "y": 140,
+      "width": 565,
+      "height": 100,
+      "method": "nested SVG viewBox framing; original JPEG unchanged"
+    }
+  ],
+  "presentation_constraints": [
+    "Only surrounding editorial composition and SVG viewBox framing may change.",
+    "No UI values, labels or product states are redrawn or edited.",
+    "Small erroneous top-left CUA clips are excluded from published source material."
+  ],
+  "replay": {
+    "status": "encoded",
+    "path": "docs/editorial/replay/eval-task-7s.gif",
+    "frames": [
+      "eval-review.jpg",
+      "eval-revision.jpg",
+      "eval-diff.jpg"
+    ],
+    "duration_ms": 7000,
+    "frame_durations_ms": [
+      2600,
+      1800,
+      2600
+    ],
+    "bytes": 371590,
+    "sha256": "ceb8fee9531eececb63f35dd38abc6996e0a4ac93405536b1741c4277d081b4b",
+    "capture_mode": "three real UI states encoded as a timed task sequence; not a continuous recording or latency measurement",
+    "autoplay_on_default_readme": false
+  },
+  "reference_licenses": [
+    {
+      "path": "licenses/Paper-Signal-LICENSE.txt",
+      "sha256": "2159bbc6afa1dc438d7fbe05c9a5f6e6ab6aaa0f790a770865736376efdb225c",
+      "bytes": 1705
+    },
+    {
+      "path": "licenses/Swiss-Grid-LICENSE.txt",
+      "sha256": "3bccf8c4c1cab670b828276f027b983ce323666326072a0f388767507d56f296",
+      "bytes": 1092
+    }
+  ],
+  "display_assets": [
+    {
+      "path": "assets/editorial/bundle-dark.svg",
+      "bytes": 82670,
+      "sha256": "6b391bee2d187a1ed55a82ec39a229f8e93683638ebcd5f05cd08da5bed5f42b"
+    },
+    {
+      "path": "assets/editorial/bundle-light.svg",
+      "bytes": 82670,
+      "sha256": "e821b03a79063439521dfbf5e61feb29617fa3fa7c0d25e39b99e07c7d121ac4"
+    },
+    {
+      "path": "assets/editorial/cover-dark.svg",
+      "bytes": 1074,
+      "sha256": "ca18e417ba51050ed935244ca4a638049b330b5bb5496cb012775f7e2ca1fdb2"
+    },
+    {
+      "path": "assets/editorial/cover-light.svg",
+      "bytes": 1074,
+      "sha256": "361558eb1af7002463f3b8163d982b6e3fe5d173f6898b33f6f4585a1dcbe092"
+    },
+    {
+      "path": "assets/editorial/cover-narrow-dark.svg",
+      "bytes": 893,
+      "sha256": "1c9d99735d8af2ef31f98685abdb4d0ec72ad54e13a0637a2b4c4473fe350dd5"
+    },
+    {
+      "path": "assets/editorial/cover-narrow-light.svg",
+      "bytes": 893,
+      "sha256": "bf755f76a7fedef27f043895aad3d44ec45774db48d8e13e50e8a303e41a559e"
+    },
+    {
+      "path": "assets/editorial/eval-dark.svg",
+      "bytes": 166723,
+      "sha256": "980cc73c7af16d3fd13850a694c440e0caa53e6a4d603047c739aa1d55d673bf"
+    },
+    {
+      "path": "assets/editorial/eval-light.svg",
+      "bytes": 166723,
+      "sha256": "7a2dbded3b97f0d205acb906b5e5b11a2183e4bf40ce3bd15c3e974eecef8f6a"
+    },
+    {
+      "path": "assets/editorial/eval-narrow-dark.svg",
+      "bytes": 166235,
+      "sha256": "1c4c9deccc71f261ac6ea95b50f8374ea421f89b57f1423fcb3ab580e92c782e"
+    },
+    {
+      "path": "assets/editorial/eval-narrow-light.svg",
+      "bytes": 166235,
+      "sha256": "e40726630ebbcb4cc606527d38096693361c3c82bd24730594afd0cd5611abe9"
+    },
+    {
+      "path": "assets/editorial/rag-dark.svg",
+      "bytes": 225833,
+      "sha256": "f9ff849075f388373eaa145140ffc0ef5d012528db93b6e65d3d5a30c3efde60"
+    },
+    {
+      "path": "assets/editorial/rag-light.svg",
+      "bytes": 225833,
+      "sha256": "05560c6e14ed84321e482cb0715627528695243ad65c71b99ae17608c5096fa9"
+    },
+    {
+      "path": "assets/editorial/rag-narrow-dark.svg",
+      "bytes": 225816,
+      "sha256": "bf242d9ef879e38447d5d1f0b1c98acb3fa6bf4251c48bf75efe211886776620"
+    },
+    {
+      "path": "assets/editorial/rag-narrow-light.svg",
+      "bytes": 225816,
+      "sha256": "cb904fde17b9a3664fcf72d9ce102505033da441105e5bd358c26d1440820a70"
+    },
+    {
+      "path": "assets/editorial/taste-dark.svg",
+      "bytes": 69273,
+      "sha256": "1e59ae8ab302f83a913f2be8236bf8e984f85a3d2782ef28974aac4a539de903"
+    },
+    {
+      "path": "assets/editorial/taste-light.svg",
+      "bytes": 69273,
+      "sha256": "5dd41ab89e539d0f924bae8222aea58278e3757e1c9873585714f6126b913f62"
+    }
+  ],
+  "default_static_bytes_per_theme": {
+    "light": 545573,
+    "dark": 545573
+  }
+}
