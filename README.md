@@ -15,7 +15,9 @@
 
 ### Eval Lab · 复核一条 2/5 的评语
 
-一段在半句处截断的小说开场，模型给了结构 2/5。读它引用的原句，再判断这条评语是否成立。你的复核意见单独记录。
+一段在半句处截断的小说开场，模型给了结构 2/5。读它引用的原句，再判断这条评语是否成立。
+
+我保留裁判的原始评分，把人的异议另记成可回看的记录，方便之后讨论是文稿有问题，还是量表需要校准。[看复核与校准的实现 · PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
 
 [复核一条 2/5 的评语](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [用自己的文稿](https://andyzhang666666.github.io/llm-output-eval/workspace/) · [设计过程](https://andyzhang666666.github.io/cases/trust/) · [源码](https://github.com/AndyZhang666666/llm-output-eval)
 
@@ -24,19 +26,19 @@
 <h3>偏爱实验室 · TasteRoom</h3>
 <p>喜欢这张海报，要记到哪个场景？</p>
 <a href="https://andyzhang666666.github.io/tasteroom/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png" alt="偏爱实验室 · TasteRoom: 喜欢这张海报，要记到哪个场景？" width="100%"></a>
-<p>用同一份文案与主图对照个人、工作规则，再明确决定偏好范围。</p>
+<p>我把试看的海报和记住的偏好分开：同一张图可以分别试个人和工作风格，明确确认后才保存到对应场景。 <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">看偏好保存流程 · PR #8</a></p>
 <p><sub>本机设计规则 / 查看对照不写记忆</sub><br><a href="https://andyzhang666666.github.io/tasteroom/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">源码</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png">大图</a></p>
 
 <h3>Bundle Lab</h3>
 <p>套餐卖得更多，为什么可能少赚？</p>
 <a href="https://andyzhang666666.github.io/bundle-lab/simulate/"><img src="https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png" alt="Bundle Lab: 套餐卖得更多，为什么可能少赚？" width="100%"></a>
-<p>从自己的商品或 CSV 建立基线，拆开新增贡献与既有让利，再冻结验证计划。</p>
+<p>做促销时，原本就会下单的人也可能领走折扣。我把这部分让利单列，并在试验前存下保本门槛，让后续订单能按当时的假设核对。 <a href="https://github.com/AndyZhang666666/bundle-lab/pull/4">看账本和保本核对 · PR #4</a></p>
 <p><sub>合成订单 / 自有输入 / 条件推演</sub><br><a href="https://andyzhang666666.github.io/bundle-lab/simulate/">体验</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">源码</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png">大图</a></p>
 
 <h3>可信 RAG 实验台</h3>
 <p>答复里的数字，能回到哪条依据？</p>
 <a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png" alt="可信 RAG 实验台: 答复里的数字，能回到哪条依据？" width="100%"></a>
-<p>导入自己的资料，选择引用、编辑答复，核对数字与日期、权限变化。</p>
+<p>同一句答复，换个日期或读者，能引用的资料可能就变了。我让使用者直接对照两种条件下的依据，逐个核查草稿中的数字。 <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">看引用范围对照 · PR #8</a></p>
 <p><sub>本机检索与人工草稿 / 默认不调用模型</sub><br><a href="https://andyzhang666666.github.io/rag-lab/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab">源码</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png">大图</a></p>
 
 Eval 配图取自 11 月 15 日的公开 e06 回放。其余三项截图来自 11 月 11 日的真实界面与构造验收材料。体验入口打开当前产品；截图固定到对应源码版本。[素材来源](docs/assets/featured-sources-20261112.json)
@@ -45,18 +47,10 @@ Eval 配图取自 11 月 15 日的公开 e06 回放。其余三项截图来自 1
 
 | 日期 | 已发布的变化 | 实现记录 |
 | --- | --- | --- |
-| 2026-11-15 | [安心装修](https://andyzhang666666.github.io/renovation/) · 在客餐厅图上选家具，核对尺寸与送装费用，离线保存家庭交接单。 | [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [迭代记录](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
+| 2026-11-15 | [安心装修](https://andyzhang666666.github.io/renovation/) · 家具尺寸与送装费用可离线核对。上线后用带旧缓存的浏览器复验，发现新卡片出现后又消失，修复后重新从官网分类走通了入口。 | [官网入口修复 · PR #13](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13) · [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [迭代记录](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
 | 2026-11-11 | Eval：保存修改版本、核对逐字增删、复制本版送评任务包；存疑依据可整理为量表校准备忘草稿。 | [Eval PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5) |
 | 2026-11-11 | Bundle：调整既有顾客领折扣的假设，将矩阵预演存成方案，用观察计数核对冻结计划的保本门槛。 | [Bundle PR #4](https://github.com/AndyZhang666666/bundle-lab/pull/4) |
 | 2026-11-11 | 偏爱支持同文同图的场景授权对照；RAG 增加草稿数字核查和日期、身份变化前后的依据范围对照。 | [产品发布 PR #8](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8) · [RAG 资源版本补丁 #9](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9) |
-
-## 我在这些产品里作的判断
-
-**找到引句，还要核对评语。** Eval 将模型原分、用途适用性和人工意见分别保留。排除不适用维度后的参考均分另列；校准备忘只是一份待审阅草稿。[看设计依据](https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md)
-
-**查看一个可能性，不等于同意记住它。** 偏爱的个人/工作对照只读；关闭后，原画布、未应用文案和已保存偏好都还在。临时试用也要经过明确确认，才形成长期规则。[看授权设计](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md)
-
-**验证计划要保留当时的条件。** Bundle 用冻结计划的保本点核对后来的观察，当前工作输入的变化不会改写基准。未知值保持未知；达到门槛之后，仍需作推广判断。[看账本与验证设计](https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md)
 
 ## 继续看其他方向
 
