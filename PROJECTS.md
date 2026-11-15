@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | [Agent 执行评测台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/agent-bench) · [体验](https://andyzhang666666.github.io/agent-bench/) | 响应超时后，查原操作与最终工单；审批、权限与幂等共同约束执行。 | 程序执行记录回放；Python / SQLite 后端可本地运行。 |
 | [可信 RAG 实验台](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab) · [体验](https://andyzhang666666.github.io/rag-lab/) | 导入个人资料，检索并选择引用、编辑答复；核对数字与日期、身份变化后的依据范围。 | TXT/Markdown/文字 PDF 本机解析与检索；草稿由用户确认，规则提示不等于语义认证；可选后端另行配置。 |
-| [Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [体验](https://andyzhang666666.github.io/llm-output-eval/workspace/) | 人工审阅、处理项与改稿对照；本版送评任务包和量表校准备忘。 | 自有文稿在本机审阅；6 个样本的 18 次历史输出另行回放；可选模型接口，原分保留。 |
+| [Eval Lab](https://github.com/AndyZhang666666/llm-output-eval) · [复核一条 2/5 的评语](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [用自己的文稿](https://andyzhang666666.github.io/llm-output-eval/workspace/) | 人工审阅、处理项与改稿对照；本版送评任务包和量表校准备忘。 | 自有文稿在本机审阅；6 个样本的 18 次历史输出另行回放；可选模型接口，原分保留。 |
 | [Filing Eval](https://github.com/AndyZhang666666/filing-eval) · [体验](https://andyzhang666666.github.io/demos/filing-eval/) | 断言错误与重要遗漏分别回到原文核验。 | 28 条构造公告回放；人工记录独立保存。 |
 
 ## 生活与创新

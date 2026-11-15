@@ -13,38 +13,33 @@
 
 ## 从这里开始
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<p><strong>Eval Lab</strong><br>改稿之后，怎样保留判断依据？</p>
-<a href="https://andyzhang666666.github.io/llm-output-eval/workspace/"><img src="https://raw.githubusercontent.com/AndyZhang666666/llm-output-eval/af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40/docs/assets/task-loops-20261111/static/workspace-diff-1280.png" alt="Eval Lab: 改稿之后，怎样保留判断依据？" width="100%"></a>
-<p>对照原稿与修改稿，核对增删，再带走当前版本的送评任务包。</p>
-<p><sub>人工审阅 / 历史输出分开保存</sub><br><a href="https://andyzhang666666.github.io/llm-output-eval/workspace/">体验</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval">源码</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval/blob/af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40/docs/assets/task-loops-20261111/static/workspace-diff-1280.png">大图</a></p>
-</td>
-<td width="50%" valign="top">
-<p><strong>偏爱实验室 · TasteRoom</strong><br>喜欢这张海报，要记到哪个场景？</p>
+### Eval Lab · 复核一条 2/5 的评语
+
+一段在半句处截断的小说开场，模型给了结构 2/5。读它引用的原句，再判断这条评语是否成立。你的复核意见单独记录。
+
+[复核一条 2/5 的评语](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [用自己的文稿](https://andyzhang666666.github.io/llm-output-eval/workspace/) · [设计过程](https://andyzhang666666.github.io/cases/trust/) · [源码](https://github.com/AndyZhang666666/llm-output-eval)
+
+[![Eval Lab · e06 原文引句与结构维度的原始评分](assets/eval-e06.jpg)](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure)
+
+<h3>偏爱实验室 · TasteRoom</h3>
+<p>喜欢这张海报，要记到哪个场景？</p>
 <a href="https://andyzhang666666.github.io/tasteroom/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png" alt="偏爱实验室 · TasteRoom: 喜欢这张海报，要记到哪个场景？" width="100%"></a>
 <p>用同一份文案与主图对照个人、工作规则，再明确决定偏好范围。</p>
 <p><sub>本机设计规则 / 查看对照不写记忆</sub><br><a href="https://andyzhang666666.github.io/tasteroom/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">源码</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png">大图</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<p><strong>Bundle Lab</strong><br>套餐卖得更多，为什么可能少赚？</p>
+
+<h3>Bundle Lab</h3>
+<p>套餐卖得更多，为什么可能少赚？</p>
 <a href="https://andyzhang666666.github.io/bundle-lab/simulate/"><img src="https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png" alt="Bundle Lab: 套餐卖得更多，为什么可能少赚？" width="100%"></a>
 <p>从自己的商品或 CSV 建立基线，拆开新增贡献与既有让利，再冻结验证计划。</p>
 <p><sub>合成订单 / 自有输入 / 条件推演</sub><br><a href="https://andyzhang666666.github.io/bundle-lab/simulate/">体验</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">源码</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png">大图</a></p>
-</td>
-<td width="50%" valign="top">
-<p><strong>可信 RAG 实验台</strong><br>答复里的数字，能回到哪条依据？</p>
+
+<h3>可信 RAG 实验台</h3>
+<p>答复里的数字，能回到哪条依据？</p>
 <a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png" alt="可信 RAG 实验台: 答复里的数字，能回到哪条依据？" width="100%"></a>
 <p>导入自己的资料，选择引用、编辑答复，核对数字与日期、权限变化。</p>
 <p><sub>本机检索与人工草稿 / 默认不调用模型</sub><br><a href="https://andyzhang666666.github.io/rag-lab/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab">源码</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png">大图</a></p>
-</td>
-</tr>
-</table>
 
-截图来自 2026-11-11 的真实界面与构造验收材料。体验入口打开当前产品；截图固定到对应源码版本。[素材来源](docs/assets/featured-sources-20261112.json)
+Eval 配图取自 11 月 15 日的公开 e06 回放。其余三项截图来自 11 月 11 日的真实界面与构造验收材料。体验入口打开当前产品；截图固定到对应源码版本。[素材来源](docs/assets/featured-sources-20261112.json)
 
 ## 最近交付
 

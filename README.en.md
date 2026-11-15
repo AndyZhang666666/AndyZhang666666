@@ -13,38 +13,33 @@ I turn business questions into usable products, then check whether they solve th
 
 ## Start here
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<p><strong>Eval Lab</strong><br>What supports the next revision?</p>
-<a href="https://andyzhang666666.github.io/llm-output-eval/workspace/"><img src="https://raw.githubusercontent.com/AndyZhang666666/llm-output-eval/af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40/docs/assets/task-loops-20261111/static/workspace-diff-1280.png" alt="Eval Lab: What supports the next revision?" width="100%"></a>
-<p>Compare saved drafts, inspect exact changes and take the current version for reassessment.</p>
-<p><sub>Manual review / historical outputs kept separate</sub><br><a href="https://andyzhang666666.github.io/llm-output-eval/workspace/">Try it</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval">Source</a> · <a href="https://github.com/AndyZhang666666/llm-output-eval/blob/af60f5b096bfd4e09ef0e5c94d5f8a93f44a1b40/docs/assets/task-loops-20261111/static/workspace-diff-1280.png">Full image</a></p>
-</td>
-<td width="50%" valign="top">
-<p><strong>TasteRoom</strong><br>Where should a preference apply?</p>
+### Eval Lab · Review a 2/5 judgement
+
+The judge gave an unfinished story opening 2/5 for structure. Read the line it cited, then decide whether the comment holds up. Your review is recorded separately.
+
+[Review a 2/5 judgement](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [Use your own draft](https://andyzhang666666.github.io/llm-output-eval/workspace/) · [Design decisions](https://andyzhang666666.github.io/cases/trust/) · [Source](https://github.com/AndyZhang666666/llm-output-eval)
+
+[![Eval Lab · e06 · source quote and the original structure score](assets/eval-e06.jpg)](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure)
+
+<h3>TasteRoom</h3>
+<p>Where should a preference apply?</p>
 <a href="https://andyzhang666666.github.io/tasteroom/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png" alt="TasteRoom: Where should a preference apply?" width="100%"></a>
 <p>Compare personal and work rules on the same copy and image, then choose its scope.</p>
 <p><sub>Local design rules / comparison saves no preference</sub><br><a href="https://andyzhang666666.github.io/tasteroom/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">Source</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png">Full image</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<p><strong>Bundle Lab</strong><br>Can selling more earn less?</p>
+
+<h3>Bundle Lab</h3>
+<p>Can selling more earn less?</p>
 <a href="https://andyzhang666666.github.io/bundle-lab/simulate/"><img src="https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png" alt="Bundle Lab: Can selling more earn less?" width="100%"></a>
 <p>Use your products or CSV, separate new contribution from discount leakage and freeze a test plan.</p>
 <p><sub>Synthetic orders / personal inputs / conditional model</sub><br><a href="https://andyzhang666666.github.io/bundle-lab/simulate/">Try it</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">Source</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png">Full image</a></p>
-</td>
-<td width="50%" valign="top">
-<p><strong>Trustworthy RAG Lab</strong><br>Which source supports this number?</p>
+
+<h3>Trustworthy RAG Lab</h3>
+<p>Which source supports this number?</p>
 <a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png" alt="Trustworthy RAG Lab: Which source supports this number?" width="100%"></a>
 <p>Import documents, select quotations and draft an answer; inspect numbers and scope changes.</p>
 <p><sub>Local retrieval and human drafts / no model call by default</sub><br><a href="https://andyzhang666666.github.io/rag-lab/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab">Source</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png">Full image</a></p>
-</td>
-</tr>
-</table>
 
-Screenshots show actual interfaces with constructed acceptance material from 2026-11-11. Demo links open the current products; images are pinned to their source versions. [Image provenance](docs/assets/featured-sources-20261112.json)
+The Eval image shows the public e06 replay on 15 November. The other three images show the actual interfaces with constructed acceptance material from 11 November. Demo links open the current products; images are pinned to their source versions. [Image provenance](docs/assets/featured-sources-20261112.json)
 
 ## Recently shipped
 
