@@ -15,7 +15,7 @@ I turn business questions into usable products, then check whether they solve th
 
 ### Eval Lab · Review a 2/5 judgement
 
-The judge gave an unfinished story opening 2/5 for structure. Read the line it cited, then decide whether the comment holds up. Your review is recorded separately.
+The judge gave an unfinished story opening 2/5 for structure. Read the line it cited, then decide whether the comment holds up. I keep the judge’s original score and record the reviewer’s disagreement separately. Later, the team can revisit whether the draft or the rubric needs work. [Review and calibration changes · PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
 
 [Review a 2/5 judgement](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [Use your own draft](https://andyzhang666666.github.io/llm-output-eval/workspace/) · [Design decisions](https://andyzhang666666.github.io/cases/trust/) · [Source](https://github.com/AndyZhang666666/llm-output-eval)
 
@@ -24,19 +24,19 @@ The judge gave an unfinished story opening 2/5 for structure. Read the line it c
 <h3>TasteRoom</h3>
 <p>Where should a preference apply?</p>
 <a href="https://andyzhang666666.github.io/tasteroom/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png" alt="TasteRoom: Where should a preference apply?" width="100%"></a>
-<p>Compare personal and work rules on the same copy and image, then choose its scope.</p>
+<p>I let people try the same poster with personal and work rules side by side. A preference is saved to a context only when the user confirms it. <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">Preference confirmation · PR #8</a></p>
 <p><sub>Local design rules / comparison saves no preference</sub><br><a href="https://andyzhang666666.github.io/tasteroom/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">Source</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png">Full image</a></p>
 
 <h3>Bundle Lab</h3>
 <p>Can selling more earn less?</p>
 <a href="https://andyzhang666666.github.io/bundle-lab/simulate/"><img src="https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png" alt="Bundle Lab: Can selling more earn less?" width="100%"></a>
-<p>Use your products or CSV, separate new contribution from discount leakage and freeze a test plan.</p>
+<p>Customers who would have bought anyway can also claim a discount. I account for that cost separately and save the break-even threshold before the trial, so later orders can be checked against the original assumptions. <a href="https://github.com/AndyZhang666666/bundle-lab/pull/4">Ledger and break-even check · PR #4</a></p>
 <p><sub>Synthetic orders / personal inputs / conditional model</sub><br><a href="https://andyzhang666666.github.io/bundle-lab/simulate/">Try it</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">Source</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png">Full image</a></p>
 
 <h3>Trustworthy RAG Lab</h3>
 <p>Which source supports this number?</p>
 <a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png" alt="Trustworthy RAG Lab: Which source supports this number?" width="100%"></a>
-<p>Import documents, select quotations and draft an answer; inspect numbers and scope changes.</p>
+<p>A different date or reader can change which sources support the same answer. I show the two sets of sources side by side so the writer can check each number in the draft. <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">Compare evidence across conditions · PR #8</a></p>
 <p><sub>Local retrieval and human drafts / no model call by default</sub><br><a href="https://andyzhang666666.github.io/rag-lab/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab">Source</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png">Full image</a></p>
 
 The Eval image shows the public e06 replay on 15 November. The other three images show the actual interfaces with constructed acceptance material from 11 November. Demo links open the current products; images are pinned to their source versions. [Image provenance](docs/assets/featured-sources-20261112.json)
@@ -45,18 +45,10 @@ The Eval image shows the public e06 replay on 15 November. The other three image
 
 | Date | Released changes | Implementation record |
 | --- | --- | --- |
-| 2026-11-15 | [Home Notes](https://andyzhang666666.github.io/renovation/) · Compare furniture against a floor plan, check delivered cost and save a family handoff offline. | [Source](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [Iterations](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
+| 2026-11-15 | [Home Notes](https://andyzhang666666.github.io/renovation/) · Compare fit and delivered cost offline. After launch I saw the new card disappear in a browser with a cached directory, fixed the cache and retested the route from the portfolio filter. | [Directory cache fix · PR #13](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13) · [Source](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [Iterations](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
 | 2026-11-11 | Eval: compare exact changes between saved drafts, copy the current version's task package and collect disputed evidence in a draft calibration memo. | [Eval PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5) |
 | 2026-11-11 | Bundle: adjust existing customers' discount take-up, save matrix previews as scenarios and check later counts against the plan's frozen break-even boundary. | [Bundle PR #4](https://github.com/AndyZhang666666/bundle-lab/pull/4) |
 | 2026-11-11 | TasteRoom: compare scoped rules on the same copy and image. RAG: inspect draft numbers and compare evidence scope after date or role changes. | [Product release PR #8](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8) · [RAG asset-version patch #9](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9) |
-
-## Decisions behind the products
-
-**A quotation can exist while the judgement is wrong.** Eval keeps model scores, intended-use applicability and human observations separate. A reference mean that excludes unsuitable dimensions is shown independently. Calibration suggestions remain reviewable drafts. [Design and boundaries](https://github.com/AndyZhang666666/llm-output-eval/blob/main/docs/TASK-LOOPS-20261111.md)
-
-**Inspecting a possibility does not grant permission to remember it.** TasteRoom's personal/work comparison leaves the active canvas, pending copy and saved preferences unchanged. A trial becomes a lasting rule only after explicit confirmation. [Consent design](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md)
-
-**A frozen plan needs its original comparison basis.** Bundle checks later observations against the saved plan's break-even boundary, even after working inputs change. Unknown values stay unknown. Crossing the boundary still leaves a rollout decision to make. [Ledger and validation design](https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md)
 
 ## Explore further
 
