@@ -2,7 +2,7 @@
 
 [Home](README.en.md) · [中文](PROJECTS.md)
 
-Browse by the decision each project examines. Agent Bench, RAG Lab, TasteRoom and Suibianju live inside the personal-site repository; they do not have separate repositories.
+Browse by the decision each project examines. Agent Bench, RAG Lab, TasteRoom, Suibianju and Home Notes live inside the personal-site repository; they do not have separate repositories.
 
 ## Agents and evaluation
 
@@ -17,6 +17,7 @@ Browse by the decision each project examines. Agent Bench, RAG Lab, TasteRoom an
 
 | Project | Product question and mechanism | Run mode |
 | --- | --- | --- |
+| [Home Notes](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [Demo](https://andyzhang666666.github.io/renovation/) · [Iterations](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) | Compare net space, furniture dimensions and delivered prices. | Fictional quotes; offline HTML, local handoff snapshots and text export. |
 | [TasteRoom](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [Demo](https://andyzhang666666.github.io/tasteroom/) | Edit original posters, compare scoped authorisations on the same copy and image, and explicitly confirm reversible preferences. | Local design rules and exports; comparisons save no preferences. No model or image-generation call. |
 | [Suibianju](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [Demo](https://andyzhang666666.github.io/suibianju/) | Confirm constraints, preview voluntary changes and require agreement on the same proposal. | A single-person negotiation simulation with 3–5 fictional roles. |
 | [Grounded Choice](https://github.com/AndyZhang666666/grounded-choice) · [Demo](https://andyzhang666666.github.io/grounded-choice/) | Compare choices while retaining conflicting experiences and applicability. | Original simulated sources; no live search or automatic price comparison. |

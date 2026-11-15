@@ -45,6 +45,7 @@ Eval 配图取自 11 月 15 日的公开 e06 回放。其余三项截图来自 1
 
 | 日期 | 已发布的变化 | 实现记录 |
 | --- | --- | --- |
+| 2026-11-15 | [安心装修](https://andyzhang666666.github.io/renovation/) · 在客餐厅图上选家具，核对尺寸与送装费用，离线保存家庭交接单。 | [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [迭代记录](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
 | 2026-11-11 | Eval：保存修改版本、核对逐字增删、复制本版送评任务包；存疑依据可整理为量表校准备忘草稿。 | [Eval PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5) |
 | 2026-11-11 | Bundle：调整既有顾客领折扣的假设，将矩阵预演存成方案，用观察计数核对冻结计划的保本门槛。 | [Bundle PR #4](https://github.com/AndyZhang666666/bundle-lab/pull/4) |
 | 2026-11-11 | 偏爱支持同文同图的场景授权对照；RAG 增加草稿数字核查和日期、身份变化前后的依据范围对照。 | [产品发布 PR #8](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8) · [RAG 资源版本补丁 #9](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9) |

@@ -2,7 +2,7 @@
 
 [返回主页](README.md) · [English](PROJECTS.en.md)
 
-按项目要解决的判断来浏览。Agent 台、RAG 台、偏爱实验室和随便局的代码位于个人网站仓库内；其余工具在独立仓库维护。
+按项目要解决的判断来浏览。Agent 台、RAG 台、偏爱实验室、随便局和安心装修的代码位于个人网站仓库内；其余工具在独立仓库维护。
 
 ## AI / Agent 与评测
 
@@ -17,6 +17,7 @@
 
 | 项目 | 问题与机制 | 运行方式 |
 | --- | --- | --- |
+| [安心装修](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [体验](https://andyzhang666666.github.io/renovation/) · [迭代](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) | 看中的家具放得下吗？核对摆位净尺寸与送装总价。 | 虚构报价；离线 HTML、本机交接单与文本导出。 |
 | [偏爱实验室](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom) · [体验](https://andyzhang666666.github.io/tasteroom/) | 编辑原创海报，对照同文同图的场景授权，明确确认可撤回的偏好记忆。 | 本机设计规则与导出；场景对照不写记忆，不调用模型或生图服务。 |
 | [随便局](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/suibianju) · [体验](https://andyzhang666666.github.io/suibianju/) | 先确认底线，预演自愿调整，同版全员接受后形成决定。 | 3–5 位虚构角色的单人协商模拟。 |
 | [有据 · Grounded Choice](https://github.com/AndyZhang666666/grounded-choice) · [体验](https://andyzhang666666.github.io/grounded-choice/) | 保留经验分歧与适用条件，比较方案并导出决定。 | 原创模拟资料；不做实时搜索或自动电商比价。 |

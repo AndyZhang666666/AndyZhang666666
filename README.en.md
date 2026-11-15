@@ -45,6 +45,7 @@ The Eval image shows the public e06 replay on 15 November. The other three image
 
 | Date | Released changes | Implementation record |
 | --- | --- | --- |
+| 2026-11-15 | [Home Notes](https://andyzhang666666.github.io/renovation/) · Compare furniture against a floor plan, check delivered cost and save a family handoff offline. | [Source](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [Iterations](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
 | 2026-11-11 | Eval: compare exact changes between saved drafts, copy the current version's task package and collect disputed evidence in a draft calibration memo. | [Eval PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5) |
 | 2026-11-11 | Bundle: adjust existing customers' discount take-up, save matrix previews as scenarios and check later counts against the plan's frozen break-even boundary. | [Bundle PR #4](https://github.com/AndyZhang666666/bundle-lab/pull/4) |
 | 2026-11-11 | TasteRoom: compare scoped rules on the same copy and image. RAG: inspect draft numbers and compare evidence scope after date or role changes. | [Product release PR #8](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8) · [RAG asset-version patch #9](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9) |
