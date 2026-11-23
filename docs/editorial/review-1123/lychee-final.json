@@ -1,0 +1,24 @@
+{
+  "total": 226,
+  "unique": 95,
+  "successful": 226,
+  "unknown": 0,
+  "unsupported": 0,
+  "timeouts": 0,
+  "redirects": 0,
+  "remaps": 0,
+  "excludes": 0,
+  "errors": 0,
+  "cached": 83,
+  "success_map": {},
+  "error_map": {},
+  "timeout_map": {},
+  "suggestion_map": {},
+  "redirect_map": {},
+  "excluded_map": {},
+  "duration": {
+    "secs": 7,
+    "nanos": 385460375
+  },
+  "detailed_stats": false
+}
