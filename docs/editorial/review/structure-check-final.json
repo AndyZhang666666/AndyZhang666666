@@ -1,0 +1,569 @@
+{
+  "checked_at_utc": "2026-11-12T14:30:21.655789+00:00",
+  "scope": "Read-only document/assets verification; only evidence files written. No git command, product execution, model call or remote mutation.",
+  "readmes": {
+    "README.en.md": {
+      "picture_count": 5,
+      "all_images_have_alt": true,
+      "relative_reference_count": 31,
+      "unresolved_placeholders": [],
+      "inline_style_or_script": [],
+      "assets_by_mode": {
+        "light_desktop": {
+          "paths": [
+            "assets/editorial/cover-light.svg",
+            "assets/editorial/eval-light.svg",
+            "assets/editorial/taste-light.svg",
+            "assets/editorial/bundle-light.svg",
+            "assets/editorial/rag-light.svg"
+          ],
+          "bytes": 545573
+        },
+        "light_mobile": {
+          "paths": [
+            "assets/editorial/cover-narrow-light.svg",
+            "assets/editorial/eval-narrow-light.svg",
+            "assets/editorial/taste-light.svg",
+            "assets/editorial/bundle-light.svg",
+            "assets/editorial/rag-narrow-light.svg"
+          ],
+          "bytes": 544882
+        },
+        "dark_desktop": {
+          "paths": [
+            "assets/editorial/cover-dark.svg",
+            "assets/editorial/eval-dark.svg",
+            "assets/editorial/taste-dark.svg",
+            "assets/editorial/bundle-dark.svg",
+            "assets/editorial/rag-dark.svg"
+          ],
+          "bytes": 545573
+        },
+        "dark_mobile": {
+          "paths": [
+            "assets/editorial/cover-narrow-dark.svg",
+            "assets/editorial/eval-narrow-dark.svg",
+            "assets/editorial/taste-dark.svg",
+            "assets/editorial/bundle-dark.svg",
+            "assets/editorial/rag-narrow-dark.svg"
+          ],
+          "bytes": 544882
+        }
+      }
+    },
+    "README.md": {
+      "picture_count": 5,
+      "all_images_have_alt": true,
+      "relative_reference_count": 31,
+      "unresolved_placeholders": [],
+      "inline_style_or_script": [],
+      "assets_by_mode": {
+        "light_desktop": {
+          "paths": [
+            "assets/editorial/cover-light.svg",
+            "assets/editorial/eval-light.svg",
+            "assets/editorial/taste-light.svg",
+            "assets/editorial/bundle-light.svg",
+            "assets/editorial/rag-light.svg"
+          ],
+          "bytes": 545573
+        },
+        "light_mobile": {
+          "paths": [
+            "assets/editorial/cover-narrow-light.svg",
+            "assets/editorial/eval-narrow-light.svg",
+            "assets/editorial/taste-light.svg",
+            "assets/editorial/bundle-light.svg",
+            "assets/editorial/rag-narrow-light.svg"
+          ],
+          "bytes": 544882
+        },
+        "dark_desktop": {
+          "paths": [
+            "assets/editorial/cover-dark.svg",
+            "assets/editorial/eval-dark.svg",
+            "assets/editorial/taste-dark.svg",
+            "assets/editorial/bundle-dark.svg",
+            "assets/editorial/rag-dark.svg"
+          ],
+          "bytes": 545573
+        },
+        "dark_mobile": {
+          "paths": [
+            "assets/editorial/cover-narrow-dark.svg",
+            "assets/editorial/eval-narrow-dark.svg",
+            "assets/editorial/taste-dark.svg",
+            "assets/editorial/bundle-dark.svg",
+            "assets/editorial/rag-narrow-dark.svg"
+          ],
+          "bytes": 544882
+        }
+      }
+    }
+  },
+  "relative_references": {
+    "checked_markdown_files": 11,
+    "checked_relative_targets": 91,
+    "failures": []
+  },
+  "raw_screenshots": {
+    "manifest_count": 7,
+    "directory_files": [
+      "bundle-ledger.jpg",
+      "eval-diff.jpg",
+      "eval-review.jpg",
+      "eval-revision.jpg",
+      "rag-condition.jpg",
+      "rag-numeric.jpg",
+      "taste-scene.jpg"
+    ],
+    "checks": [
+      {
+        "path": "raw/bundle-ledger.jpg",
+        "bytes": 61296,
+        "sha256": "59f0ae1b5951fbd75c8a57a2889b888047d3c6aaedc9a74e17b7cf82c8995bd2",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      },
+      {
+        "path": "raw/eval-diff.jpg",
+        "bytes": 62313,
+        "sha256": "91ef2c089f8e246b9a6598f91529874e119e94819146f21e74396eca3722daaa",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      },
+      {
+        "path": "raw/eval-review.jpg",
+        "bytes": 61521,
+        "sha256": "642316167a3def94662fc605c35ca3ab59533f1a24d98d142f87f09533ebc6fc",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      },
+      {
+        "path": "raw/eval-revision.jpg",
+        "bytes": 56172,
+        "sha256": "c47685b6d656846c8f43cfb28133198e568f73fd3415e46cd45b0c8b151ecc72",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      },
+      {
+        "path": "raw/rag-condition.jpg",
+        "bytes": 73757,
+        "sha256": "9255610252c7447f1833232d2103f2f3484c0d793ef1e51a5433b367b303d6e2",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      },
+      {
+        "path": "raw/rag-numeric.jpg",
+        "bytes": 94677,
+        "sha256": "962aa14621e2f78c4b344335b297c92bb1c173dc80174d73ee940d8a26f6bd68",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      },
+      {
+        "path": "raw/taste-scene.jpg",
+        "bytes": 51230,
+        "sha256": "31f1d1f6a7d420d92c216bc7ffc2bf987a44151cde3c081ec36d06b8b291ce64",
+        "dimensions": [
+          1265,
+          712
+        ],
+        "hash_matches_manifest": true,
+        "bytes_match_manifest": true,
+        "dimensions_match_manifest": true
+      }
+    ]
+  },
+  "svg_security": {
+    "count": 16,
+    "checks": [
+      {
+        "path": "assets/editorial/bundle-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "59f0ae1b5951fbd75c8a57a2889b888047d3c6aaedc9a74e17b7cf82c8995bd2"
+        ],
+        "bytes": 82670
+      },
+      {
+        "path": "assets/editorial/bundle-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "59f0ae1b5951fbd75c8a57a2889b888047d3c6aaedc9a74e17b7cf82c8995bd2"
+        ],
+        "bytes": 82670
+      },
+      {
+        "path": "assets/editorial/cover-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [],
+        "bytes": 1074
+      },
+      {
+        "path": "assets/editorial/cover-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [],
+        "bytes": 1074
+      },
+      {
+        "path": "assets/editorial/cover-narrow-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [],
+        "bytes": 893
+      },
+      {
+        "path": "assets/editorial/cover-narrow-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [],
+        "bytes": 893
+      },
+      {
+        "path": "assets/editorial/eval-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "642316167a3def94662fc605c35ca3ab59533f1a24d98d142f87f09533ebc6fc",
+          "91ef2c089f8e246b9a6598f91529874e119e94819146f21e74396eca3722daaa"
+        ],
+        "bytes": 166723
+      },
+      {
+        "path": "assets/editorial/eval-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "642316167a3def94662fc605c35ca3ab59533f1a24d98d142f87f09533ebc6fc",
+          "91ef2c089f8e246b9a6598f91529874e119e94819146f21e74396eca3722daaa"
+        ],
+        "bytes": 166723
+      },
+      {
+        "path": "assets/editorial/eval-narrow-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "91ef2c089f8e246b9a6598f91529874e119e94819146f21e74396eca3722daaa",
+          "642316167a3def94662fc605c35ca3ab59533f1a24d98d142f87f09533ebc6fc"
+        ],
+        "bytes": 166235
+      },
+      {
+        "path": "assets/editorial/eval-narrow-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "91ef2c089f8e246b9a6598f91529874e119e94819146f21e74396eca3722daaa",
+          "642316167a3def94662fc605c35ca3ab59533f1a24d98d142f87f09533ebc6fc"
+        ],
+        "bytes": 166235
+      },
+      {
+        "path": "assets/editorial/rag-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "962aa14621e2f78c4b344335b297c92bb1c173dc80174d73ee940d8a26f6bd68",
+          "9255610252c7447f1833232d2103f2f3484c0d793ef1e51a5433b367b303d6e2"
+        ],
+        "bytes": 225833
+      },
+      {
+        "path": "assets/editorial/rag-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "962aa14621e2f78c4b344335b297c92bb1c173dc80174d73ee940d8a26f6bd68",
+          "9255610252c7447f1833232d2103f2f3484c0d793ef1e51a5433b367b303d6e2"
+        ],
+        "bytes": 225833
+      },
+      {
+        "path": "assets/editorial/rag-narrow-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "962aa14621e2f78c4b344335b297c92bb1c173dc80174d73ee940d8a26f6bd68",
+          "9255610252c7447f1833232d2103f2f3484c0d793ef1e51a5433b367b303d6e2"
+        ],
+        "bytes": 225811
+      },
+      {
+        "path": "assets/editorial/rag-narrow-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "962aa14621e2f78c4b344335b297c92bb1c173dc80174d73ee940d8a26f6bd68",
+          "9255610252c7447f1833232d2103f2f3484c0d793ef1e51a5433b367b303d6e2"
+        ],
+        "bytes": 225811
+      },
+      {
+        "path": "assets/editorial/taste-dark.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "31f1d1f6a7d420d92c216bc7ffc2bf987a44151cde3c081ec36d06b8b291ce64"
+        ],
+        "bytes": 69273
+      },
+      {
+        "path": "assets/editorial/taste-light.svg",
+        "xml_parsed": true,
+        "unsafe_items": [],
+        "embedded_jpeg_sha256": [
+          "31f1d1f6a7d420d92c216bc7ffc2bf987a44151cde3c081ec36d06b8b291ce64"
+        ],
+        "bytes": 69273
+      }
+    ],
+    "scope": "XML parse; disallow scripts, foreignObject, external references, events, inline styles, DTD/entity declarations and animation; embedded JPEG hashes must match unchanged full source captures."
+  },
+  "display_asset_manifest_checks": [
+    {
+      "path": "assets/editorial/bundle-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/bundle-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/cover-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/cover-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/cover-narrow-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/cover-narrow-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/eval-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/eval-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/eval-narrow-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/eval-narrow-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/rag-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/rag-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/rag-narrow-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/rag-narrow-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/taste-dark.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "assets/editorial/taste-light.svg",
+      "bytes_match": true,
+      "sha256_match": true
+    }
+  ],
+  "gif": {
+    "path": "docs/editorial/replay/eval-task-7s.gif",
+    "frames": 3,
+    "frame_durations_ms": [
+      2600,
+      1800,
+      2600
+    ],
+    "total_duration_ms": 7000,
+    "bytes": 371590,
+    "sha256": "ceb8fee9531eececb63f35dd38abc6996e0a4ac93405536b1741c4277d081b4b",
+    "matches_manifest": true,
+    "matches_expected_delivery": true
+  },
+  "remote_main": {
+    "checked_at_utc": "2026-11-12T14:14:42.852Z",
+    "repository": "AndyZhang666666/AndyZhang666666",
+    "expected_sha": "ae171a4355b9c21f463f15df9d793c9c4b937d64",
+    "observed_sha": "ae171a4355b9c21f463f15df9d793c9c4b937d64",
+    "unchanged": true
+  },
+  "baseline_preservation": {
+    "method": "Compare candidate bytes with remote Git tree blob hashes; no git command was run.",
+    "checks": [
+      {
+        "path": "CHANGELOG.md",
+        "remote_baseline_blob_sha": "0ec2f62276e0028d2bfd1f44d6ee5ad664e06254",
+        "candidate_blob_sha": "0ec2f62276e0028d2bfd1f44d6ee5ad664e06254",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "PROJECTS.en.md",
+        "remote_baseline_blob_sha": "1025910ed3252082f6e05ae975a3f8e2b7be0ffe",
+        "candidate_blob_sha": "1025910ed3252082f6e05ae975a3f8e2b7be0ffe",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "PROJECTS.md",
+        "remote_baseline_blob_sha": "b5c8d8da4baaba2ce8556901c3e2f5bfed32625d",
+        "candidate_blob_sha": "b5c8d8da4baaba2ce8556901c3e2f5bfed32625d",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "README.en.md",
+        "remote_baseline_blob_sha": "f2b7d557eb69562dc80dce8711d2b8daf9af7bb1",
+        "candidate_blob_sha": "314078095961111437c95c5c9c5a01202d32d396",
+        "unchanged": false,
+        "allowed_to_change": true
+      },
+      {
+        "path": "README.md",
+        "remote_baseline_blob_sha": "813625d2b00e01de43fdbc3313f7df7f6aa4bbea",
+        "candidate_blob_sha": "5559877d568a894d73af3ff00e91bf9d335c7d71",
+        "unchanged": false,
+        "allowed_to_change": true
+      },
+      {
+        "path": "assets/profile-dark.svg",
+        "remote_baseline_blob_sha": "aa4c0f3af648349e3d21fe9c891180289e6e824e",
+        "candidate_blob_sha": "aa4c0f3af648349e3d21fe9c891180289e6e824e",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "assets/profile-light.svg",
+        "remote_baseline_blob_sha": "bb1b87e7a7b18a1357a869699457083c009eae98",
+        "candidate_blob_sha": "bb1b87e7a7b18a1357a869699457083c009eae98",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/agent-preview.jpg",
+        "remote_baseline_blob_sha": "373b85de2ed5d6ac2b681fefe0803bd732bef71b",
+        "candidate_blob_sha": "373b85de2ed5d6ac2b681fefe0803bd732bef71b",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/agent-replay.gif",
+        "remote_baseline_blob_sha": "c7a33e16119c96815c8dcb10d1296e945a7e8206",
+        "candidate_blob_sha": "c7a33e16119c96815c8dcb10d1296e945a7e8206",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/bundle-preview.jpg",
+        "remote_baseline_blob_sha": "f2b20f058776e02a8f65eff5af759a7cf81643cf",
+        "candidate_blob_sha": "f2b20f058776e02a8f65eff5af759a7cf81643cf",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/eval-preview.jpg",
+        "remote_baseline_blob_sha": "c7d2d5d20bd6d92d9aeb4270d976d4537b70ac94",
+        "candidate_blob_sha": "c7d2d5d20bd6d92d9aeb4270d976d4537b70ac94",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/featured-sources-20261112.json",
+        "remote_baseline_blob_sha": "d0f68ddeba5f96e17e0f4082dc07560e34a548be",
+        "candidate_blob_sha": "d0f68ddeba5f96e17e0f4082dc07560e34a548be",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/media-sources.json",
+        "remote_baseline_blob_sha": "a9fc4c87734c3335aa61481186fc91b300fafcda",
+        "candidate_blob_sha": "a9fc4c87734c3335aa61481186fc91b300fafcda",
+        "unchanged": true,
+        "allowed_to_change": false
+      },
+      {
+        "path": "docs/assets/taste-preview.jpg",
+        "remote_baseline_blob_sha": "bdd4d5f44c75c33163b479aed7bf034855e7a69c",
+        "candidate_blob_sha": "bdd4d5f44c75c33163b479aed7bf034855e7a69c",
+        "unchanged": true,
+        "allowed_to_change": false
+      }
+    ],
+    "unexpected_changes": []
+  },
+  "issues": [],
+  "limitations": [
+    "Structural checks are not a visual-design score or a rerun of product functionality.",
+    "GitHub branch rendering, theme appearance and narrow-layout visual review are recorded separately."
+  ]
+}

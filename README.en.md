@@ -1,69 +1,89 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
-  <img src="assets/profile-light.svg" alt="Agent / Evaluation / Growth · a compact decision trace" width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/editorial/cover-narrow-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/editorial/cover-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/cover-dark.svg">
+  <img src="assets/editorial/cover-light.svg" alt="Andy Zhang · 张千羽 — Agent / Evaluation / Growth" width="100%">
 </picture>
 
-# Andy Zhang · 张千羽
+**Andy Zhang · AI product manager.** I build creative agents, evaluation tools and growth experiments. Try making one decision in each of these tools.
 
-**AI Product Manager working on Agents, evaluation and growth.**
+[中文](README.md) · [Portfolio](https://andyzhang666666.github.io/) · [Résumés (3 PDFs in Chinese)](https://andyzhang666666.github.io/#resumes) · [Project index](PROJECTS.en.md)
 
-I turn business questions into usable products, then check whether they solve the problem. These four projects show decisions about evaluation, preferences, commercial trade-offs and evidence.
+**AI products** · [Find the sentence behind a 2/5 score](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · Historical replay · [Review design](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
 
-[Portfolio & full demos](https://andyzhang666666.github.io/) · [Product CV, Chinese](https://andyzhang666666.github.io/assets/resume.pdf) · [中文](README.md) · [All projects](PROJECTS.en.md)
+**Growth** · [Conversion went up. Would you roll it out?](https://andyzhang666666.github.io/growth-experiment-lab/#read) · Synthetic A/B test · [Decision rules](https://github.com/AndyZhang666666/growth-experiment-lab/blob/main/docs/DECISIONS.md)
 
-## Start here
+**Pricing** · [Move the discount from 6% to 8% and check the margin](https://andyzhang666666.github.io/bundle-lab/simulate/) · Synthetic orders · [Ledger design](https://github.com/AndyZhang666666/bundle-lab/pull/5)
 
-### Eval Lab · Review a 2/5 judgement
+## Eval Lab · Does a cut-off sentence justify a low score?
 
-The judge gave an unfinished story opening 2/5 for structure. Read the line it cited, then decide whether the comment holds up. I keep the judge’s original score and record the reviewer’s disagreement separately. Later, the team can revisit whether the draft or the rubric needs work. [Review and calibration changes · PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
+A suspense scene ends just as the protagonist reads a name badge. The historical reviewer gave structure 2/5. The sentence really is unfinished. Should a complete-story rubric apply if the author only intended an opening?
 
-[Review a 2/5 judgement](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [Use your own draft](https://andyzhang666666.github.io/llm-output-eval/workspace/) · [Design decisions](https://andyzhang666666.github.io/cases/trust/) · [Source](https://github.com/AndyZhang666666/llm-output-eval)
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/editorial/e06-review-narrow.jpg">
+  <img src="assets/editorial/e06-review.jpg" width="100%" alt="Historical score of 2/5 with the quoted, unfinished sentence highlighted in e06.">
+</picture>
 
-[![Eval Lab · e06 · source quote and the original structure score](assets/eval-e06.jpg)](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure)
+I keep the original score alongside a separate human review. Someone can challenge the rubric and the next reviewer can still trace the original decision.
 
-<h3>TasteRoom</h3>
-<p>Where should a preference apply?</p>
-<a href="https://andyzhang666666.github.io/tasteroom/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png" alt="TasteRoom: Where should a preference apply?" width="100%"></a>
-<p>I let people try the same poster with personal and work rules side by side. A preference is saved to a context only when the user confirms it. <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">Preference confirmation · PR #8</a></p>
-<p><sub>Local design rules / comparison saves no preference</sub><br><a href="https://andyzhang666666.github.io/tasteroom/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">Source</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png">Full image</a></p>
+[Review this verdict](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [How review works](docs/editorial/projects/eval.md)
 
-<h3>Bundle Lab</h3>
-<p>Can selling more earn less?</p>
-<a href="https://andyzhang666666.github.io/bundle-lab/simulate/"><img src="https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png" alt="Bundle Lab: Can selling more earn less?" width="100%"></a>
-<p>Customers who would have bought anyway can also claim a discount. I account for that cost separately and save the break-even threshold before the trial, so later orders can be checked against the original assumptions. <a href="https://github.com/AndyZhang666666/bundle-lab/pull/4">Ledger and break-even check · PR #4</a></p>
-<p><sub>Synthetic orders / personal inputs / conditional model</sub><br><a href="https://andyzhang666666.github.io/bundle-lab/simulate/">Try it</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">Source</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png">Full image</a></p>
+A separate task: [watch a 7-second human review and revision](docs/editorial/replay/eval-task-7s.gif) using a constructed draft. The sequence shows manual edits.
 
-<h3>Trustworthy RAG Lab</h3>
-<p>Which source supports this number?</p>
-<a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png" alt="Trustworthy RAG Lab: Which source supports this number?" width="100%"></a>
-<p>A different date or reader can change which sources support the same answer. I show the two sets of sources side by side so the writer can check each number in the draft. <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">Compare evidence across conditions · PR #8</a></p>
-<p><sub>Local retrieval and human drafts / no model call by default</sub><br><a href="https://andyzhang666666.github.io/rag-lab/">Try it</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md">Design</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab">Source</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png">Full image</a></p>
+## Three more design decisions
 
-The Eval image shows the public e06 replay on 15 November. The other three images show the actual interfaces with constructed acceptance material from 11 November. Demo links open the current products; images are pinned to their source versions. [Image provenance](docs/assets/featured-sources-20261112.json)
+### TasteRoom · Preference scopes
 
-## Recently shipped
+Where should a layout preference apply? Try the same copy in a personal and a work context. A rule enters that context only when you choose to save it.
 
-| Date | Released changes | Implementation record |
-| --- | --- | --- |
-| 2026-11-15 | [Home Notes](https://andyzhang666666.github.io/renovation/) · Compare fit and delivered cost offline. After launch I saw the new card disappear in a browser with a cached directory, fixed the cache and retested the route from the portfolio filter. | [Directory cache fix · PR #13](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13) · [Source](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [Iterations](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
-| 2026-11-11 | Eval: compare exact changes between saved drafts, copy the current version's task package and collect disputed evidence in a draft calibration memo. | [Eval PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5) |
-| 2026-11-11 | Bundle: adjust existing customers' discount take-up, save matrix previews as scenarios and check later counts against the plan's frozen break-even boundary. | [Bundle PR #4](https://github.com/AndyZhang666666/bundle-lab/pull/4) |
-| 2026-11-11 | TasteRoom: compare scoped rules on the same copy and image. RAG: inspect draft numbers and compare evidence scope after date or role changes. | [Product release PR #8](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8) · [RAG asset-version patch #9](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9) |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/taste-dark.svg">
+  <img src="assets/editorial/taste-light.svg" alt="The same copy laid out under personal and work rules" width="100%">
+</picture>
 
-## Explore further
+[Try it](https://andyzhang666666.github.io/tasteroom/) · [Design and implementation](docs/editorial/projects/taste.md)
 
-[Agent Execution Bench](https://andyzhang666666.github.io/agent-bench/) examines lost responses, permissions and duplicate writes. [Filing Eval](https://github.com/AndyZhang666666/filing-eval) reviews factual errors and important omissions separately. [Growth Experiment Lab](https://github.com/AndyZhang666666/growth-experiment-lab) and [Pricing Model Sim](https://github.com/AndyZhang666666/pricing-model-sim) test what evidence supports a business decision.
+### Bundle Lab · The promotion ledger
 
-[Suibianju](https://andyzhang666666.github.io/suibianju/), [Grounded Choice](https://andyzhang666666.github.io/grounded-choice/), [Commute Compare](https://github.com/AndyZhang666666/commute-compare) and the [poker experiments](PROJECTS.en.md#everyday-decisions-and-modelling) remain in the project index. [AI Product Teardowns](https://github.com/AndyZhang666666/ai-product-teardowns) examines capability boundaries, failure handling and payment moments. [Creative Eval](https://github.com/AndyZhang666666/creative-eval) preserves the first iteration's calibration and historical results.
+Existing buyers can claim the discount too. Keep adoption fixed and try 6% and 8% on the built-in orders. The ledger shows new contribution and discounts to existing buyers per 100 covered orders. In the mid-adoption scenario, margin moves from +¥13.44 to −¥7.54, before fulfilment and operating costs.
 
-## Work in practice
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/bundle-dark.svg">
+  <img src="assets/editorial/bundle-light.svg" alt="Bundle Lab: new contribution, existing-customer discounts and margin change" width="100%">
+</picture>
 
-At Shanhai Xingchen, I own creative Agent workflows and Skill assets: 38 Skills shipped, around 6,000 tool calls per month and roughly 30% less creation time per drama. During my Baidu internship, I helped launch an AI feature that passed 10,000 daily active users within two weeks. At Meituan Keeta, segmented subsidy experiments reduced new-customer acquisition cost by 27% and increased new-customer monthly retention by 8%. I also interned on Li Auto's smart cockpit and Revolut's subscription products.
+[Try it](https://andyzhang666666.github.io/bundle-lab/simulate/) · [Design and implementation](docs/editorial/projects/bundle.md)
 
-[Responsibilities and measurement context](https://andyzhang666666.github.io/#work) · [Product CV, Chinese](https://andyzhang666666.github.io/assets/resume.pdf)
+### RAG Lab · When evidence expires
 
-These are work outcomes. The public repositories contain independent projects, with simulated material, historical model outputs and conditional calculations labelled separately. They contain no employer code or internal business data. Public Agent / RAG demos use recorded program executions and browser retrieval respectively; live-model use requires local configuration.
+The policy says 14 days and the draft says 12. Check the source, then change the business date: previously selected evidence needs another review before export. The demo retrieves constructed material in the browser.
 
-Master's studies at UCL; undergraduate Electrical and Electronic Engineering at Bristol. My research includes an order-flow-based intraday trading model and a wearable posture-monitoring system with a mobile interface.
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/editorial/rag-narrow-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/editorial/rag-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/rag-dark.svg">
+  <img src="assets/editorial/rag-light.svg" alt="Trustworthy RAG: draft numbers, source evidence and scope warnings" width="100%">
+</picture>
 
-[Get in touch](https://andyzhang666666.github.io/#contact) · [中文](README.md) · [Browse all projects](PROJECTS.en.md)
+[Try it](https://andyzhang666666.github.io/rag-lab/) · [Design and implementation](docs/editorial/projects/rag.md)
+
+## Recent releases · 2026
+
+- **11.15**　Renovation planner. A stale cache made the project card disappear after loading. The entry was fixed and rechecked from the portfolio. [Release](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13)
+- **11.13**　Eval. After checking a quote on a phone, the reader can return to the same verdict. [Release](https://github.com/AndyZhang666666/llm-output-eval/pull/6)
+- **11.13**　Bundle. Preview a cell in the discount matrix before applying its assumptions. [Release](https://github.com/AndyZhang666666/bundle-lab/pull/5)
+
+## Experience and other work
+
+At Shanhai I worked on creative agents and reusable skills. At Baidu Wenku I worked on AI features, and at Keeta on international growth. One search problem at Keeta was deciding when an Arabic transliteration matched a dish closely enough to show it.
+
+<details>
+<summary>More experience and research</summary>
+
+My work included segmented subsidy experiments at Keeta, in-car interactions at Li Auto and subscription upgrades at Revolut. My MSc research at UCL explored order flow in intraday S&P 500 trading. At Bristol I built a wearable posture-monitoring project with phone feedback for exercise.
+
+</details>
+
+[Work history](https://andyzhang666666.github.io/#work) · [Cross-language search at Keeta](https://andyzhang666666.github.io/#evidence-search) · [Enterprise delivery](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent execution bench](https://andyzhang666666.github.io/agent-bench/) · [Browse all projects](PROJECTS.en.md)
+
+[Contact](https://andyzhang666666.github.io/#contact) · [Image sources](docs/editorial/SOURCES.md)

@@ -1,71 +1,89 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
-  <img src="assets/profile-light.svg" alt="Agent / Evaluation / Growth · a compact decision trace" width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/editorial/cover-narrow-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/editorial/cover-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/cover-dark.svg">
+  <img src="assets/editorial/cover-light.svg" alt="张千羽 · Andy Zhang — Agent / Evaluation / Growth" width="100%">
 </picture>
 
-# 张千羽 · Andy Zhang
+**张千羽 · AI 产品经理**　我做创作 Agent、效果评测和增长实验。下面三个工具，各留了一个判断给你。
 
-**AI 产品经理，做 Agent、效果评测和商业增长。**
+[English](README.en.md) · [个人网站](https://andyzhang666666.github.io/) · [按方向看简历](https://andyzhang666666.github.io/#resumes) · [全部作品](PROJECTS.md)
 
-我把业务问题做成可操作的产品，再核对它是否解决了问题。下面四个作品，分别展示评测、偏好、商业判断和证据整理中的设计取舍。
+**AI 应用** · [点开 2/5 的评语，找到它引用的原句](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · 历史回放 · [评分与复核](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
 
-[官网与完整体验](https://andyzhang666666.github.io/) · [产品简历](https://andyzhang666666.github.io/assets/resume.pdf) · [English](README.en.md) · [全部项目](PROJECTS.md)
+**增长实验** · [转化率涨了，要全量上线吗？](https://andyzhang666666.github.io/growth-experiment-lab/#read) · 模拟实验 · [决策规则](https://github.com/AndyZhang666666/growth-experiment-lab/blob/main/docs/DECISIONS.md)
 
-## 从这里开始
+**定价策略** · [把折扣从 6% 调到 8%，看毛利变号](https://andyzhang666666.github.io/bundle-lab/simulate/) · 合成订单 · [账本实现](https://github.com/AndyZhang666666/bundle-lab/pull/5)
 
-### Eval Lab · 复核一条 2/5 的评语
+## Eval Lab · 半句话能支持一个低分吗？
 
-一段在半句处截断的小说开场，模型给了结构 2/5。读它引用的原句，再判断这条评语是否成立。
+悬疑开场停在“他看清了那人胸牌上的”。历史评语给结构完整性 2/5。原文确实断在这里，但如果作者只打算写一个开场，用完整短篇的标准扣分合适吗？
 
-我保留裁判的原始评分，把人的异议另记成可回看的记录，方便之后讨论是文稿有问题，还是量表需要校准。[看复核与校准的实现 · PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/editorial/e06-review-narrow.jpg">
+  <img src="assets/editorial/e06-review.jpg" width="100%" alt="e06 历史评分 2/5，评语引用的半句话在原文中标出。">
+</picture>
 
-[复核一条 2/5 的评语](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [用自己的文稿](https://andyzhang666666.github.io/llm-output-eval/workspace/) · [设计过程](https://andyzhang666666.github.io/cases/trust/) · [源码](https://github.com/AndyZhang666666/llm-output-eval)
+我把原始分数和人工意见分开保存。读者可以质疑量表，下一位审阅者仍能看到当初的原句和判断。
 
-[![Eval Lab · e06 原文引句与结构维度的原始评分](assets/eval-e06.jpg)](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure)
+[复核这条评语](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [设计与实现](docs/editorial/projects/eval.md)
 
-<h3>偏爱实验室 · TasteRoom</h3>
-<p>喜欢这张海报，要记到哪个场景？</p>
-<a href="https://andyzhang666666.github.io/tasteroom/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png" alt="偏爱实验室 · TasteRoom: 喜欢这张海报，要记到哪个场景？" width="100%"></a>
-<p>我把试看的海报和记住的偏好分开：同一张图可以分别试个人和工作风格，明确确认后才保存到对应场景。 <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">看偏好保存流程 · PR #8</a></p>
-<p><sub>本机设计规则 / 查看对照不写记忆</sub><br><a href="https://andyzhang666666.github.io/tasteroom/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/tasteroom/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/tasteroom">源码</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/tasteroom/docs/evidence/task-loop-20261111/scene-desktop.png">大图</a></p>
+另一个场景：[看 7 秒人工审阅与改稿对照](docs/editorial/replay/eval-task-7s.gif)。使用构造文稿，全程人工操作。
 
-<h3>Bundle Lab</h3>
-<p>套餐卖得更多，为什么可能少赚？</p>
-<a href="https://andyzhang666666.github.io/bundle-lab/simulate/"><img src="https://raw.githubusercontent.com/AndyZhang666666/bundle-lab/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png" alt="Bundle Lab: 套餐卖得更多，为什么可能少赚？" width="100%"></a>
-<p>做促销时，原本就会下单的人也可能领走折扣。我把这部分让利单列，并在试验前存下保本门槛，让后续订单能按当时的假设核对。 <a href="https://github.com/AndyZhang666666/bundle-lab/pull/4">看账本和保本核对 · PR #4</a></p>
-<p><sub>合成订单 / 自有输入 / 条件推演</sub><br><a href="https://andyzhang666666.github.io/bundle-lab/simulate/">体验</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/main/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/bundle-lab">源码</a> · <a href="https://github.com/AndyZhang666666/bundle-lab/blob/062b6563a9e587c27040f6fc596184f58d0407b3/docs/assets/task-loop-20261111/workspace-1280.png">大图</a></p>
+## 另外三个设计取舍
 
-<h3>可信 RAG 实验台</h3>
-<p>答复里的数字，能回到哪条依据？</p>
-<a href="https://andyzhang666666.github.io/rag-lab/"><img src="https://raw.githubusercontent.com/AndyZhang666666/AndyZhang666666.github.io/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png" alt="可信 RAG 实验台: 答复里的数字，能回到哪条依据？" width="100%"></a>
-<p>同一句答复，换个日期或读者，能引用的资料可能就变了。我让使用者直接对照两种条件下的依据，逐个核查草稿中的数字。 <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8">看引用范围对照 · PR #8</a></p>
-<p><sub>本机检索与人工草稿 / 默认不调用模型</sub><br><a href="https://andyzhang666666.github.io/rag-lab/">体验</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/rag-lab/docs/TASK-LOOP-20261111.md">设计过程</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/rag-lab">源码</a> · <a href="https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/174399eef34fcdaae22926585dcf9066d1a283bb/rag-lab/evidence/task-loop-20261111/rag-1280-grounding.png">大图</a></p>
+### TasteRoom · 偏爱实验室
 
-Eval 配图取自 11 月 15 日的公开 e06 回放。其余三项截图来自 11 月 11 日的真实界面与构造验收材料。体验入口打开当前产品；截图固定到对应源码版本。[素材来源](docs/assets/featured-sources-20261112.json)
+喜欢一种排版，应该记到哪里？同一段文字可以先在个人和工作两种场景试排。只有确认保存，规则才进入那个场景。
 
-## 最近交付
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/taste-dark.svg">
+  <img src="assets/editorial/taste-light.svg" alt="相同文案在个人与工作场景的构图对照" width="100%">
+</picture>
 
-| 日期 | 已发布的变化 | 实现记录 |
-| --- | --- | --- |
-| 2026-11-15 | [安心装修](https://andyzhang666666.github.io/renovation/) · 家具尺寸与送装费用可离线核对。上线后用带旧缓存的浏览器复验，发现新卡片出现后又消失，修复后重新从官网分类走通了入口。 | [官网入口修复 · PR #13](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13) · [源码](https://github.com/AndyZhang666666/AndyZhang666666.github.io/tree/main/renovation) · [迭代记录](https://github.com/AndyZhang666666/AndyZhang666666.github.io/blob/main/renovation/CHANGELOG.md) |
-| 2026-11-11 | Eval：保存修改版本、核对逐字增删、复制本版送评任务包；存疑依据可整理为量表校准备忘草稿。 | [Eval PR #5](https://github.com/AndyZhang666666/llm-output-eval/pull/5) |
-| 2026-11-11 | Bundle：调整既有顾客领折扣的假设，将矩阵预演存成方案，用观察计数核对冻结计划的保本门槛。 | [Bundle PR #4](https://github.com/AndyZhang666666/bundle-lab/pull/4) |
-| 2026-11-11 | 偏爱支持同文同图的场景授权对照；RAG 增加草稿数字核查和日期、身份变化前后的依据范围对照。 | [产品发布 PR #8](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/8) · [RAG 资源版本补丁 #9](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/9) |
+[体验](https://andyzhang666666.github.io/tasteroom/) · [设计与实现](docs/editorial/projects/taste.md)
 
-## 继续看其他方向
+### Bundle Lab · 促销账本
 
-[Agent 执行评测台](https://andyzhang666666.github.io/agent-bench/)检查响应丢失、权限和重复写入；[Filing Eval](https://github.com/AndyZhang666666/filing-eval)把事实错误与重要遗漏分开复核。[增长实验](https://github.com/AndyZhang666666/growth-experiment-lab)和[付费机制模拟](https://github.com/AndyZhang666666/pricing-model-sim)继续检查证据能否支持业务决策。
+每 100 笔覆盖订单，既有顾客也会拿走折扣。打开内置算例，保持采纳率不动，分别试 6% 和 8%。账本会把新增贡献和原有顾客让利分别列出。中档算例从 +¥13.44 变为 −¥7.54。这里算的是条件毛利，尚未扣履约和运营成本。
 
-[随便局](https://andyzhang666666.github.io/suibianju/)、[有据](https://andyzhang666666.github.io/grounded-choice/)、[通勤比较器](https://github.com/AndyZhang666666/commute-compare)与[扑克实验](PROJECTS.md#日常决策与建模)保留在分类索引里。[AI 产品拆解](https://github.com/AndyZhang666666/ai-product-teardowns)记录能力边界、失败处理与付费点；[Creative Eval](https://github.com/AndyZhang666666/creative-eval)保留第一版的校准过程与历史结果。
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/bundle-dark.svg">
+  <img src="assets/editorial/bundle-light.svg" alt="Bundle Lab：新增贡献、既有让利与毛利变化" width="100%">
+</picture>
 
-## 工作中的产品实践
+[体验](https://andyzhang666666.github.io/bundle-lab/simulate/) · [设计与实现](docs/editorial/projects/bundle.md)
 
-在山海星辰负责创作 Agent 与 Skill 资产：上线 38 个 Skill，工具月均调用约 6,000 次，单剧创作耗时缩短约 30%。在百度实习时参与 AI 功能从 0 到 1，上线两周日活破万；在美团 Keeta 的增长实习中，分层补贴实验使新客获客成本降低 27%，新客月留存提升 8%。也有理想汽车智能座舱和 Revolut 订阅产品的实习经历。
+### 可信 RAG · 依据的有效期
 
-[具体职责与结果口径](https://andyzhang666666.github.io/#work) · [产品简历](https://andyzhang666666.github.io/assets/resume.pdf)
+借用条款写 14 天，草稿写了 12 天。可以回到来源核对这两个数。业务日期改变后，已选依据还得重新确认，才能导出草稿。演示在浏览器内检索构造资料。
 
-上面是工作经历中的业务结果；这里的公开代码是独立作品。演示资料、历史模型输出和条件模拟在项目中分别标明，不包含公司内部代码或业务数据。Agent / RAG 的公开站点分别为程序记录回放和浏览器检索，真实模型接入需自行配置。
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/editorial/rag-narrow-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/editorial/rag-narrow-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/rag-dark.svg">
+  <img src="assets/editorial/rag-light.svg" alt="可信 RAG：草稿数字、引用依据与适用范围提示" width="100%">
+</picture>
 
-UCL 硕士 · Bristol 电子电气工程本科。研究过订单流日内量化模型，也做过面向运动场景的可穿戴姿态监测与手机交互。
+[体验](https://andyzhang666666.github.io/rag-lab/) · [设计与实现](docs/editorial/projects/rag.md)
 
-[联系我](https://andyzhang666666.github.io/#contact) · [English](README.en.md) · [按方向浏览全部项目](PROJECTS.md)
+## 最近交付 · 2026
+
+- **11.15**　安心装修。旧缓存让新作品卡片出现后又消失，修复后从官网重新走通入口。 [发布记录](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13)
+- **11.13**　Eval。手机用户核对引文后，可以回到同一条评语继续复核。 [发布记录](https://github.com/AndyZhang666666/llm-output-eval/pull/6)
+- **11.13**　Bundle。可以在折扣矩阵里预演一个方案，再决定是否采用。 [发布记录](https://github.com/AndyZhang666666/bundle-lab/pull/5)
+
+## 工作与其他作品
+
+在山海星辰做创作 Agent 与可复用 Skill，在百度参与文库 AI 产品，在 Keeta 做海外用户增长。在 Keeta 做跨语言搜菜时，一个具体问题是：阿语音译多找回一道菜，要怎么判断有没有错配？
+
+<details>
+<summary>更多经历与研究背景</summary>
+
+在 Keeta 做分层补贴实验，在理想汽车参与智能座舱交互，在 Revolut 参与订阅权益与升级流程。UCL 硕士期间研究标普 500 订单流与日内交易；Bristol 本科毕设把运动姿态监测与手机端反馈结合起来。
+
+</details>
+
+[工作经历](https://andyzhang666666.github.io/#work) · [Keeta 跨语言搜索案例](https://andyzhang666666.github.io/#evidence-search) · [企业工具交付](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent 执行评测](https://andyzhang666666.github.io/agent-bench/) · [按方向找作品](PROJECTS.md)
+
+[联系我](https://andyzhang666666.github.io/#contact) · [素材与版本](docs/editorial/SOURCES.md)

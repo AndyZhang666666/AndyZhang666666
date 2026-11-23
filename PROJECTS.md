@@ -47,3 +47,9 @@
 ## 经历与研究
 
 [官网](https://andyzhang666666.github.io/#work)另列工作经历、企业交付和研究主题。这些是案例说明，不把它们列成已公开的客户系统或源码仓库。各项目的使用权限以其自身许可证为准。
+
+企业工具交付 · [看选品与人工核对](https://andyzhang666666.github.io/cases/agent-workflow/)
+
+其他官网条目：[个人投研工作流](https://andyzhang666666.github.io/#project-research-agent) · [内容获客案例](https://andyzhang666666.github.io/#project-content) · [扑克玩家类型测试（外站介绍）](https://andyzhang666666.github.io/#project-poker-quiz)。
+
+[跨语言搜索案例](https://andyzhang666666.github.io/#evidence-search) · [同款、近似款与待核实款](https://andyzhang666666.github.io/#evidence-matching)

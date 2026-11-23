@@ -1,0 +1,492 @@
+[
+  {
+    "key": "candidate-zh-1280-light",
+    "layout": {
+      "width": 1280,
+      "doc": 1280,
+      "bg": "rgb(255, 255, 255)"
+    },
+    "images": [
+      {
+        "url": "cover-light.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "e06-review.jpg",
+        "natural": 1048,
+        "width": 861
+      },
+      {
+        "url": "taste-light.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "bundle-light.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "rag-light.svg",
+        "natural": 1200,
+        "width": 861
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 377
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 417
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 457
+      }
+    ]
+  },
+  {
+    "key": "candidate-en-1280-light",
+    "layout": {
+      "width": 1280,
+      "doc": 1280,
+      "bg": "rgb(255, 255, 255)"
+    },
+    "images": [
+      {
+        "url": "cover-light.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "e06-review.jpg",
+        "natural": 1048,
+        "width": 861
+      },
+      {
+        "url": "taste-light.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "bundle-light.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "rag-light.svg",
+        "natural": 1200,
+        "width": 861
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 401
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 441
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 481
+      }
+    ]
+  },
+  {
+    "key": "candidate-zh-1280-dark",
+    "layout": {
+      "width": 1280,
+      "doc": 1280,
+      "bg": "rgb(13, 17, 23)"
+    },
+    "images": [
+      {
+        "url": "cover-dark.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "e06-review.jpg",
+        "natural": 1048,
+        "width": 861
+      },
+      {
+        "url": "taste-dark.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "bundle-dark.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "rag-dark.svg",
+        "natural": 1200,
+        "width": 861
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 377
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 417
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 457
+      }
+    ]
+  },
+  {
+    "key": "candidate-en-1280-dark",
+    "layout": {
+      "width": 1280,
+      "doc": 1280,
+      "bg": "rgb(13, 17, 23)"
+    },
+    "images": [
+      {
+        "url": "cover-dark.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "e06-review.jpg",
+        "natural": 1048,
+        "width": 861
+      },
+      {
+        "url": "taste-dark.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "bundle-dark.svg",
+        "natural": 1200,
+        "width": 861
+      },
+      {
+        "url": "rag-dark.svg",
+        "natural": 1200,
+        "width": 861
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 401
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 441
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 481
+      }
+    ]
+  },
+  {
+    "key": "candidate-zh-390-light",
+    "layout": {
+      "width": 390,
+      "doc": 390,
+      "bg": "rgb(255, 255, 255)"
+    },
+    "images": [
+      {
+        "url": "cover-narrow-light.svg",
+        "natural": 600,
+        "width": 324
+      },
+      {
+        "url": "e06-review-narrow.jpg",
+        "natural": 489,
+        "width": 324
+      },
+      {
+        "url": "taste-light.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "bundle-light.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "rag-narrow-light.svg",
+        "natural": 600,
+        "width": 324
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 366
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 430
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 518
+      }
+    ]
+  },
+  {
+    "key": "candidate-en-390-light",
+    "layout": {
+      "width": 390,
+      "doc": 390,
+      "bg": "rgb(255, 255, 255)"
+    },
+    "images": [
+      {
+        "url": "cover-narrow-light.svg",
+        "natural": 600,
+        "width": 324
+      },
+      {
+        "url": "e06-review-narrow.jpg",
+        "natural": 489,
+        "width": 324
+      },
+      {
+        "url": "taste-light.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "bundle-light.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "rag-narrow-light.svg",
+        "natural": 600,
+        "width": 324
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 438
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 502
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 566
+      }
+    ]
+  },
+  {
+    "key": "candidate-zh-390-dark",
+    "layout": {
+      "width": 390,
+      "doc": 390,
+      "bg": "rgb(13, 17, 23)"
+    },
+    "images": [
+      {
+        "url": "cover-narrow-dark.svg",
+        "natural": 600,
+        "width": 324
+      },
+      {
+        "url": "e06-review-narrow.jpg",
+        "natural": 489,
+        "width": 324
+      },
+      {
+        "url": "taste-dark.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "bundle-dark.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "rag-narrow-dark.svg",
+        "natural": 600,
+        "width": 324
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 366
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 430
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 518
+      }
+    ]
+  },
+  {
+    "key": "candidate-en-390-dark",
+    "layout": {
+      "width": 390,
+      "doc": 390,
+      "bg": "rgb(13, 17, 23)"
+    },
+    "images": [
+      {
+        "url": "cover-narrow-dark.svg",
+        "natural": 600,
+        "width": 324
+      },
+      {
+        "url": "e06-review-narrow.jpg",
+        "natural": 489,
+        "width": 324
+      },
+      {
+        "url": "taste-dark.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "bundle-dark.svg",
+        "natural": 1200,
+        "width": 324
+      },
+      {
+        "url": "rag-narrow-dark.svg",
+        "natural": 600,
+        "width": 324
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 438
+      },
+      {
+        "url": "https://andyzhang666666.github.io/growth-experiment-lab/#read",
+        "y": 502
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 566
+      }
+    ]
+  },
+  {
+    "key": "before-zh-1280-light",
+    "layout": {
+      "width": 1280,
+      "doc": 1280,
+      "bg": "rgb(255, 255, 255)"
+    },
+    "images": [
+      {
+        "url": "profile-light.svg",
+        "natural": 300,
+        "width": 861
+      },
+      {
+        "url": "eval-e06.jpg",
+        "natural": 1280,
+        "width": 861
+      },
+      {
+        "url": "scene-desktop.png",
+        "natural": 1280,
+        "width": 861
+      },
+      {
+        "url": "workspace-1280.png",
+        "natural": 1280,
+        "width": 861
+      },
+      {
+        "url": "rag-1280-grounding.png",
+        "natural": 1280,
+        "width": 861
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 681
+      },
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 1188
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 2773
+      }
+    ]
+  },
+  {
+    "key": "before-zh-390-light",
+    "layout": {
+      "width": 390,
+      "doc": 390,
+      "bg": "rgb(255, 255, 255)"
+    },
+    "images": [
+      {
+        "url": "profile-light.svg",
+        "natural": 300,
+        "width": 324
+      },
+      {
+        "url": "eval-e06.jpg",
+        "natural": 1280,
+        "width": 324
+      },
+      {
+        "url": "scene-desktop.png",
+        "natural": 1280,
+        "width": 324
+      },
+      {
+        "url": "workspace-1280.png",
+        "natural": 1280,
+        "width": 324
+      },
+      {
+        "url": "rag-1280-grounding.png",
+        "natural": 1280,
+        "width": 324
+      }
+    ],
+    "actions": [
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 816
+      },
+      {
+        "url": "https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure",
+        "y": 1044
+      },
+      {
+        "url": "https://andyzhang666666.github.io/bundle-lab/simulate/",
+        "y": 1873
+      }
+    ]
+  }
+]
