@@ -50,4 +50,6 @@
 
 企业工具交付 · [看选品与人工核对](https://andyzhang666666.github.io/cases/agent-workflow/)
 
-其他官网条目：[个人投研工作流](https://andyzhang666666.github.io/#project-research-agent) · [内容获客案例](https://andyzhang666666.github.io/#project-content) · [扑克玩家类型测试（外站介绍）](https://andyzhang666666.github.io/#project-poker-quiz).
+其他官网条目：[个人投研工作流](https://andyzhang666666.github.io/#project-research-agent) · [内容获客案例](https://andyzhang666666.github.io/#project-content) · [扑克玩家类型测试（外站介绍）](https://andyzhang666666.github.io/#project-poker-quiz)。
+
+[跨语言搜索案例](https://andyzhang666666.github.io/#evidence-search) · [同款、近似款与待核实款](https://andyzhang666666.github.io/#evidence-matching)

@@ -7,7 +7,7 @@
 
 **张千羽 · AI 产品经理**　我做创作 Agent、效果评测和增长实验。下面三个工具，各留了一个判断给你。
 
-[English](README.en.md) · [个人网站](https://andyzhang666666.github.io/) · [全部作品](PROJECTS.md)
+[English](README.en.md) · [个人网站](https://andyzhang666666.github.io/) · [按方向看简历](https://andyzhang666666.github.io/#resumes) · [全部作品](PROJECTS.md)
 
 **AI 应用** · [点开 2/5 的评语，找到它引用的原句](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · 历史回放 · [评分与复核](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
 
@@ -75,7 +75,7 @@
 
 ## 工作与其他作品
 
-在山海星辰做创作 Agent 与可复用 Skill，在百度参与文库 AI 产品，在 Keeta 做海外用户增长。工作中遇到的检索、定价与评测问题，也是我做这些独立工具的起点。
+在山海星辰做创作 Agent 与可复用 Skill，在百度参与文库 AI 产品，在 Keeta 做海外用户增长。在 Keeta 做跨语言搜菜时，一个具体问题是：阿语音译多找回一道菜，要怎么判断有没有错配？
 
 <details>
 <summary>更多经历与研究背景</summary>
@@ -84,6 +84,6 @@
 
 </details>
 
-[工作经历](https://andyzhang666666.github.io/#work) · [Keeta 增长经历](https://andyzhang666666.github.io/#work-keeta) · [企业工具交付](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent 执行评测](https://andyzhang666666.github.io/agent-bench/) · [按方向找作品](PROJECTS.md)
+[工作经历](https://andyzhang666666.github.io/#work) · [Keeta 跨语言搜索案例](https://andyzhang666666.github.io/#evidence-search) · [企业工具交付](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent 执行评测](https://andyzhang666666.github.io/agent-bench/) · [按方向找作品](PROJECTS.md)
 
 [联系我](https://andyzhang666666.github.io/#contact) · [素材与版本](docs/editorial/SOURCES.md)

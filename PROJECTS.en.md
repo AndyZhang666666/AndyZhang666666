@@ -51,3 +51,5 @@ The [portfolio](https://andyzhang666666.github.io/#work) separately describes pr
 Enterprise workflows · [Sourcing and human review](https://andyzhang666666.github.io/cases/agent-workflow/)
 
 Elsewhere on the portfolio: [Investment research workflow](https://andyzhang666666.github.io/#project-research-agent) · [Content acquisition case](https://andyzhang666666.github.io/#project-content) · [Poker player quiz (external tool listing)](https://andyzhang666666.github.io/#project-poker-quiz).
+
+[Cross-language search](https://andyzhang666666.github.io/#evidence-search) · [Exact, approximate and unverified product matches](https://andyzhang666666.github.io/#evidence-matching)

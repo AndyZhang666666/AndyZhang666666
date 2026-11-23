@@ -7,7 +7,7 @@
 
 **Andy Zhang · AI product manager.** I build creative agents, evaluation tools and growth experiments. Try making one decision in each of these tools.
 
-[中文](README.md) · [Portfolio](https://andyzhang666666.github.io/) · [Project index](PROJECTS.en.md)
+[中文](README.md) · [Portfolio](https://andyzhang666666.github.io/) · [Résumés (3 PDFs in Chinese)](https://andyzhang666666.github.io/#resumes) · [Project index](PROJECTS.en.md)
 
 **AI products** · [Find the sentence behind a 2/5 score](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · Historical replay · [Review design](https://github.com/AndyZhang666666/llm-output-eval/pull/5)
 
@@ -75,7 +75,7 @@ The policy says 14 days and the draft says 12. Check the source, then change the
 
 ## Experience and other work
 
-I worked on creative-agent workflows and reusable skills at Shanhai, AI features at Baidu Wenku, and international growth at Keeta. Those jobs gave me concrete questions about retrieval, pricing and evaluation to explore in my independent tools.
+At Shanhai I worked on creative agents and reusable skills. At Baidu Wenku I worked on AI features, and at Keeta on international growth. One search problem at Keeta was deciding when an Arabic transliteration matched a dish closely enough to show it.
 
 <details>
 <summary>More experience and research</summary>
@@ -84,6 +84,6 @@ My work included segmented subsidy experiments at Keeta, in-car interactions at 
 
 </details>
 
-[Work history](https://andyzhang666666.github.io/#work) · [Growth at Keeta](https://andyzhang666666.github.io/#work-keeta) · [Enterprise delivery](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent execution bench](https://andyzhang666666.github.io/agent-bench/) · [Browse all projects](PROJECTS.en.md)
+[Work history](https://andyzhang666666.github.io/#work) · [Cross-language search at Keeta](https://andyzhang666666.github.io/#evidence-search) · [Enterprise delivery](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent execution bench](https://andyzhang666666.github.io/agent-bench/) · [Browse all projects](PROJECTS.en.md)
 
 [Contact](https://andyzhang666666.github.io/#contact) · [Image sources](docs/editorial/SOURCES.md)
