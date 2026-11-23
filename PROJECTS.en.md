@@ -47,3 +47,7 @@ Browse by the decision each project examines. Agent Bench, RAG Lab, TasteRoom, S
 ## Experience and research
 
 The [portfolio](https://andyzhang666666.github.io/#work) separately describes professional work, enterprise delivery and research. These descriptions are not public client systems or additional source repositories. Repository-specific licences apply.
+
+Enterprise workflows · [Sourcing and human review](https://andyzhang666666.github.io/cases/agent-workflow/)
+
+Elsewhere on the portfolio: [Investment research workflow](https://andyzhang666666.github.io/#project-research-agent) · [Content acquisition case](https://andyzhang666666.github.io/#project-content) · [Poker player quiz (external tool listing)](https://andyzhang666666.github.io/#project-poker-quiz).

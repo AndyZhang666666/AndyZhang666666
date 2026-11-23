@@ -1,5 +1,13 @@
 # Eval Lab · 设计与实现 / Design & implementation
 
+## e06 · 历史评语 / Historical verdict
+
+[定位原句并复核 2/5 的结构评分 / Check the quoted sentence](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) · [原始展示截图 / Full capture](../../../assets/eval-e06.jpg) · [复核流程 / Review flow](https://github.com/AndyZhang666666/llm-output-eval/pull/6)
+
+引用能定位到截断的句子。读者还可以声明文稿是开场或完整短篇，再判断结构评分的适用性。The highlighted sentence establishes where the excerpt stops. Its intended use matters when deciding whether a whole-story rubric fits.
+
+## 另一个任务 · 人工审阅 / A separate manual review
+
 改稿之后，原来的评语是否仍有依据？这次用一份 50 字构造短篇，先在 V1 保存对白引用与人工意见，再建立 V2，并查看逐字增删。
 
 设计取舍：把引用、人工判断与文稿版本联系起来，保留模型原分与人工意见的边界，而不是覆盖一个总分。本组截图没有模型评测或分数；人工观察不证明模型效果。

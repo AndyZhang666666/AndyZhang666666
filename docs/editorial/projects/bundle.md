@@ -1,5 +1,18 @@
 # Bundle Lab · 设计与实现 / Design & implementation
 
+## 折扣跨过保本点 / Crossing the break-even discount
+
+内置合成订单，中档采纳率 12%，每 100 笔覆盖单。只改套餐折扣，同一账本从正值转负。Synthetic orders, 12% adoption, per 100 covered orders. Only the discount changes.
+
+| 套餐折扣 / Discount | 条件增量毛利 / Incremental margin | 实际界面 / Screenshot |
+| --- | --- | --- |
+| 6% | +¥13.44 | [6%](../raw/margin-6.jpg) |
+| 8% | −¥7.54 | [8%](../raw/margin-8.jpg) |
+
+[复算这两个值 / Reproduce](https://andyzhang666666.github.io/bundle-lab/simulate/) · [矩阵与账本实现 / Implementation](https://github.com/AndyZhang666666/bundle-lab/pull/5)
+
+## 12% 折扣的历史算例 / Earlier example at a 12% discount
+
 套餐卖得更多，为什么仍可能少赚？本组使用内置可乐与鸡腿饭合成订单：折扣 12%、中档新增采纳率 12%、既有顾客领折扣 100%，按每 100 个覆盖订单归一化。
 
 设计取舍：把新增毛利贡献 ¥46.11 与既有让利损失 ¥95.61 分开，界面增量毛利为 −¥49.51。三项独立四舍五入，保留原值；毛利不含履约、库存和运营成本。这是条件推演，不是观测收益或净利润；后续验证应与冻结计划对照。
