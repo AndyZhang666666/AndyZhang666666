@@ -49,19 +49,15 @@ def plate(name, theme, height, title, captures, footer, narrow=False):
 
 def cover(theme, narrow=False):
     paper, ink, accent, muted = PALETTES[theme]
+    width, height = (600, 108) if narrow else (1200, 132)
+    left = 24 if narrow else 36
+    block = 38 if narrow else 48
+    x, y = width - 2 * left - block, (height - block) // 2 - 5
     pieces = [
-        text(40, 102, 'Andy Zhang', 92, 700),
-        text(44, 145, 'Agent / Evaluation / Growth', 28, 400),
-        text(44, 185, '张千羽', 32, 600),
-        text(942, 32, 'Judgment', 24, 500),
-        f'<path d="M942 141V50h103v91Z" fill="none" stroke="{ink}" stroke-width="7"/>',
-        f'<path d="M968 165V74h103v91Z" fill="none" stroke="{accent}" stroke-width="7"/>',
-        text(968, 199, 'Verification', 24, 500, accent),
+        text(left, height * 0.65, 'Andy Zhang', 58 if narrow else 76, 700),
+        f'<rect x="{x}" y="{y}" width="{block}" height="{block}" fill="none" stroke="{ink}" stroke-width="4"/>',
+        f'<rect x="{x+10}" y="{y+10}" width="{block}" height="{block}" fill="none" stroke="{accent}" stroke-width="4"/>',
     ]
-    width, height = 1200, 220
-    if narrow:
-        width, height = 600, 184
-        pieces = [text(24, 73, 'Andy Zhang', 72, 700),text(27,116,'Agent / Evaluation / Growth',24),text(27,160,'张千羽',32,600),f'<path d="M464 135V65h70v70Z" fill="none" stroke="{ink}" stroke-width="5"/>',f'<path d="M483 154V84h70v70Z" fill="none" stroke="{accent}" stroke-width="5"/>']
     suffix = '-narrow' if narrow else ''
     (OUT/f'cover{suffix}-{theme}.svg').write_text(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">Andy Zhang · 张千羽</title><desc id="desc">Agent, Evaluation, Growth. Judgment connected to verification through one deliberately displaced frame.</desc><rect width="{width}" height="{height}" fill="{paper}"/><g font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="{ink}">{''.join(pieces).replace('fill="ink"',f'fill="{ink}"')}</g></svg>''')
 

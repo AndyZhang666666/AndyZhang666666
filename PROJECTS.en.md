@@ -1,6 +1,6 @@
 # Project index
 
-[Home](README.en.md) · [中文](PROJECTS.md)
+[Home](README.md) · [中文](PROJECTS.md)
 
 Browse by the decision each project examines. Agent Bench, RAG Lab, TasteRoom, Suibianju and Home Notes live inside the personal-site repository; they do not have separate repositories.
 
@@ -53,3 +53,26 @@ Enterprise workflows · [Sourcing and human review](https://andyzhang666666.gith
 Elsewhere on the portfolio: [Investment research workflow](https://andyzhang666666.github.io/#project-research-agent) · [Content acquisition case](https://andyzhang666666.github.io/#project-content) · [Poker player quiz (external tool listing)](https://andyzhang666666.github.io/#project-poker-quiz).
 
 [Cross-language search](https://andyzhang666666.github.io/#evidence-search) · [Exact, approximate and unverified product matches](https://andyzhang666666.github.io/#evidence-matching)
+
+## Recent releases · 2026
+
+- **11.15**　Renovation planner. A stale cache made the project card disappear after loading. The entry was fixed and rechecked from the portfolio. [Release](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13)
+- **11.13**　Eval. After checking a quote on a phone, the reader can return to the same verdict. [Release](https://github.com/AndyZhang666666/llm-output-eval/pull/6)
+- **11.13**　Bundle. Preview a cell in the discount matrix before applying its assumptions. [Release](https://github.com/AndyZhang666666/bundle-lab/pull/5)
+
+## Experience and other work
+
+At Shanhai I worked on creative agents and reusable skills. At Baidu Wenku I worked on AI features, and at Keeta on international growth. One search problem at Keeta was deciding when an Arabic transliteration matched a dish closely enough to show it.
+
+<details>
+<summary>More experience and research</summary>
+
+My work included segmented subsidy experiments at Keeta, in-car interactions at Li Auto and subscription upgrades at Revolut. My MSc research at UCL explored order flow in intraday S&P 500 trading. At Bristol I built a wearable posture-monitoring project with phone feedback for exercise.
+
+</details>
+
+[Work history](https://andyzhang666666.github.io/#work) · [Cross-language search at Keeta](https://andyzhang666666.github.io/#evidence-search) · [Enterprise delivery](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent execution bench](https://andyzhang666666.github.io/agent-bench/)
+
+Product captures and design notes · [Eval](docs/editorial/projects/eval.md) · [TasteRoom](docs/editorial/projects/taste.md) · [Bundle](docs/editorial/projects/bundle.md) · [RAG](docs/editorial/projects/rag.md)
+
+[Bilingual menu search](https://andyzhang666666.github.io/studio/menu/)

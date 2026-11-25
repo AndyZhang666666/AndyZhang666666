@@ -1,6 +1,6 @@
 # 项目索引
 
-[返回主页](README.md) · [English](PROJECTS.en.md)
+[返回主页](README.zh-CN.md) · [English](PROJECTS.en.md)
 
 按项目要解决的判断来浏览。Agent 台、RAG 台、偏爱实验室、随便局和安心装修的代码位于个人网站仓库内；其余工具在独立仓库维护。
 
@@ -53,3 +53,26 @@
 其他官网条目：[个人投研工作流](https://andyzhang666666.github.io/#project-research-agent) · [内容获客案例](https://andyzhang666666.github.io/#project-content) · [扑克玩家类型测试（外站介绍）](https://andyzhang666666.github.io/#project-poker-quiz)。
 
 [跨语言搜索案例](https://andyzhang666666.github.io/#evidence-search) · [同款、近似款与待核实款](https://andyzhang666666.github.io/#evidence-matching)
+
+## 最近交付 · 2026
+
+- **11.15**　安心装修。旧缓存让新作品卡片出现后又消失，修复后从官网重新走通入口。 [发布记录](https://github.com/AndyZhang666666/AndyZhang666666.github.io/pull/13)
+- **11.13**　Eval。手机用户核对引文后，可以回到同一条评语继续复核。 [发布记录](https://github.com/AndyZhang666666/llm-output-eval/pull/6)
+- **11.13**　Bundle。可以在折扣矩阵里预演一个方案，再决定是否采用。 [发布记录](https://github.com/AndyZhang666666/bundle-lab/pull/5)
+
+## 工作与其他作品
+
+在山海星辰做创作 Agent 与可复用 Skill，在百度参与文库 AI 产品，在 Keeta 做海外用户增长。在 Keeta 做跨语言搜菜时，一个具体问题是：阿语音译多找回一道菜，要怎么判断有没有错配？
+
+<details>
+<summary>更多经历与研究背景</summary>
+
+在 Keeta 做分层补贴实验，在理想汽车参与智能座舱交互，在 Revolut 参与订阅权益与升级流程。UCL 硕士期间研究标普 500 订单流与日内交易；Bristol 本科毕设把运动姿态监测与手机端反馈结合起来。
+
+</details>
+
+[工作经历](https://andyzhang666666.github.io/#work) · [Keeta 跨语言搜索案例](https://andyzhang666666.github.io/#evidence-search) · [企业工具交付](https://andyzhang666666.github.io/cases/agent-workflow/) · [Agent 执行评测](https://andyzhang666666.github.io/agent-bench/)
+
+产品设计图和操作记录 · [Eval](docs/editorial/projects/eval.md) · [TasteRoom](docs/editorial/projects/taste.md) · [Bundle](docs/editorial/projects/bundle.md) · [RAG](docs/editorial/projects/rag.md)
+
+[双语菜单检索](https://andyzhang666666.github.io/studio/menu/)
