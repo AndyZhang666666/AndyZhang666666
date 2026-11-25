@@ -2,7 +2,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/editorial/cover-narrow-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/editorial/cover-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/cover-dark.svg">
-  <img src="assets/editorial/cover-light.svg" alt="张千羽 · Andy Zhang — Agent / Evaluation / Growth" width="100%">
+  <img src="assets/editorial/cover-light.svg" alt="Andy Zhang" width="100%">
 </picture>
 
 **Qianyu (Andy) Zhang · AI Product Manager & Builder.** I build agent workflows and evaluation tools, and test the economics of growth.

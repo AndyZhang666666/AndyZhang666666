@@ -2,7 +2,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/editorial/cover-narrow-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/editorial/cover-narrow-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/editorial/cover-dark.svg">
-  <img src="assets/editorial/cover-light.svg" alt="张千羽 · Andy Zhang — Agent / Evaluation / Growth" width="100%">
+  <img src="assets/editorial/cover-light.svg" alt="Andy Zhang" width="100%">
 </picture>
 
 **张千羽 · AI 产品经理。** 我做 Agent 工作流、模型评测和增长实验。下面五个工具各留了一道可以亲手验证的问题。
@@ -11,15 +11,15 @@
 
 ## 试一次产品判断
 
-五个体验都可以直接打开。评测和执行台提供历史记录，检索和商业算例使用构造材料。
+五个体验都可以直接打开。评测与执行台回放留档记录。检索与商业算例使用构造材料。
 
 | 项目 | 你要判断什么 | 体验 |
 | --- | --- | --- |
-| [Eval Lab][repo1] | 核对历史 2/5 评语引用的半句话。用完整短篇的标准评开场，合适吗？ | [定位原句](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) |
-| [Agent Bench][repo2] | 提交后回执丢失。对照两条程序回放，查工单到底改了几次。 | [看超时回放](https://andyzhang666666.github.io/agent-bench/) |
-| [RAG Lab][repo3] | 借用期限随政策日期变化。换一个日期，核对回答引用了哪版条款。 | [切换日期](https://andyzhang666666.github.io/rag-lab/) |
-| [Bundle Lab][repo4] | 折扣从 6% 调到 8%。算算给老顾客的让利何时吃掉新增毛利。 | [改折扣](https://andyzhang666666.github.io/bundle-lab/simulate/) |
-| [Growth Lab][repo5] | 模拟实验转化上升。核对最低业务提升和护栏，决定是否放量。 | [判断放量](https://andyzhang666666.github.io/growth-experiment-lab/#read) |
+| [Eval Lab][repo1] | 核对历史 2/5 评语引用的半句话。用完整短篇的标准评开场，合适吗？ | [Demo](https://andyzhang666666.github.io/llm-output-eval/?sample=e06&dimension=structure) |
+| [Agent Bench][repo2] | 提交后回执丢失。对照两条程序回放，查工单到底改了几次。 | [Demo](https://andyzhang666666.github.io/agent-bench/) |
+| [RAG Lab][repo3] | 借用期限随政策日期变化。换一个日期，核对回答引用了哪版条款。 | [Demo](https://andyzhang666666.github.io/rag-lab/) |
+| [Bundle Lab][repo4] | 折扣从 6% 调到 8%。算算给老顾客的让利何时吃掉新增毛利。 | [Demo](https://andyzhang666666.github.io/bundle-lab/simulate/) |
+| [Growth Lab][repo5] | 模拟实验转化上升。核对最低业务提升和护栏，决定是否放量。 | [Demo](https://andyzhang666666.github.io/growth-experiment-lab/#read) |
 
 ## 我怎么做产品
 
