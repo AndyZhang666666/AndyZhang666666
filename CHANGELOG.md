@@ -1,5 +1,9 @@
 # 个人主页更新记录
 
+## 2026-11-25
+
+Reorganized the bilingual profile around five public tasks. The project index carries the longer case notes and their original release links.
+
 ## 2026-11-23 · 候选
 
 - 在草稿 PR #1 合入公开主页的 e06 评分复核和新增项目索引，双语首屏增加三个实际操作。
